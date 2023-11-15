@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
+/* Universal Style */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -34,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .divider {
   font-size: 6rem;
   font-weight: lighter;
@@ -41,11 +46,17 @@ a {
   color: #777777;
 }
 
+#vertical-space {
+  height: 4rem;
+}
+
 p {
   font-size: 1.5rem;
   line-height: 1.5;
+  padding: 1rem 0;
 }
 
+/* Introduction */
 #name {
   color: lightcoral;
   font-size: 2rem;
@@ -63,6 +74,42 @@ p {
   font-size: 1.25rem;
 }
 
+/* Navigation Links */
+#navigation {
+  margin: 2rem auto;
+}
+#btn-project,
+#btn-certificate,
+#btn-contact {
+  display: block;
+  width: 8rem;
+  margin: 1rem auto;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  color: black;
+  border-top-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+#btn-project {
+  background-color: #0165fc;
+}
+
+#btn-certificate {
+  background-color: #21fc0d;
+}
+
+#btn-contact {
+  background-color: #ff7124;
+}
+
+#btn-project:hover,
+#btn-certificate:hover,
+#btn-contact:hover {
+  opacity: 0.75;
+}
+
+/* Paragraphs */
 #about strong {
   color: hsl(45, 100%, 75%);
 }
@@ -111,7 +158,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   color: black;
   font-weight: 700;
   background: hsla(339, 100%, 55%, 1);
@@ -145,27 +192,13 @@ p {
   transform: scale(1.25);
 }
 
-#btn-certificate {
-  display: block;
-  width: fit-content;
-  margin: 2rem auto;
-  padding: 0.5rem 1rem;
-  background-color: chocolate;
-  border-radius: 1rem;
-  font-weight: 700;
-  color: black;
-}
-
-#btn-certificate:hover {
-  color: white;
-}
-
 #footer {
   margin: 4rem 0 0;
 }
 
 #footer p {
   font-size: 1rem;
+  padding: 0;
 }
 
 /* Tablet Responsive */
