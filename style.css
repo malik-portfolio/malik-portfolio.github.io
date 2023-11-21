@@ -10,8 +10,8 @@
   font-size: 16px;
 }
 body {
-  background-color: black;
-  color: antiquewhite;
+  background-color: #242424;
+  color: #cccccc;
 }
 img {
   width: 100%;
@@ -29,11 +29,11 @@ img {
   margin: 1rem auto;
 }
 #profile-name {
-  color: tomato;
+  color: #EE4E34;
   font-size: 2rem;
 }
 #profile-career {
-  color: cyan;
+  color: #FCEDDA;
   font-size: 1.5rem;
 }
 #profile-links {
@@ -68,7 +68,7 @@ img {
   margin: 4rem auto;
 }
 #about strong {
-  color: mediumspringgreen;
+  color: burlywood;
 }
 
 /* Technology */
