@@ -7,147 +7,78 @@
     <title>Malik Portfolio</title>
     <meta
       name="description"
-      content="My name is Malik Jahanzaib and I am a Front End Engineer professionally certitifed by codecademy. This is my portfolio website here I showcasw my skills and projects as Front End Engineer." />
+      content="My name is Malik Jahanzaib and I am a Front End Engineer professionally certified by codecademy. This is my portfolio website here I showcase my skills and projects as Front End Engineer." />
   </head>
   <body>
-    <main>
-      <!-- Profile Picture -->
-      <img src="assets/profile-picture.webp" alt="profile picture" />
-
-      <!-- Introduction -->
-      <div id="introduction">
-        <h1 id="name">Malik Jahanzaib</h1>
-        <div id="primary-role">Front End Engineer</div>
-        <div id="secondary-role">JavaScript Developer</div>
-      </div>
-
-      <!-- Navigation Links -->
-      <nav id="navigation">
-        <li><a id="btn-project" href="#project">PROJECT</a></li>
-        <li>
-          <a
-            href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
-            target="_blank"
-            id="btn-certificate">
-            CERTIFICATE
+    <!-- Profile -->
+    <div id="profile" class="section">
+      <img
+        id="profile-picture"
+        src="assets/profile picture.jpeg"
+        alt="profile picture" />
+      <div id="profile-info">
+        <h1 id="profile-name">Malik Jahanzaib</h1>
+        <h2 id="profile-career">Front End Engineer</h2>
+        <div id="profile-links">
+          <a href="mailto:malic.jahan@gmail.com" target="_blank">
+            <span class="gmail-icon icon"></span>
           </a>
-        </li>
-        <li><a id="btn-contact" href="#contact">CONTACT</a></li>
-      </nav>
-      <div class="divider">&#x007B;</div>
-
-      <!-- About -->
-      <p id="about">
-        I am a <strong>professional certified</strong> front-end engineer from
-        <strong>codecademy</strong> one of the top learning platforms of the
-        tech industry. Professional certificates are aligned with the industry
-        standards and requirements. To achieve these certificates, one has to
-        pass all the required exams
-      </p>
-      <div class="divider">&#x007D;</div>
-
-      <!-- Skill -->
-      <p id="skill">
-        I am using <strong>modern technologies</strong> which are react, redux,
-        tailwind & typescript to make projects. I also have an understanding of
-        the most common <strong>data structures & algorithms</strong> and have a
-        basic understanding of <strong>back-end technologies</strong>
-      </p>
-      <div class="divider">&#x007B;</div>
-
-      <!-- Practical -->
-      <p id="practical">
-        My primary programming language is <strong>typescript</strong> which is
-        a superset of javascript and has become the industry standard for
-        large-scale applications. When developing an application I try my best
-        to follow <strong>clean code</strong> practices. I can work in a team
-        and make better <strong>collaboration</strong> by using github tool
-      </p>
-      <div class="divider">&#x007D;</div>
-
-      <!-- Technologies -->
-      <p id="technology">
-        Various <strong>technologies</strong> are required to become a front-end
-        engineer. The technologies that I have learned for my career are the
-        following
-      </p>
-      <div id="vertical-space"></div>
-      <div id="technology-icons">
-        <div class="html-icon"></div>
-        <div class="css-icon"></div>
-        <div class="javascript-icon"></div>
-        <div class="react-icon"></div>
-        <div class="redux-icon"></div>
-        <div class="git-icon"></div>
-        <div class="tailwind-icon"></div>
-        <div class="typescript-icon"></div>
+          <a href="https://wa.me/923032791874" target="_blank">
+            <span class="whatsapp-icon icon"></span>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/malik-jahanzaib-15807016a"
+            target="_blank">
+            <span class="linkedin-icon icon"></span>
+          </a>
+          <a href="https://github.com/malik-portfolio" target="_blank">
+            <span class="github-icon icon"></span>
+          </a>
+          <a
+            id="profile-certificate"
+            href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
+            target="_blank">
+            Certificate
+          </a>
+        </div>
       </div>
-      <div class="divider">&#x007D;</div>
+    </div>
 
-      <!-- Aim -->
-      <p id="aim">
-        I aim to become a <strong>full-stack developer</strong> and
-        <strong>teach programming</strong> to those who think programming is
-        difficult to learn. So that more people can contribute to the tech
-        industry
+    <!-- About & Technology  -->
+    <div id="about" class="section">
+      <p id="about-description">
+        Welcome, my name is <strong>malik jahanzaib</strong> and I am a
+        <strong>front-end engineer</strong> professionally certified by
+        codecademy one of the top learning platforms of the tech industry. I use
+        <strong>modern technologies</strong> when developing the projects. In
+        addition to these I also have understanding of most common
+        <strong>data structures & algorithms</strong>. I can make better
+        <strong>collaboration</strong> with team by using github tool. My
+        primary programming language is <strong>typescript</strong> which is the
+        industry standard for large scale web applications. I am working on
+        <strong>projects</strong> by using react, redux, tailwind & typescript,
+        and will deploy them.
       </p>
-      <div class="divider">&#x007B;</div>
+      <div id="technology">
+        <div class="html-icon icon"></div>
+        <div class="css-icon icon"></div>
+        <div class="javascript-icon icon"></div>
+        <div class="react-icon icon"></div>
+        <div class="redux-icon icon"></div>
+        <div class="git-icon icon"></div>
+        <div class="tailwind-icon icon"></div>
+        <div class="typescript-icon icon"></div>
+      </div>
+    </div>
 
-      <!-- Motivation -->
-      <p id="motivation">
-        As a <strong>junior front-end developer</strong> no problem because
-        every success starts from the ground. I can try my best to work on
-        complex large-scale projects by using react, tailwind css and
-        typescript.
-      </p>
-      <div class="divider">&#x007D;</div>
-
-      <!-- Project -->
-      <p id="project">
-        I am working on <strong>projects</strong> to demonstrate my skills by
-        using modern technologies and will deploy them as soon as they are
-        developed. The links for the projects are as follows
-      </p>
-      <div id="vertical-space"></div>
-      <div class="project-card">
-        <p>Number Magic Game</p>
-        <a href="/number-magic-game" target="_blank"
-          ><span class="link-icon"></span
+    <!-- Project -->
+    <div id="project" class="section">
+      <div class="project-item" id="number-magic-game">
+        <p class="project-title">Number Magic Game</p>
+        <a class="project-link" href="/number-magic-game" target="_blank"
+          ><span class="link-icon icon"></span
         ></a>
       </div>
-
-      <div class="divider">&#x007D;</div>
-
-      <!-- Contact -->
-      <p id="contact">
-        And last, if you feel I am <strong>eligible</strong> to work as a
-        front-end engineer in your organization. You can
-        <strong>contact</strong> me
-      </p>
-      <div id="vertical-space"></div>
-      <div id="contact-icons">
-        <a href="mailto:malic.jahan@gmail.com" target="_blank">
-          <span class="gmail-icon"></span>
-        </a>
-        <a href="https://wa.me/923032791874" target="_blank">
-          <span class="whatsapp-icon"></span>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/malik-jahanzaib-15807016a"
-          target="_blank">
-          <span class="linkedin-icon"></span>
-        </a>
-        <a href="https://github.com/malik-portfolio" target="_blank">
-          <span class="github-icon"></span>
-        </a>
-        <a href="https://maps.app.goo.gl/SXET8D7T9srAiNNaA" target="_blank">
-          <span class="location-icon"></span>
-        </a>
-      </div>
-    </main>
-    <footer id="footer">
-      <p>Copyright &copy; 2023</p>
-      <p>Made By: Malik Jahanzaib</p>
-    </footer>
+    </div>
   </body>
 </html>
