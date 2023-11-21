@@ -10,55 +10,69 @@
       content="My name is Malik Jahanzaib and I am a Front End Engineer professionally certified by codecademy. This is my portfolio website here I showcase my skills and projects as Front End Engineer." />
   </head>
   <body>
-    <!-- Profile -->
-    <div id="profile" class="section">
-      <img
-        id="profile-picture"
-        src="assets/profile picture.jpeg"
-        alt="profile picture" />
-      <div id="profile-info">
-        <h1 id="profile-name">Malik Jahanzaib</h1>
-        <h2 id="profile-career">Front End Engineer</h2>
-        <div id="profile-links">
-          <a href="mailto:malic.jahan@gmail.com" target="_blank">
-            <span class="gmail-icon icon"></span>
-          </a>
-          <a href="https://wa.me/923032791874" target="_blank">
-            <span class="whatsapp-icon icon"></span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/malik-jahanzaib-15807016a"
-            target="_blank">
-            <span class="linkedin-icon icon"></span>
-          </a>
-          <a href="https://github.com/malik-portfolio" target="_blank">
-            <span class="github-icon icon"></span>
-          </a>
-          <a
-            id="profile-certificate"
-            href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
-            target="_blank">
-            Certificate
-          </a>
+    <main>
+      <!-- Profile -->
+      <div id="profile">
+        <!-- Profile Picture -->
+        <div id="profile-picture">
+          <img src="assets/profile picture.jpeg" alt="profile picture" />
+        </div>
+        <!-- Profile Info -->
+        <div id="profile-info">
+          <!-- Profile Name -->
+          <h1 id="profile-name">Malik Jahanzaib</h1>
+          <!-- Profile Career -->
+          <h2 id="profile-career">Front End Engineer</h2>
+          <!-- Profile Links -->
+          <div id="profile-links">
+            <!-- Gmail Link -->
+            <a href="mailto:malic.jahan@gmail.com" target="_blank">
+              <span class="gmail-icon icon"></span>
+            </a>
+            <!-- Whatsapp Link -->
+            <a href="https://wa.me/923032791874" target="_blank">
+              <span class="whatsapp-icon icon"></span>
+            </a>
+            <!-- Linkedin Link -->
+            <a
+              href="https://www.linkedin.com/in/malik-jahanzaib-15807016a"
+              target="_blank">
+              <span class="linkedin-icon icon"></span>
+            </a>
+            <!-- Github Link -->
+            <a href="https://github.com/malik-portfolio" target="_blank">
+              <span class="github-icon icon"></span>
+            </a>
+            <!-- Certificate Link -->
+            <a
+              id="profile-certificate"
+              href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
+              target="_blank">
+              Certificate
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- About & Technology  -->
-    <div id="about" class="section">
-      <p id="about-description">
-        Welcome, my name is <strong>malik jahanzaib</strong> and I am a
-        <strong>front-end engineer</strong> professionally certified by
-        codecademy one of the top learning platforms of the tech industry. I use
-        <strong>modern technologies</strong> when developing the projects. In
-        addition to these I also have understanding of most common
-        <strong>data structures & algorithms</strong>. I can make better
-        <strong>collaboration</strong> with team by using github tool. My
-        primary programming language is <strong>typescript</strong> which is the
-        industry standard for large scale web applications. I am working on
-        <strong>projects</strong> by using react, redux, tailwind & typescript,
-        and will deploy them.
-      </p>
+      <!-- About  -->
+      <div id="about">
+        <!-- Description -->
+        <p id="about-description">
+          Welcome, my name is <strong>malik jahanzaib</strong> and I am a
+          <strong>front-end engineer</strong> professional certified by
+          codecademy one of the top learning platforms of the tech industry. I
+          use <strong>modern technologies</strong> when developing the projects.
+          In addition to these I also have understanding of most common
+          <strong>data structures & algorithms</strong>. I can make better
+          <strong>collaboration</strong> with team by using github tool. My
+          primary programming language is <strong>typescript</strong> which is
+          the industry standard for large scale web applications. I am working
+          on <strong>projects</strong> by using react, redux, tailwind &
+          typescript, and will deploy them.
+        </p>
+      </div>
+
+      <!-- Technology -->
       <div id="technology">
         <div class="html-icon icon"></div>
         <div class="css-icon icon"></div>
@@ -69,16 +83,18 @@
         <div class="tailwind-icon icon"></div>
         <div class="typescript-icon icon"></div>
       </div>
-    </div>
+    </main>
 
     <!-- Project -->
-    <div id="project" class="section">
-      <div class="project-item" id="number-magic-game">
-        <p class="project-title">Number Magic Game</p>
-        <a class="project-link" href="/number-magic-game" target="_blank"
-          ><span class="link-icon icon"></span
-        ></a>
-      </div>
-    </div>
+    <aside id="project">
+      <!-- Number Magic Game -->
+      <a
+        id="number-magic-game"
+        class="project-link"
+        href="/number-magic-game"
+        target="_blank"
+        >Number Magic Game</a
+      >
+    </aside>
   </body>
 </html>
