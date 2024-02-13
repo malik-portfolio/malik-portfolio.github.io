@@ -1,129 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script type="module" src="script.js"></script>
-    <title>Malik Portfolio</title>
-    <meta
-      name="description"
-      content="My name is Malik Jahanzaib and I am a Front End Engineer professionally certified by codecademy. This is my portfolio website here I showcase my skills and projects as Front End Engineer." />
-  </head>
-  <body>
-    <div id="show-menu" class="menu-icon icon"></div>
-    <header id="header">
-      <div id="menu">
-        <div id="menu-heading">
-          <div id="menu-title">Projects</div>
-          <div id="hide-menu">❌</div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="My name is Malik Jahanzaib and I am a Front End Engineer professionally certified by codecademy. This is my portfolio website here I showcase my skills and projects as a Front End Engineer." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="icons.css" />
+  <title>Malik Portfolio | Front End Engineer</title>
+</head>
+
+<body>
+
+  <main>
+    <section id="profile-picture-section">
+      <img id="profile-picture" src="assets/profile_picture.webp" alt="picture of malik jahanzaib front end engineer">
+      <h1 id="profile-name">Malik&nbsp;Jahanzaib</h1>
+      <p id="profile-career">Front&nbsp;End&nbsp;Engineer</p>
+    </section>
+
+    <div class="divider">⇣</div>
+
+    <section>
+      <p>
+        Welcome, my name is <strong>Malik Jahanzaib</strong> and I am a <strong>front-end engineer</strong>
+        professionally certified by Codecademy one of the top learning platforms of the tech industry. To verify the
+        certificate <a id="certificate-link"
+          href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
+          target="_blank">click&nbsp;here</a>
+      </p>
+    </section>
+
+    <div class="divider">⇣</div>
+
+    <section>
+      <p>
+        Using <strong>modern technologies</strong> I can develop and manage from <strong>simple to complex web
+          applications</strong> because modern technologies help in managing the complexity of web applications.
+      </p>
+    </section>
+
+    <div class="divider">⇣</div>
+
+    <section>
+      <p>
+        When developing the web application I focus on two main things one is <strong>user experience</strong> and
+        second is <strong>developer experience</strong> because better user experience helps the user in
+        achieving their task more efficiently, and developer experience helps the developer to manage the application
+        efficiently.
+      </p>
+    </section>
+
+    <div class="divider">⇣</div>
+
+    <section>
+      <p>
+        Having an understanding of <strong>back-end development</strong> and <strong>data structure &
+          algorithms</strong> I can try my best to work on <strong>full-stack web applications</strong>. As noted my
+        main career is front-end engineering.
+      </p>
+    </section>
+
+    <div class="divider">⇣</div>
+
+    <section>
+      <p>
+        These are the following <strong>skills</strong> that I have learned and practiced for my career. Besides HTML,
+        CSS and Javascript other skills are most popular or gaining popularity among enterprises.
+      </p>
+      <div id="skill-wrapper">
+        <div class="skill-card">
+          <div class="html-icon skill-icon" title="HTML"></div>
+          <p>HTML</p>
         </div>
-        <nav id="project-links">
-          <li>
-            <a class="project-link" href="/number-magic-game" target="_blank"
-              >Number Magic Game</a
-            >
-          </li>
-        </nav>
-        <div id="contact-links">
-          <!-- Gmail Link -->
-          <a href="mailto:malic.jahan@gmail.com" target="_blank">
-            <span class="gmail-icon icon"></span>
+        <div class="skill-card">
+          <div class="css-icon skill-icon" title="CSS"></div>
+          <p>CSS</p>
+        </div>
+        <div class="skill-card">
+          <div class="javascript-icon skill-icon" title="JavaScript"></div>
+          <p>JavaScript</p>
+        </div>
+        <div class="skill-card">
+          <div class="react-icon skill-icon" title="React"></div>
+          <p>React</p>
+        </div>
+        <div class="skill-card">
+          <div class="redux-icon skill-icon" title="Redux"></div>
+          <p>Redux</p>
+        </div>
+        <div class="skill-card">
+          <div class="git-icon skill-icon" title="Git"></div>
+          <p>Git</p>
+        </div>
+        <div class="skill-card">
+          <div class="tailwind-icon skill-icon" title="Tailwind CSS"></div>
+          <p>Tailwind CSS</p>
+        </div>
+        <div class="skill-card">
+          <div class="typescript-icon skill-icon" title="TypeScript"></div>
+          <p>TypeScript</p>
+        </div>
+        <div class="skill-card">
+          <div class="nextjs-icon skill-icon" title="Next JS"></div>
+          <p>Next JS</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider">⇣</div>
+
+    <section>
+      <p>
+        Still not sure? You can view my <strong>projects</strong> which I have working on and will deploy them as soon
+        as they are developed. Here is a list of the projects which are deployed. Click on the project name to visit the
+        site.
+      </p>
+      <div id="project-wrapper">
+        <div class="project-card">
+          <a class="project-link" href="https://malik-portfolio.github.io/number-magic-game/" target="_blank">
+            <h2 class="project-title">Number Magic Game</h2>
           </a>
-          <!-- Whatsapp Link -->
-          <a href="https://wa.me/923032791874" target="_blank">
-            <span class="whatsapp-icon icon"></span>
+          <p class="project-description">
+            In this game, the user thinks of a number in a range. The computer will show some number grid slides and
+            ask
+            that the number is available in this slide. After giving answers to the user, the computer will guess the
+            number and display it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider">⇣</div>
+
+    <section>
+      <p>
+        If you have decided that I am <strong>eligible</strong> to work as a web developer in your organization. You can
+        contact me
+      </p>
+      <div id="contact-wrapper">
+        <div class="contact-card">
+          <span class="gmail-icon contact-icon"></span>
+          <a class="contact-link" href="mailto:malic.jahan@gmail.com" target="_blank">
+            malic.jahan@gmail.com
           </a>
-          <!-- Linkedin Link -->
-          <a
-            href="https://www.linkedin.com/in/malik-jahanzaib-15807016a"
-            target="_blank">
-            <span class="linkedin-icon icon"></span>
+
+        </div>
+        <div class="contact-card">
+          <span class="whatsapp-icon contact-icon"></span>
+          <a class="contact-link" href="https://wa.me/923032791874" target="_blank">
+            +92-303-2791874
           </a>
-          <!-- Github Link -->
-          <a href="https://github.com/malik-portfolio" target="_blank">
-            <span class="github-icon icon"></span>
+        </div>
+        <div class="contact-card">
+          <span class="github-icon contact-icon"></span>
+          <a class="contact-link" href="https://github.com/malik-portfolio" target="_blank">
+            github.com/malik-portfolio
           </a>
-          <!-- Certificate Link -->
-          <a
-            id="certificate-link"
-            href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
-            target="_blank">
-            Certificate
+        </div>
+        <div class="contact-card">
+          <span class="location-icon contact-icon"></span>
+          <a class="contact-link" href="https://maps.app.goo.gl/L3NvFAbHquFZrqjo8" target="_blank">
+            Rawalpindi, Pakistan
           </a>
         </div>
       </div>
-    </header>
-    <main>
-      <img
-        id="profile-picture"
-        src="assets/profile picture.webp"
-        alt="profile picture" />
+    </section>
 
-      <div class="divider-icon"></div>
+    <hr id="end-line" />
+  </main>
+</body>
 
-      <p class="description">
-        Welcome, my name is <span id="name">Malik Jahanzaib</span> and I am a
-        <span id="career">Front End Engineer</span> with
-        <strong>React</strong> and <strong>TypeScript</strong>
-      </p>
-
-      <div class="divider-icon"></div>
-
-      <p class="description">
-        I am a <strong>professional certified</strong> front-end engineer from
-        codecademy one of the top learning platforms of the tech industry.
-      </p>
-
-      <div class="divider-icon"></div>
-
-      <p class="description">
-        I use <strong>modern technologies</strong> when developing the projects.
-        In addition to these I also have understanding of the most common
-        <strong>data structures & algorithms</strong>. I can make better
-        <strong>collaboration</strong> with team by using github tool. My
-        primary programming language is <strong>typescript</strong> which is the
-        industry standard for large scale web applications.
-      </p>
-
-      <div class="divider-icon"></div>
-
-      <p class="description">
-        I have covered the core technologies which are <strong>html</strong> for
-        structure, <strong>css</strong> for style and
-        <strong>javascript</strong> for dynamic. I have also covered the modern
-        technologies which are <strong>react</strong> for web application,
-        <strong>redux</strong> for state management, <strong>git</strong> for
-        version control, <strong>tailwind</strong> for style and
-        <strong>typescript</strong> for large scale applications.
-      </p>
-
-      <div class="divider-icon"></div>
-
-      <div id="technology">
-        <div class="html-icon icon"></div>
-        <div class="css-icon icon"></div>
-        <div class="javascript-icon icon"></div>
-        <div class="react-icon icon"></div>
-        <div class="redux-icon icon"></div>
-        <div class="git-icon icon"></div>
-        <div class="tailwind-icon icon"></div>
-        <div class="typescript-icon icon"></div>
-      </div>
-
-      <div class="divider-icon"></div>
-
-      <p class="description">
-        I am working on the <strong>projects</strong> by using the modern
-        technologies and will deploy them as soon as they are developed
-      </p>
-
-      <div class="divider-icon"></div>
-
-      <p class="description">
-        If you feel I am <strong>eligible</strong> to work as front-end engineer
-        in your organization. You can <strong>contact</strong> me
-      </p>
-    </main>
-  </body>
 </html>
