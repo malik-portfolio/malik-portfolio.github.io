@@ -13,62 +13,49 @@
 
 <body>
     <!-- Profile Section -->
-    <header class="profile">
-        <div class="profile__picture-wrapper">
-            <img class="profile__picture" src="assets/profile_picture.webp"
-                alt="profile picture of malik jahanzaib front end engineer">
-            <h1 class="profile__name">Malik Jahanzaib</h1>
-            <p class="profile__career">Front End Engineer</p>
-        </div>
-        <div class="profile__contact-container">
-            <div class="profile__contact-card">
-                <span class="gmail-icon profile__contact-icon"></span>
-                <a class="profile__contact-link" href="mailto:malic.jahan@gmail.com" target="_blank">
-                    malic.jahan@gmail.com
-                </a>
-
-            </div>
-            <div class="profile__contact-card">
-                <span class="whatsapp-icon profile__contact-icon"></span>
-                <a class="profile__contact-link" href="https://wa.me/923032791874" target="_blank">
-                    +92-303-2791874
-                </a>
-            </div>
-            <div class="profile__contact-card">
-                <span class="github-icon profile__contact-icon"></span>
-                <a class="profile__contact-link" href="https://github.com/malik-portfolio" target="_blank">
-                    github.com/malik-portfolio
-                </a>
-            </div>
-            <div class="profile__contact-card">
-                <span class="location-icon profile__contact-icon"></span>
-                <a class="profile__contact-link" href="https://maps.app.goo.gl/L3NvFAbHquFZrqjo8" target="_blank">
-                    Rawalpindi, Pakistan
-                </a>
-            </div>
-        </div>
+    <header id="profile" class="profile">
+        <img class="profile__picture" src="assets/profile_picture.webp"
+            alt="profile picture of malik jahanzaib front end engineer">
+        <h1 class="profile__name">Malik&nbsp;Jahanzaib</h1>
+        <p class="profile__career">Front&nbsp;End&nbsp;Engineer</p>
         <a class="profile__certificate-link"
             href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
             target="_blank">Verify Certificate</a>
+
+        <nav class="navbar">
+            <div id="navbar-menu" class="navbar__menu">🧭</div>
+            <ul id="navbar-container" class="navbar__container hidden">
+                <li><a class="navbar__link navbar__home" href="#profile">Home</a></li>
+                <li><a class="navbar__link" href="#about">About</a></li>
+                <li><a class="navbar__link" href="#skill">Skill</a></li>
+                <li><a class="navbar__link" href="#project">Project</a></li>
+                <li><a class="navbar__link" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <!-- Hire Section -->
-        <section class="hire-me">
-            <h2 class="sub-heading first-sub-heading">Why you hire me ?</h2>
-            <ul class="hire-me__reason">
-                <li class="hire-me__list-item">Professional certified</li>
-                <li class="hire-me__list-item">Using modern technologies</li>
-                <li class="hire-me__list-item">Understanding of back end development</li>
-                <li class="hire-me__list-item">Understanding of data structures & algorithms</li>
-                <li class="hire-me__list-item">Focus on user experience and developer experience</li>
-                <li class="hire-me__list-item">Better team collaboration</li>
+
+        <!-- About -->
+        <section id="about" class="about">
+            <h2 class="section-heading">Why you hire me ?</h2>
+            <ul class="about__list">
+                <li class="about__item">Professional certified front-end engineer by Codecademy</li>
+                <li class="about__item">Using modern technologies to build complex web applications</li>
+                <li class="about__item">Understanding of back end development to deal with full-stack web applications
+                    by using MERN stack
+                </li>
+                <li class="about__item">Understanding of data structures & algorithms to deal with enterprise level web
+                    applications</li>
+                <li class="about__item">Focus on user experience and developer experience to make web applications
+                    better</li>
+                <li class="about__item">Better team collaboration to complete the project in time</li>
             </ul>
         </section>
 
         <!-- Skill Section -->
-        <section class="skill">
-            <h2 class="sub-heading">Skills I have learned</h2>
+        <section id="skill" class="skill">
+            <h2 class="section-heading">Skills I have learned</h2>
             <div class="skill__container">
                 <div class="skill__card">
                     <div class="html-icon skill__icon" title="HTML"></div>
@@ -109,8 +96,8 @@
         </section>
 
         <!-- Project Section -->
-        <section class="project">
-            <h2 class="sub-heading">Projects I have completed</h2>
+        <section id="project" class="project">
+            <h2 class="section-heading">Projects I have completed</h2>
             <div class="project__container">
                 <div class="project__card">
                     <h3 class="project__title">Number Magic Game</h3>
@@ -124,7 +111,53 @@
                 </div>
             </div>
         </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact">
+            <h2 class="section-heading">Contact</h2>
+            <p>If you have decided that I am eligible to work in your organization as web developer. You can contact me
+            </p>
+            <div class="contact__container">
+                <div class="contact__card">
+                    <span class="gmail-icon contact__icon"></span>
+                    <a class="contact__link" href="mailto:malic.jahan@gmail.com" target="_blank">
+                        malic.jahan@gmail.com
+                    </a>
+
+                </div>
+                <div class="contact__card">
+                    <span class="whatsapp-icon contact__icon"></span>
+                    <a class="contact__link" href="https://wa.me/923032791874" target="_blank">
+                        +92-303-2791874
+                    </a>
+                </div>
+                <div class="contact__card">
+                    <span class="github-icon contact__icon"></span>
+                    <a class="contact__link" href="https://github.com/malik-portfolio" target="_blank">
+                        github.com/malik-portfolio
+                    </a>
+                </div>
+                <div class="contact__card">
+                    <span class="location-icon contact__icon"></span>
+                    <a class="contact__link" href="https://maps.app.goo.gl/L3NvFAbHquFZrqjo8" target="_blank">
+                        Rawalpindi, Pakistan
+                    </a>
+                </div>
+            </div>
+        </section>
+
     </main>
+
+    <script>
+        // Element Selection
+        const navbarMenuElement = document.querySelector('#navbar-menu');
+        const navbarWrapperElement = document.querySelector('#navbar-container');
+
+        // Event Listener
+        navbarMenuElement.addEventListener('click', () => {
+            navbarWrapperElement.classList.toggle('hidden');
+        })
+    </script>
 </body>
 
 </html>
