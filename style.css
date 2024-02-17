@@ -23,16 +23,14 @@
 }
 
 body {
-    background-color: #212121;
+    background-color: black;
     padding: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #eeeeee;
 }
 
 section {
-    display: grid;
-    align-content: center;
-    padding: 2rem 0;
+    padding: 4rem 0;
 }
 
 p {
@@ -53,7 +51,7 @@ p {
     display: grid;
     justify-items: center;
     align-content: center;
-    min-height: 100lvh;
+    padding: 4rem 0;
 }
 
 .profile__picture {
@@ -64,21 +62,22 @@ p {
 }
 
 .profile__name {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: springgreen;
 }
 
 .profile__career {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #eeeeee;
 }
 
 .profile__certificate-link {
     text-decoration: none;
     margin: 2rem 0;
-    background-color: teal;
+    background-color: orange;
     color: black;
     padding: 0.5rem 1rem;
+    border-radius: 1rem;
 }
 
 /* Navigation */
@@ -111,9 +110,17 @@ p {
 }
 
 /* About */
-.about__item {
-    margin: 0 0 1rem 1rem;
+.about__card {
+    margin: 2rem 0;
     line-height: 1.5;
+    background-color: #212121;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.about__title {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Skill */
@@ -121,27 +128,39 @@ p {
     display: flex;
     align-items: center;
     margin: 2rem 0;
+    background-color: #212121;
+    border-radius: 1rem;
+    padding: 1rem;
 }
 
 .skill__icon {
     display: block;
     width: 2rem;
     height: 2rem;
+    flex-shrink: 0;
     margin-right: 1rem;
+}
+
+
+.skill__description {
+    margin: 0.25rem 0;
 }
 
 /* Project */
 .project__card {
-    background-color: antiquewhite;
-    color: black;
-    padding: 0.5rem;
+    background-color: #212121;
+    color: #eee;
+    padding: 1rem;
     font-size: 1rem;
+    margin: 2rem 0;
+    border-radius: 1rem;
 }
 
 .project__title {
     margin-bottom: 1rem;
-    border-bottom: 2px solid black;
     padding-bottom: 0.5rem;
+    font-size: 1.25rem;
+    border-bottom: 1px solid #eee;
 }
 
 .project__link {
@@ -150,7 +169,7 @@ p {
     margin-top: 1rem;
     text-decoration: none;
     color: black;
-    background-color: teal;
+    background-color: orange;
     padding: 0.25rem 0.5rem;
 }
 
@@ -202,7 +221,7 @@ p {
     }
 
     section {
-        min-height: 100vh;
+        min-height: 100lvh;
     }
     
     header {
@@ -210,10 +229,11 @@ p {
         right: 2rem;
         top: 2rem;
         width: 30%;
+        min-height: 100lvh;
     }
 
     .profile__certificate-link:hover {
-        background-color: cadetblue;
+        background-color: khaki;
     }
 
     .navbar__menu {
@@ -229,7 +249,7 @@ p {
     .navbar__container {
         display: flex;
         position: static;
-        background-color: #212121;
+        background-color: transparent;
         flex-direction: row;
         padding: 0;
         width: auto;
@@ -257,24 +277,24 @@ p {
         margin: 0 4rem auto 0;
     }
 
-    .skill__container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
     .skill__card {
         margin: 0 0 2rem;
     }
 
-    .project__container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-
-    }
 
     .contact__card:hover {
         transform: translateX(2rem);
     }
-
     
 }
+
+@media screen and (min-width: 2000px) {
+    body {
+        zoom: 200%;
+    }
+    .profile {
+        min-height: 0;
+        padding-top: 8rem;
+    }
+}
+
