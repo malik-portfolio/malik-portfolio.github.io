@@ -4,244 +4,168 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="My name is Malik Jahanzaib and I am a Front End Engineer professionally certified by Codecademy. This is my portfolio website here I showcase my skills and projects as a Front End Engineer" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="description" content="My name is Malik Jahanzaib and I am a Front End Engineer professionally certified by Codecademy. 
+        This is my portfolio website here I showcase my skills and projects as a Front End Engineer" />
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="icons.css" />
     <title>Malik Jahanzaib | Front End Engineer</title>
 </head>
 
 <body>
-    <nav id="navbar" class="navbar">
-        <ul class="navbar__wrapper">
-            <li><a class="navbar__link" href="#home">Home</a></li>
-            <li><a class="navbar__link" href="#about">About</a></li>
-            <li><a class="navbar__link" href="#skill">Skill</a></li>
-            <li><a class="navbar__link" href="#project">Project</a></li>
-            <li><a class="navbar__link" href="#contact">Contact</a></li>
-            <li class="certificate__link-wrapper"><a class="certificate__link"
-                    href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
-                    target="_blank">Certificate</a>
-            </li>
-
-        </ul>
-    </nav>
-
-    <div id="navbar-menu" class="navbar__menu">🧭</div>
-
-    <header>
-        <!-- Introduction Section -->
-        <section id="home">
-            <h1 class="introduction">
-                👋 Welcome, my name is <span class="introduction__name">Malik Jahanzaib</span> and I am a <span
-                    class="introduction__career">Front End Engineer</span> willing to become a Full Stack Engineer
-            </h1>
-        </section>
+    <!-- Header -->
+    <header id="profile">
+        <!-- Profile Picture -->
+        <img id="profile-picture" src="assets/profile_picture.webp"
+            alt="profile picture of malik jahanzaib front end engineer">
+        <h1 id="profile-name">Malik Jahanzaib</h1>
+        <p id="profile-career">Front End Engineer</p>
+        <!-- Contacts Section -->
+        <div id="contact-links">
+            <div class="contact-card">
+                <span class="gmail-icon contact-icon"></span>
+                <a class="contact__link" href="mailto:malic.jahan@gmail.com" target="_blank">
+                    malic.jahan@gmail.com
+                </a>
+            </div>
+            <div class="contact-card">
+                <span class="whatsapp-icon contact-icon"></span>
+                <a class="contact__link" href="https://wa.me/923032791874" target="_blank">
+                    +92-303-2791874
+                </a>
+            </div>
+            <div class="contact-card">
+                <span class="github-icon contact-icon"></span>
+                <a class="contact__link" href="https://github.com/malik-portfolio" target="_blank">
+                    github.com/malik-portfolio
+                </a>
+            </div>
+            <div class="contact-card">
+                <span class="location-icon contact-icon"></span>
+                <a class="contact__link" href="https://maps.app.goo.gl/L3NvFAbHquFZrqjo8" target="_blank">
+                    Rawalpindi, Pakistan
+                </a>
+            </div>
+        </div>
+        <!-- Links Button Section -->
+        <div id="btn-container">
+            <a id="certificate-btn"
+                href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
+                target="_blank">Certificate</a>
+            <a id="project-btn" href="#project">Projects</a>
+        </div>
     </header>
 
-    <main>
-        <!-- About Section -->
-        <section id="about" class="about">
-            <h2 class="section-heading">Why do you hire me?</h2>
-            <div class="about__card-wrapper">
-                <div class="about__card">
-                    <div class="about__icon">🎓</div>
-                    <h3 class="about__title">Professional Certified</h3>
-                    <div class="about__description">Professional certified front-end engineer by codecademy one of the
-                        top learning platforms
-                    </div>
-                </div>
-                <div class="about__card">
-                    <div class="about__icon">👨‍💻</div>
-                    <h3 class="about__title">Modern Technologies</h3>
-                    <div class="about__description">Using modern technologies which are react, redux, tailwind and
-                        typescript</div>
-                </div>
-                <div class="about__card">
-                    <div class="about__icon">🌍</div>
-                    <h3 class="about__title">Back End Development</h3>
-                    <div class="about__description">Understanding back-end development concepts can help in dealing with
-                        full-stack web applications</div>
-                </div>
-                <div class="about__card">
-                    <div class="about__icon">🛡️</div>
-                    <h3 class="about__title">Security</h3>
-                    <div class="about__description">Prevent security threats at the basic level by developing with
-                        security in mind</div>
-                </div>
-                <div class="about__card">
-                    <div class="about__icon">🧮</div>
-                    <h3 class="about__title">DSA</h3>
-                    <div class="about__description">Data structures & algorithms at the medium level to make the web
-                        application more efficient</div>
-                </div>
-                <div class="about__card">
-                    <div class="about__icon">⭐</div>
-                    <h3 class="about__title">User experience</h3>
-                    <div class="about__description">Better user experience helps the user to complete their task
-                        efficiently</div>
-                </div>
-                <div class="about__card">
-                    <div class="about__icon">🎯</div>
-                    <h3 class="about__title">Aim</h3>
-                    <div class="about__description">To be a full-stack web application engineer with more focus on
-                        database and API development</div>
-                </div>
-                <div class="about__card">
-                    <div class="about__icon">🤝</div>
-                    <h3 class="about__title">Team collaboration</h3>
-                    <div class="about__description">When working with the team I try to better collaborate so that the
-                        project is completed on time</div>
-                </div>
-            </div>
-        </section>
+    <div class="section-divider">⇣</div>
 
-        <section id="skill" class="skill">
-            <h2 class="section-heading">Skills I have learned</h2>
-            <div class="skill__card-wrapper">
-                <div class="skill__card">
-                    <div class="skill__icon-wrapper">
-                        <div class="html-icon skill__icon"></div>
-                    </div>
-                    <h3 class="skill__title">HTML</h3>
-                    <p class="skill__description">Hyper Text Markup Language is used for the structure and semantics of
-                        the web application contents</p>
-                </div>
-                <div class="skill__card">
-                    <div class="skill__icon-wrapper">
-                        <div class="css-icon skill__icon"></div>
-                    </div>
-                    <h3 class="skill__title">CSS</h3>
-                    <p class="skill__description">Cascading Style Sheet is used for styling the web application</p>
-                </div>
-                <div class="skill__card">
-                    <div class="skill__icon-wrapper">
-                        <div class="javascript-icon skill__icon"></div>
-                    </div>
-                    <h3 class="skill__title">JavaScript</h3>
-                    <p class="skill__description">JavaScript is a programming language used to give logic to the web
-                        application</p>
-                </div>
-                <div class="skill__card">
-                    <div class="skill__icon-wrapper">
-                        <div class="react-icon skill__icon"></div>
-                    </div>
-                    <h3 class="skill__title">React</h3>
-                    <p class="skill__description">React is a JavaScript library used for making DOM manipulation
-                        easy and has component-based architecture</p>
-                </div>
-                <div class="skill__card">
-                    <div class="skill__icon-wrapper">
-                        <div class="redux-icon skill__icon"></div>
-                    </div>
-                    <h3 class="skill__title">Redux</h3>
-                    <p class="skill__description">Redux is a JavaScript library used for advanced state management
-                    </p>
-                </div>
-                <div class="skill__card">
-                    <div class="skill__icon-wrapper">
-                        <div class="tailwind-icon skill__icon"></div>
-                    </div>
-                    <h3 class="skill__title">Tailwind</h3>
-                    <p class="skill__description">Tailwind is a CSS framework based on utility classes that make web
-                        application styling easy</p>
-                </div>
-                <div class="skill__card">
-                    <div class="skill__icon-wrapper">
-                        <div class="typescript-icon skill__icon"></div>
-                    </div>
-                    <h3 class="skill__title">TypeScript</h3>
-                    <p class="skill__description">TypeScript is a superset of JavaScript and is used for type safety
-                        and is heavily used for large-scale web applications</p>
-                </div>
-                <div class="skill__card">
-                    <div class="skill__icon-wrapper">
-                        <div class="nextjs-icon skill__icon"></div>
-                    </div>
-                    <h3 class="skill__title">Next JS</h3>
-                    <p class="skill__description">Next JS is a React framework and is used for full-stack web
-                        application development </p>
-                </div>
-                <div class="skill__card">
-                    <div class="skill__icon-wrapper">
-                        <div class="git-icon skill__icon"></div>
-                    </div>
-                    <h3 class="skill__title">Git</h3>
-                    <p class="skill__description">Git is used to make versions of the applications so that the
-                        changes will be tracked and can restore the application to its previous version</p>
-                </div>
-        </section>
+    <!-- About Section 1 -->
+    <section>
+        <div class="section-wrapper">
+            Welcome, my name is <em>Malik Jahanzaib</em> and I am a <strong>🌍 Front End Engineer</strong> (web
+            developer) professionally certified by <em>Codecademy</em> one of the top learning platforms for the tech
+            industry. Using <em>modern technologies</em> to develop complex web applications. The role of the front-end
+            engineer is to develop and maintain the <em>client side</em> of the web application. The main areas in
+            front-end engineering are web design, user experience, component-based architecture, state management,
+            routing, web API, third party API, fetching data, search engine optimization and performance optimization
+        </div>
+    </section>
 
-        <!-- Project Section -->
-        <section id="project" class="project">
-            <h2 class="section-heading">Projects I have completed</h2>
-            <div class="project__card-wrapper">
-                <div class="project__card">
-                    <div class="project__icon">🎮</div>
-                    <h3 class="project__title">Number Magic Game</h3>
-                    <p class="project__description">
-                        In this game, the user thinks of a number in a range. The computer will show some number grid
-                        slides and ask that the number is available in this slide. After getting answers from the user,
-                        the computer will guess the number and display it.
-                    </p>
-                    <a class="project__link" href="https://malik-portfolio.github.io/number-magic-game/"
-                        target="_blank">Visit</a>
-                </div>
-            </div>
-        </section>
+    <div class="section-divider">⇣</div>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <h2 class="section-heading">Contact</h2>
+    <!-- About Section 2 -->
+    <section>
+        <div class="section-wrapper">
+            With an understanding of <strong>👨‍💻 Back End Development</strong> which includes routing, controller,
+            middleware, API and authentication. Also have an understanding of <strong>Database management</strong> which
+            includes data modeling, schema definition, constraints, CRUD operations, triggers and entity relationships
+        </div>
+    </section>
 
-            <div class="contact__container">
-                <div class="contact__picture-wrapper">
-                    <img class="contact__picture" src="assets/profile_picture.webp"
-                        alt="profile picture of malik jahanzaib front end engineer">
-                    <div class="contact__name">Malik Jahanzaib</div>
-                    <div class="contact__career">Front End Engineer</div>
-                </div>
-                <div class="contact__wrapper">
-                    <div class="contact__card">
-                        <span class="gmail-icon contact__icon"></span>
-                        <a class="contact__link" href="mailto:malic.jahan@gmail.com" target="_blank">
-                            malic.jahan@gmail.com
-                        </a>
+    <div class="section-divider">⇣</div>
 
-                    </div>
-                    <div class="contact__card">
-                        <span class="whatsapp-icon contact__icon"></span>
-                        <a class="contact__link" href="https://wa.me/923032791874" target="_blank">
-                            +92-303-2791874
-                        </a>
-                    </div>
-                    <div class="contact__card">
-                        <span class="github-icon contact__icon"></span>
-                        <a class="contact__link" href="https://github.com/malik-portfolio" target="_blank">
-                            github.com/malik-portfolio
-                        </a>
-                    </div>
-                    <div class="contact__card">
-                        <span class="location-icon contact__icon"></span>
-                        <a class="contact__link" href="https://maps.app.goo.gl/L3NvFAbHquFZrqjo8" target="_blank">
-                            Rawalpindi, Pakistan
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- About Section 3 -->
+    <section>
+        <div class="section-wrapper">
+            With an understanding of <strong>🧮 Data Structures & Algorithms</strong> which includes linked lists,
+            queues, stacks, trees, graphs, heaps, searching algorithms and sorting algorithms. These are the most common
+            data structures & algorithms used to develop efficient web applications
+        </div>
+    </section>
 
-    <script>
-        // Element Selection
-        const navbarMenuElement = document.querySelector('#navbar-menu');
-        const navbarElement = document.querySelector('#navbar');
+    <div class="section-divider">⇣</div>
 
-        // Event Listener
-        navbarMenuElement.addEventListener('click', () => {
-            navbarElement.classList.toggle('show-navbar');
-        })
-    </script>
+    <!-- About Section 4 -->
+    <section>
+        <div class="section-wrapper">
+            <strong>🎯 Aim</strong> to become a <em>full-stack engineer</em> and to be a master in <em>data structures &
+                algorithms</em>. It will help me to deal with enterprise-level web applications. For that level
+            the data structures & algorithms are required
+        </div>
+    </section>
+
+    <div class="section-divider">⇣</div>
+
+    <!-- About Section 5 -->
+    <section>
+        <div class="section-wrapper">
+            Focus on <strong>⭐ User Experience</strong> because it helps the user to complete their tasks more
+            efficiently. Better user experience increases the number of users and bad user experience can decrease the
+            number of users, which directly impacts the business of the organization
+        </div>
+    </section>
+
+    <div class="section-divider">⇣</div>
+
+    <!-- Skill Section -->
+    <section>
+        <div class="section-wrapper">
+            To become a <em>front-end engineer</em> various technologies are required to learn. The <strong>essential
+                technologies </strong> that I have learned are <em>HTML</em> hypertext markup language, <em>CSS</em>
+            cascading style sheet, <em>JavaScript</em> programming language, <em>React</em> interactive library,
+            <em>Redux</em> state management library, <em>Tailwind</em> CSS framework, <em>Typescript</em> type safety
+            for javascript, <em>Next JS</em> full-stack web application framework, <em>SQL</em> structure query language
+            and <em>Git</em> version control system
+        </div>
+    </section>
+
+    <div class="section-divider">⇣</div>
+
+    <section id="skill-icons-container">
+        <div class="html-icon skill-icon" title="HTML"></div>
+        <div class="css-icon skill-icon" title="CSS"></div>
+        <div class="javascript-icon skill-icon" title="JavaScript"></div>
+        <div class="react-icon skill-icon" title="React"></div>
+        <div class="redux-icon skill-icon" title="Redux"></div>
+        <div class="tailwind-icon skill-icon" title="Tailwind"></div>
+        <div class="typescript-icon skill-icon" title="TypeScript"></div>
+        <div class="nextjs-icon skill-icon" title="Next JS"></div>
+        <div class="sql-icon skill-icon" title="SQL"></div>
+        <div class="git-icon skill-icon" title="Git"></div>
+    </section>
+
+    <div class="section-divider">⇣</div>
+
+    <!-- Project Section -->
+    <section id="project">
+        <div class="section-wrapper">
+            <em>Still unsure?</em> You can view my <strong>Front End Projects</strong> which I have developed by using
+            modern technologies which are react, tailwind and typescript
+        </div>
+    </section>
+
+    <div class="section-divider">⇣</div>
+
+    <section id="projects-container">
+        <div class="project-card">
+            <h3 class="project-title">🎮 Number Magic Game</h3>
+            <p class="project-description">
+                In this game, the user thinks of a number in a range. The computer will show some number grid
+                slides and ask that the number is available in this slide. After getting answers from the user,
+                the computer will guess the number and display it.
+            </p>
+            <a class="project-link" href="https://malik-portfolio.github.io/number-magic-game/"
+                target="_blank">Visit</a>
+        </div>
+    </section>
 </body>
 
 </html>
