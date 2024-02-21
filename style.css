@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+/* -------------------------------------------
+1. Reset
+2. Universal
+3. Profile Picture
+4. About
+5. Skills
+6. Projects
+7. Contacts
+----------------------------------------------- */
+
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Universal Styles */
+:root {
+    font-size: 16px;
+}
+
+body {
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #eee;
+    line-height: 1.5;
+}
+
+section {
+    padding-top: 8rem;
+    width: 75%;
+    margin: 0 auto;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar__wrapper {
+    display: inline-flex;
+    justify-content: center;
+    margin: 2rem auto;
+    list-style-type: none;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem 0 antiquewhite;
+    background-color: black;
+    padding: 0 2rem;
+}
+
+
+.navbar__link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem 2rem;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.navbar__link:hover {
+    color: springgreen;
+    border-bottom: 1px solid springgreen;
+    border-top: 1px solid springgreen;
+}
+
+.navbar__menu {
+    display: none;
+}
+
+/* Introduction */
+.introduction {
+    text-align: center;
+    font-size: 2rem;
+    color: #eee;
+    padding-top: 5rem;
+}
+
+.introduction__name {
+    display: inline;
+    color: crimson;
+}
+
+.introduction__career {
+    color: springgreen;
+}
+
+.certificate__link-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.certificate__link {
+    text-decoration: none;
+    color: black;
+    background-color: orange;
+    padding: 0.5rem 1rem;
+    font-weight: 900;
+    border-radius: 0.5rem;
+}
+
+.certificate__link:hover {
+    background-color: lightyellow;
+}
+
+/* About */
+.about__card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.about__card {
+    background-color: #212121;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.about__icon {
+    font-size: 2rem;
+    background-color: black;
+    width: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.about__description {
+    color: gray;
+}
+
+/* Skill */
+.skill__card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.skill__card {
+    background-color: #212121;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.skill__icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.skill__icon {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.skill__description {
+    color: gray;
+}
+
+/* Project */
+.project__card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.project__card {
+    background-color: #212121;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.project__icon {
+    font-size: 2rem;
+    background-color: black;
+    width: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.project__description {
+    color: gray;
+}
+
+.project__link {
+    display: inline-block;
+    background-color: teal;
+    color: #eee;
+    text-decoration: none;
+    padding: 0.25rem 1rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+.project__link:hover {
+    background-color: darkcyan;
+}
+
+/* Contact */
+.contact__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212121;
+    width: 75%;
+    padding: 1rem;
+    margin: 2rem auto;
+    border-radius: 1rem;
+}
+
+.contact__picture {
+    display: block;
+    width: 10rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.contact__name {
+    font-size: 1.25rem;
+}
+
+.contact__card {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contact__icon {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.contact__link {
+    text-decoration: none;
+    color: #eee;
+}
+
+.contact__link:hover {
+    color: springgreen;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:1000px) {
+
+    .project__card-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contact__container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px) {
+
+    section {
+        width: 90%;
+        padding: 4rem 1rem 0;
+    }
+
+    .introduction {
+        padding: 0;
+    }
+
+    .about__card-wrapper,
+    .skill__card-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar__menu {
+        display: block;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+    }
+
+    .navbar {
+        display: none;
+        background-color: antiquewhite;
+        color: black;
+        position: fixed;
+        width: 200px;
+        top: unset;
+        left: unset;
+        bottom: 4rem;
+        right: 2rem;
+    }
+
+    .navbar__wrapper {
+        display: block;
+        border-radius: 0;
+        background-color: transparent;
+        box-shadow: none;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .navbar__link {
+        border: none;
+        border-bottom: 1px solid black;
+        padding: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    .navbar__link:hover {
+        border: none;
+        border-bottom: 1px solid black;
+        color: unset;
+    }
+
+    .navbar__link:not(.navbar__link[href="#contact"]) {
+        margin-bottom: 1rem;
+    }
+
+    .certificate__link {
+        margin-top: 1rem;
+    }
+
+    .contact__container {
+        flex-direction: column;
+    }
+}
+
+/* Utilities */
+.show-navbar {
+    display: inline-block;
+}
