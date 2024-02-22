@@ -84,6 +84,7 @@ section {
 .introduction-section {
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .introduction-name {
@@ -200,7 +201,6 @@ section {
 /* Responsive */
 @media screen and (min-width:700px) {
     .introduction-section {
-        text-align: center;
         width: 80%;
         margin: 0 auto;
     }
