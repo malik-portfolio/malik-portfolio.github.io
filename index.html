@@ -8,31 +8,24 @@
         content="My name is Malik Jahanzaib and I am a Front End Engineer professionally certified by Codecademy. This is my portfolio website here I showcase my skills and projects as a Front End Engineer" />
     <link rel="stylesheet" href="icon.css" />
     <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
     <title>Malik Jahanzaib | Front End Engineer</title>
 </head>
 
 <body>
-    <header>
-        <div id="navbar-show-btn" class="navbar-show-btn">🧭</div>
-        <nav class="navbar">
-            <ul class="navbar-container">
-                <li><a class="navbar-link" href="#home">Home</a></li>
-                <li><a class="navbar-link" href="#about">About</a></li>
-                <li><a class="navbar-link" href="#skill">Skills</a></li>
-                <li><a class="navbar-link" href="#project">Projects</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Introduction Section -->
-        <section id="home" class="introduction-section">
-            <h1 class="introduction-heading">
-                👋 Welcome, my name is <span class="introduction-name">Malik Jahanzaib</span> and I am a professional
-                certified <span class="introduction-career">Front End Engineer</span> willing to become a full stack
-                engineer
-            </h1>
-            <div class="contact-container">
+    <!-- Profile Section -->
+    <header id="profile-section" class="section">
+        <!-- Profile Picture -->
+        <div id="profile-picture-wrapper">
+            <img id="profile-picture" src="assets/profile-picture.webp" alt="malik jahanzaib front end engineer">
+        </div>
+        <!-- Profile Basic Info -->
+        <div id="profile-info">
+            <h1 id="profile-name">Malik Jahanzaib</h1>
+            <p id="profile-career">Front End Engineer</p>
+            <!-- Profile Links -->
+            <div id="profile-links">
                 <a class="contact-link" href="mailto:malic.jahan@gmail.com" target="_blank">
                     <span class="gmail-icon contact-icon"></span>
                 </a>
@@ -50,159 +43,104 @@
                 <a class="contact-link" href="https://maps.app.goo.gl/L3NvFAbHquFZrqjo8" target="_blank">
                     <span class="location-icon contact-icon"></span>
                 </a>
+                <a id="certificate-link"
+                    href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
+                    target="_blank">Certificate</a>
             </div>
-            <a class="certificate-link"
-                href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
-                target="_blank">Certificate</a>
-        </section>
+        </div>
+    </header>
 
-        <!-- About Section -->
-        <section id="about" class="about-section">
-            <h2 class="section-heading">Why do you hire me?</h2>
-            <div class="about-container">
-                <div class="about-card">
-                    <div class="about-icon">🎓</div>
-                    <h3 class="about-title">Professional Certified</h3>
-                    <div class="about-description">Professional certified front-end engineer by Codecademy one of the
-                        top learning platforms for the tech industry
-                    </div>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">👨‍💻</div>
-                    <h3 class="about-title">Modern Technologies</h3>
-                    <div class="about-description">Using modern technologies which include React, Redux, Tailwind, Next
-                        JS and Typescript for complex web applications</div>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">🌍</div>
-                    <h3 class="about-title">Back End Development</h3>
-                    <div class="about-description">Understanding back-end development concepts can help in dealing with
-                        full-stack web applications</div>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">🧮</div>
-                    <h3 class="about-title">DSA</h3>
-                    <div class="about-description">Knowledge of the most common data structures & algorithms to make
-                        the web applications more efficient</div>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">⭐</div>
-                    <h3 class="about-title">User experience</h3>
-                    <div class="about-description">When developing web applications I focus on user experience because
-                        it directly impacts the business of the organization</div>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">🎯</div>
-                    <h3 class="about-title">Aim</h3>
-                    <div class="about-description">My future aim is to be a full-stack web application engineer with
-                        more focus on database and API development</div>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">🤝</div>
-                    <h3 class="about-title">Team collaboration</h3>
-                    <div class="about-description">When working with the team I try to better collaborate so that the
-                        project is completed on time and have code reviews</div>
-                </div>
-                <div class="about-card">
-                    <div class="about-icon">🛡️</div>
-                    <h3 class="about-title">Security</h3>
-                    <div class="about-description">Try to prevent security threats by using the Burp suite tool for
-                        analyzing web application security</div>
-                </div>
-            </div>
-        </section>
+    <!-- Summary Section-->
+    <section id="summary-section" class="section">
+        <p>
+            Welcome, my name is <strong>Malik Jahanzaib</strong> and I am a professional certified <strong>Front End
+                Engineer</strong> by Codecademy one of the top learning platforms for the tech industry. Using
+            <strong>Modern Technologies</strong> like React, Tailwind and Typescript with the addition of Next JS /
+            Express JS and Mongodb for full-stack applications. With an understanding of <strong>Back End
+                Development</strong> more focus on API and Database development. When developing
+            <strong>Mobile Applications</strong> I will learn React Native if needed. I can also work on the most
+            common <strong>Data Structures &amp; Algorithms</strong> to make applications more efficient. When
+            developing web applications my main focus is on <strong>User Experience</strong> which impacts the business
+            of the organization and developer experience. By using the Burp Suite tool I can also analyze the
+            <strong>Security</strong> of web technologies. My future <strong>Aim</strong> is to be an expert in software
+            engineering and to teach programming to those who experience difficulty in learning programming. I am
+            working on various <strong>Projects</strong> using modern technologies and will deploy them as soon as
+            they are developed
+        </p>
+    </section>
 
-        <section id="skill" class="skill-section">
-            <h2 class="section-heading">Skills I have learned</h2>
-            <div class="skill-container">
-                <div class="skill-card">
-                    <div class="html-icon skill-icon"></div>
-                    <h3 class="skill-title">HTML</h3>
-                    <p class="skill-description">Hyper Text Markup Language is used for the structure and semantics of
-                        the web application contents</p>
-                </div>
-                <div class="skill-card">
-                    <div class="css-icon skill-icon"></div>
-                    <h3 class="skill-title">CSS</h3>
-                    <p class="skill-description">Cascading Style Sheet is used for styling the web application</p>
-                </div>
-                <div class="skill-card">
-                    <div class="javascript-icon skill-icon"></div>
-                    <h3 class="skill-title">JavaScript</h3>
-                    <p class="skill-description">JavaScript is a programming language used to give logic to the web
-                        application</p>
-                </div>
-                <div class="skill-card">
-                    <div class="react-icon skill-icon"></div>
-                    <h3 class="skill-title">React</h3>
-                    <p class="skill-description">React is a JavaScript library used for making DOM manipulation
-                        easy and has component-based architecture</p>
-                </div>
-                <div class="skill-card">
-                    <div class="redux-icon skill-icon"></div>
-                    <h3 class="skill-title">Redux</h3>
-                    <p class="skill-description">Redux is a JavaScript library used for advanced state management
-                    </p>
-                </div>
-                <div class="skill-card">
-                    <div class="tailwind-icon skill-icon"></div>
-                    <h3 class="skill-title">Tailwind</h3>
-                    <p class="skill-description">Tailwind is a CSS framework based on utility classes that make web
-                        application styling easy</p>
-                </div>
-                <div class="skill-card">
-                    <div class="typescript-icon skill-icon"></div>
-                    <h3 class="skill-title">TypeScript</h3>
-                    <p class="skill-description">TypeScript is a superset of JavaScript and is used for type safety
-                        and is heavily used for large-scale web applications</p>
-                </div>
-                <div class="skill-card">
-                    <div class="nextjs-icon skill-icon"></div>
-                    <h3 class="skill-title">Next JS</h3>
-                    <p class="skill-description">Next JS is a React framework and is used for full-stack web
-                        application development </p>
-                </div>
-                <div class="skill-card">
-                    <div class="git-icon skill-icon"></div>
-                    <h3 class="skill-title">Git</h3>
-                    <p class="skill-description">Git is used to make versions of the applications so that the
-                        changes will be tracked and can restore the application to its previous version</p>
-                </div>
-                <div class="skill-card">
-                    <div class="postgresql-icon skill-icon"></div>
-                    <h3 class="skill-title">PostgreSQL</h3>
-                    <p class="skill-description">PostgreSQL is one of the top database management systems. I have
-                        learned SQL and will use PostgreSQL for relational database management</p>
-                </div>
-        </section>
+    <!-- Certificate Section -->
+    <section id="certificate-section" class="section">
+        <img id="certificate-picture" src="assets/codecademy-certificate.PNG" alt="">
+    </section>
 
-        <!-- Project Section -->
-        <section id="project" class="project-section">
-            <h2 class="section-heading">Projects I have completed</h2>
-            <div class="project-container">
-                <div class="project-card">
-                    <div class="project-icon">🎮</div>
-                    <h3 class="project-title">Number Magic Game</h3>
-                    <p class="project-description">
-                        In this game, the user thinks of a number in a range. The computer will show some number grid
-                        slides and ask that the number is available in this slide. After getting answers from the user,
-                        the computer will guess the number and display it.
-                    </p>
-                    <a class="project-link" href="https://malik-portfolio.github.io/number-magic-game/"
-                        target="_blank">Visit</a>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- Skill Section -->
+    <section id="skill-section" class="section">
+        <div class="skill-card">
+            <div class="html-icon skill-icon"></div>
+            <p class="skill-title">HTML</p>
+        </div>
+        <div class="skill-card">
+            <div class="css-icon skill-icon"></div>
+            <p class="skill-title">CSS</p>
+        </div>
+        <div class="skill-card">
+            <div class="javascript-icon skill-icon"></div>
+            <p class="skill-title">JavaScript</p>
+        </div>
+        <div class="skill-card">
+            <div class="typescript-icon skill-icon"></div>
+            <p class="skill-title">TypeScript</p>
+        </div>
+        <div class="skill-card">
+            <div class="react-icon skill-icon"></div>
+            <p class="skill-title">React</p>
+        </div>
+        <div class="skill-card">
+            <div class="redux-icon skill-icon"></div>
+            <p class="skill-title">Redux</p>
+        </div>
+        <div class="skill-card">
+            <div class="tailwind-icon skill-icon"></div>
+            <p class="skill-title">Tailwind</p>
+        </div>
+        <div class="skill-card">
+            <div class="nextjs-icon skill-icon"></div>
+            <p class="skill-title">Next</p>
+        </div>
+        <div class="skill-card">
+            <div class="nodejs-icon skill-icon"></div>
+            <p class="skill-title">Node</p>
+        </div>
+        <div class="skill-card">
+            <div class="expressjs-icon skill-icon"></div>
+            <p class="skill-title">Express</p>
+        </div>
+        <div class="skill-card">
+            <div class="mongodb-icon skill-icon"></div>
+            <p class="skill-title">MongoDB</p>
+        </div>
+        <div class="skill-card">
+            <div class="git-icon skill-icon"></div>
+            <p class="skill-title">Git</p>
+        </div>
+    </section>
 
-    <script>
-        // Element Selection
-        const navbarElement = document.querySelector('.navbar');
-        const navbarShowBtn = document.querySelector('#navbar-show-btn');
+    <!-- Project Section -->
+    <section id="project-section">
+        <div class="project-card">
+            <a class="project-link" href="https://malik-portfolio.github.io/number-magic-game/" target="_blank">
+                <h3 class="project-title">Number Magic Game</h3>
+                <span class="project-arrow-icon">➔</span>
+            </a>
+            <p class="project-description">
+                In this game, the user thinks of a number in a range. The computer will show some number grid
+                slides and ask that the number is available in this slide. After getting answers from the user,
+                the computer will guess the number and display it.
+            </p>
+        </div>
+    </section>
 
-        // Event Listener
-        navbarShowBtn.onclick = () => navbarElement.classList.toggle('show-navbar')
-    </script>
 </body>
 
 </html>
