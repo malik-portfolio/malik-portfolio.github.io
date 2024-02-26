@@ -24,54 +24,34 @@
 }
 
 body {
-    background-image: url('assets/background-image.webp');
+    background-image: url('assets/dark-background.webp');
     background-size: cover;
     background-position: center;
-
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-
     display: grid;
     gap: 1rem;
-
     padding: 1rem;
 }
 
-/* Layout */
 .glass-card {
-    background-color: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.75);
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 1rem 0 black;
 }
 
-#profile-links {
-    margin-top: 2rem;
+/* Profile Section */
+.profile-section {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-}
-
-#summary-section,
-#project-section {
-    line-height: 2;
-}
-
-#profile-section {
     text-align: center;
+    gap: 1rem;
 }
 
-.project-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Picture */
-#profile-picture {
+.profile-picture {
     display: block;
     width: 9rem;
     border-radius: 50%;
@@ -79,54 +59,50 @@ body {
     box-shadow: 0 0 0.5rem 0 black;
 }
 
-/* Typography */
-#profile-name {
+.profile-name {
     font-size: 2rem;
 }
 
-#profile-career {
+.profile-career {
     font-size: 1.5rem;
     font-weight: normal;
 }
 
-/* Links */
-#certificate-link {
+.contact-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+    margin: 1rem 0;
+}
+
+.contact-icon {
     display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.certificate-link {
+    display: inline-block;
     background-color: black;
     text-decoration: none;
     color: white;
-    margin: 1rem 0;
     padding: 0.5rem 2rem;
     border-radius: 0.5rem;
     font-weight: 700;
 }
 
-.project-link {
-    display: block;
-    text-decoration: none;
-    color: inherit;
+/* Summary Section */
+.summary-section {
+    line-height: 2;
 }
 
-/* Icons */
-.contact-icon {
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    margin-right: 1rem;
+/* Skill Section */
+.skill-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.skill-icon {
-    display: block;
-    width: 3rem;
-    height: 3rem;
-    filter: drop-shadow(0 0 0.25rem black);
-}
-
-.project-arrow-icon {
-    font-size: 1.5rem;
-}
-
-/* Cards */
 .skill-card {
     display: inline-flex;
     flex-direction: column;
@@ -137,70 +113,100 @@ body {
     margin: 1rem;
 }
 
+.skill-icon {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    filter: drop-shadow(0 0 0.25rem black);
+}
+
+/* Project Section */
+.project-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-arrow-icon {
+    font-size: 1.5rem;
+}
+
 /* Responsive */
 @media screen and (min-width:700px) {
-    #profile-section {
+    .profile-section {
+        flex-direction: row;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .profile-picture {
+        margin: 0;
+    }
+
+    .links-container {
         display: flex;
         align-items: center;
-        text-align: left;
+        margin-top: 2rem;
     }
 
-    #profile-picture {
+    .contact-container {
         margin: 0;
-        margin-right: 1rem;
     }
 
-    #profile-links {
-        margin-top: 1rem;
-    }
-
-    #certificate-link {
+    .certificate-link {
         order: -1;
         margin: 0;
         margin-right: 1rem;
     }
 
-    .project-card {
-        width: 40%;
-        margin: 1rem;
+    .summary-section {
+        padding: 2rem;
+    }
+
+    .project-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        gap: 1rem;
+    }
+
+    .project-link {
+        width: 45%;
     }
 }
 
 @media screen and (min-width:1000px) {
     body {
-        display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 2rem;
         padding: 1rem;
     }
 
-    .project-link {
-        opacity: 0.5;
-        box-shadow: none;
-    }
-
-    .project-link:hover {
-        opacity: 1;
-        box-shadow: 0 0 1rem 0 black;
-    }
-
-    #profile-section,
-    #summary-section,
-    #skill-section {
+    .profile-section,
+    .summary-section,
+    .skill-section {
         grid-column: 1 / 2;
     }
 
-    #project-section {
+    .project-section {
         grid-column: 2 / 3;
         grid-row: 1 / span 4;
         align-self: self-start;
     }
 
-    #summary-section {
+    .summary-section {
         font-size: 1.25rem;
     }
 
-    .project-card {
+    .project-link {
         width: 100%;
         margin: 0;
         margin-bottom: 1rem;
@@ -210,8 +216,13 @@ body {
         transform: scale(1.25);
     }
 
-    #certificate-link:hover {
-        background-color: white;
-        color: black;
+    .glass-card {
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: none;
+    }
+
+    .glass-card:hover {
+        background-color: rgba(255, 255, 255, 0.75);
+        box-shadow: 0 0 0.5rem black;
     }
 }
