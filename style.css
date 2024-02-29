@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
-/* ----- Mobile First Design -----
-
-1. Universal Style 
-2. Layout 
-3. Picture
-4. Typography
-5. Links
-6. Icons
-7. Cards
-8. Responsive Design
-
-------------------------------------*/
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,39 +10,91 @@
     font-size: 16px;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+}
+
 body {
     background-image: url('assets/dark-background.webp');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    color: #eeeeee;
+    min-height: 100lvh;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    display: grid;
-    gap: 2rem;
-    padding: 1rem;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    padding: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    z-index: 10;
+    background-color: black
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 100lvh;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+
+h2 {
+    color: gray;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+strong {
+    color: springgreen;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .glass-card {
-    background-color: rgba(255, 255, 255, 0.75);
+    line-height: 1.75;
     padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: 0 0 1rem 0 black;
+    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Profile Section */
+.contact-icon {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.certificate-link {
+    display: inline-block;
+    background-color: darkorange;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+}
+
 .profile-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    gap: 1rem;
+    text-shadow: 0 0 1rem black;
 }
 
 .profile-picture {
     display: block;
     width: 8rem;
     border-radius: 50%;
-    margin: 1rem auto;
+    margin: 0 auto 1rem;
     box-shadow: 0 0 0.5rem 0 black;
 }
 
@@ -64,166 +103,70 @@ body {
 }
 
 .profile-career {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: springgreen;
+}
+
+.profile-technology-stack {
     font-size: 1.5rem;
-    font-weight: normal;
+    color: gray;
 }
 
-.links-container {
-    margin-top: 1rem;
+.skill-item {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border: 1px solid #eee;
+    border-radius: 1rem;
 }
 
-.contact-container {
+.technology-icons-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    column-gap: 1rem;
-    margin: 1rem 0;
+    gap: 2rem;
 }
 
-.contact-icon {
+.technology-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.technology-icon {
     display: block;
     width: 2rem;
     height: 2rem;
 }
 
-.certificate-link {
-    display: inline-block;
-    background-color: black;
-    text-decoration: none;
-    color: white;
-    padding: 0.5rem 2rem;
-    border-radius: 0.5rem;
-    font-weight: 700;
-}
-
-/* Summary Section */
-.summary-section {
-    line-height: 2;
-}
-
-/* Skill Section */
-.skill-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 0;
-}
-
-.skill-card {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 80px;
-    height: 80px;
-    margin: 1rem;
-}
-
-.skill-icon {
-    display: block;
-    width: 3rem;
-    height: 3rem;
-    filter: drop-shadow(0 0 0.25rem black);
-}
-
-/* Project Section */
-.project-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .project-link {
     display: block;
-    text-decoration: none;
     color: inherit;
 }
 
-.project-arrow-icon {
-    font-size: 1.5rem;
+.project-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
 }
 
-/* Responsive */
 @media screen and (min-width:700px) {
-    .profile-section {
-        flex-direction: row;
-        text-align: left;
-        gap: 2rem;
-    }
-
-    .profile-picture {
-        margin: 0;
-    }
-
-    .links-container {
-        display: flex;
-        align-items: center;
-    }
-
-    .contact-container {
-        margin: 0;
-    }
-
-    .certificate-link {
-        order: -1;
-        margin: 0;
-        margin-right: 1rem;
-    }
-
-    .project-section {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: space-between;
-        gap: 1rem;
-    }
-
-    .project-link {
-        width: 45%;
+    section {
+        width: 75%;
     }
 }
 
 @media screen and (min-width:1000px) {
-    body {
-        grid-template-columns: 2fr 1fr;
+    header {
+        background-color: transparent;
+        padding: 2rem;
     }
 
-    .profile-section,
-    .summary-section,
-    .skill-section {
-        grid-column: 1 / 2;
-    }
-
-    .project-section {
-        grid-column: 2 / 3;
-        grid-row: 1 / span 4;
-        align-self: self-start;
-    }
-
-    .project-link {
-        width: 100%;
-        margin: 0;
-        margin-bottom: 1rem;
-    }
-
-    .project-description {
-        display: none;
-    }
-
-    .project-link:hover .project-description {
-        display: block;
-    }
-
-    .contact-link:hover {
-        transform: scale(1.25);
-    }
-
-    .glass-card {
-        opacity: 0.3;
-        box-shadow: none;
-    }
-
-    .glass-card:hover {
-        opacity: 1;
-        box-shadow: 0 0 1rem white;
+    section {
+        width: 50%;
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
     }
 }
