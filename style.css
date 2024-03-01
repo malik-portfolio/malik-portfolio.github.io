@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+/* Reset Style */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,53 +11,33 @@
     font-size: 16px;
 }
 
-html {
-    scroll-snap-type: y mandatory;
-}
-
+/* Global Style */
 body {
-    background-image: url('assets/dark-background.webp');
+    background-image: url('assets/dark-background-mobile.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    color: #eeeeee;
+    color: whitesmoke;
     min-height: 100lvh;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-}
-
-header {
-    position: fixed;
-    right: 0;
-    top: 0;
-    padding: 0.75rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    z-index: 10;
-    background-color: black
+    padding: 1rem;
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.5rem;
-    min-height: 100lvh;
-    margin: 0 auto;
-    padding-top: 4rem;
+    margin: 4rem auto;
 }
 
 h2 {
     color: gray;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     font-size: 1.25rem;
     text-align: center;
 }
 
 strong {
-    color: springgreen;
+    font-weight: normal;
 }
 
 a {
@@ -64,30 +45,31 @@ a {
     color: black;
 }
 
-.glass-card {
-    line-height: 1.75;
+p {
+    line-height: 2;
+}
+
+.summary,
+.skill-item,
+.technology-card,
+.project-link {
     padding: 1rem;
-    backdrop-filter: blur(20px);
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.contact-icon {
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-}
-
-.certificate-link {
-    display: inline-block;
-    background-color: darkorange;
-    padding: 0.25rem 1rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 1px solid whitesmoke;
     border-radius: 0.5rem;
-    font-weight: 700;
 }
 
+
+/* Profile Section Style */
 .profile-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100lvh;
+    gap: 0.5rem;
     text-align: center;
-    text-shadow: 0 0 1rem black;
+    margin: 0 auto;
 }
 
 .profile-picture {
@@ -110,18 +92,43 @@ a {
 
 .profile-technology-stack {
     font-size: 1.5rem;
-    color: gray;
+}
+
+.contact-links {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.contact-icon {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.certificate-link {
+    display: inline-block;
+    background-color: darkorange;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+}
+
+/* Skill Section Style */
+.skill-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .skill-item {
     display: inline-block;
     list-style-type: none;
     padding: 0.5rem 1rem;
-    margin: 0.5rem;
-    border: 1px solid #eee;
-    border-radius: 1rem;
 }
 
+/* Technology Section Style */
 .technology-icons-container {
     display: flex;
     flex-wrap: wrap;
@@ -131,19 +138,31 @@ a {
 
 .technology-card {
     display: inline-flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    width: 9rem;
     gap: 0.5rem;
 }
 
 .technology-icon {
     display: block;
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
 }
 
+.technology-title {
+    color: whitesmoke;
+}
+
+/* Project Section Style */
 .project-link {
     display: block;
     color: inherit;
+}
+
+.project-description {
+    line-height: 1.5;
 }
 
 .project-heading {
@@ -155,18 +174,53 @@ a {
 @media screen and (min-width:700px) {
     section {
         width: 75%;
+        margin: 0 auto 4rem;
+    }
+
+    .project-link {
+        display: inline-block;
+        width: 45%;
     }
 }
 
 @media screen and (min-width:1000px) {
-    header {
-        background-color: transparent;
+    body {
+        background-image: url('assets/dark-background.webp');
         padding: 2rem;
     }
 
+    .profile-section {
+        position: fixed;
+        right: 0;
+        width: 30%;
+    }
+
     section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100lvh;
         width: 50%;
-        scroll-snap-align: start;
-        scroll-snap-stop: always;
+        margin: 0;
+        margin-right: auto;
+    }
+
+    .contact-icon:hover {
+        transform: scale(1.25);
+    }
+
+    .certificate-link:hover {
+        background-color: orange;
+    }
+
+    .technology-card:hover,
+    .project-link:hover {
+        border-color: springgreen;
+        cursor: pointer;
+    }
+
+    .project-link:hover .project-heading,
+    .technology-card:hover .technology-title {
+        color: springgreen;
     }
 }
