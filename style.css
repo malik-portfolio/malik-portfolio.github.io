@@ -13,233 +13,76 @@
 
 /* Global Style */
 body {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
     background-color: black;
-    color: #eee;
+    color: lightgrey;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    padding: 1rem;
-    min-height: 100lvh;
+    padding: 2rem;
+    min-height: 100vh;
 }
 
-a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-}
-
-p {
-    line-height: 1.75;
-    font-size: 1.25rem;
-}
-
-li {
-    list-style: none;
-}
-
-strong {
-    color: springgreen;
-}
-
-.menu-icon,
-.navigation-close-btn {
-    font-size: 2rem;
-    text-align: right;
-}
-
-.navigation-close-btn {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-}
+main { padding-left: 2rem; }
+li { list-style-type: none; }
+a { text-decoration: none; color: inherit; display: inline-block;}
 
 .navigation {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-    background-color: black;
-    z-index: 10;
-}
-
-.nav-links-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    gap: 2rem;
-}
-
-.nav-link {
-    font-size: 1.5rem;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 80lvh;
-    text-align: center;
-    padding: 2rem 0;
-    gap: 1rem;
-}
-
-.profile-picture {
-    width: 8rem;
-    border-radius: 2rem;
-}
-
-.profile-name {
+    align-items: end;
+    border-right: 2px solid lightgray;
+    text-align: right;
+    padding-right: 2rem;
     font-size: 2rem;
-}
-
-.profile-career {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: springgreen;
-}
-
-.profile-technology-stack {
-    font-size: 1.5rem;
-}
-
-.certificate-link {
-    background-color: darkorange;
-    padding: 0.5rem 2rem;
-    color: black;
-    font-weight: 700;
-}
-
-.skill-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.skill-card {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    /* background-color: red; */
-    width: 6rem;
-    height: 6rem;
-}
-
-.skill-icon {
-    width: 3rem;
-}
-
-.skill-title {
-    font-size: 0.75rem;
-}
-
-.project-link {
-    display: flex;
-    align-items: center;
     gap: 2rem;
 }
 
-.project-arrow-icon {
-    font-size: 1.5rem;
+.profile-picture { width: 8rem; border-radius: 50%; margin-bottom: 1rem; }
+.profile-name { font-size: 1.5rem;}
+.profile-technology-stack { font-size: 1.5rem;}
+.profile-career {color: springgreen;}
+.certificate-link { border: 1px solid lightgray; padding: 0.5rem 2rem; margin-top: 1rem;}
+.certificate-link:hover {background-color: lightgray; color: black;}
+.about-title {margin-bottom: 1rem;}
+.about-description {line-height: 2; font-size: 1.25rem;}
+.skill-container {display: flex; flex-wrap: wrap;}
+.skill-card {display: flex; flex-direction: column; align-items: center; justify-content: center; width: 8rem; height: 7rem;}
+.skill-card::after {content: attr(title);}
+.skill-icon {width: 4rem;}
+.project-link{display: flex; align-items: center; gap: 2rem;}
+.project-link:hover {color: springgreen; gap: 4rem;}
+.project-arrow-icon {font-size: 1.5rem;}
+.contact-container {display: flex; flex-direction: column; gap: 2rem;}
+.contact-link {display: flex; align-items: center; gap: 1rem;}
+.contact-link:hover .contact-icon {fill: springgreen;}
+.contact-link:hover .contact-title {color: springgreen;}
+.contact-icon {width: 2rem;}
+.white-shadow {filter: contrast(0);}
+
+@media screen and (max-width:1000px) {
+    body{ grid-template-columns: 1fr 2fr; }
 }
 
-.contact-link {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-}
-
-.contact-container {
-    align-items: start;
-}
-
-.contact-icon {
-    width: 2rem;
-    height: 2rem;
-}
-
-/* Utilities */
-.white-shadow {
-    filter: drop-shadow(0 0 2px white);
-}
-
-.show {
-    display: block;
-}
-
-@media screen and (min-width:700px) {
-    main {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-}
-
-@media screen and (min-width:1000px) {
-    body {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        height: 100vh;
-        align-items: center;
-        padding: 0 2rem;
-    }
-
-    .menu-icon,
-    .navigation-close-btn {
-        display: none;
-    }
-
+@media screen and (max-width:600px) {
+    body{ grid-template-columns: 1fr; padding: 1rem; align-items: start;}
     .navigation {
-        display: block;
-        position: static;
-        padding: 2rem;
-        border-right: 1px solid #eee;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        font-size: 1rem;
+        gap: 1rem;
+        border: none;
+        padding: 0;
     }
-
-    .nav-links-container {
-        align-items: end;
-        min-height: 0;
-    }
-
-    .nav-link a {
-        color: gray;
-    }
-
-    main {
-        padding: 0 2rem;
-        min-height: 0;
-        align-items: start;
-        width: 100%;
-        margin: 0;
-        text-align: left;
-    }
-
-    .skill-container {
-        justify-content: start;
-    }
-
-    .skill-card:hover {
-        transform: scale(1.5);
-    }
-
-    .certificate-link:hover {
-        background-color: orange;
-    }
-
-    .project-link:hover,
-    .contact-link:hover .contact-title {
-        color: springgreen;
-    }
-
-    .contact-link:hover .contact-icon {
-        fill: springgreen;
-    }
-
+    main { padding: 0; align-self: flex-end;}
+    .about-description {font-size: 1rem;}
+    .skill-container {gap: 0.5rem;}
+    .skill-card {height: 5rem; width: 5rem;}
+    .skill-card::after {font-size: 0.75rem;}
+    .skill-icon {width: 3rem;}
+    .project-link {gap: 0.5rem;}
+    .project-title {font-size: 1.25rem;}
 }
