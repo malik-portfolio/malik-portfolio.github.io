@@ -13,9 +13,7 @@
 
 /* Global Style */
 body {
-    background-image: url('assets/background-image.webp');
-    background-size: cover;
-    background-position: center;
+    background-color: #111;
     color: black;
     padding: 1rem;
     font-family: "Inter", sans-serif;
@@ -40,7 +38,6 @@ a {
     backdrop-filter: blur(1rem);
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 0 0 0.5rem black;
 }
 
 .profile-section {
@@ -119,7 +116,10 @@ a {
 
 .skill-icon {
     width: 3rem;
-    filter: drop-shadow(0 0 3px black);
+}
+
+.skill-icon[alt="React JS icon"] {
+    filter: drop-shadow(0 0 2px black)
 }
 
 .project-section {
