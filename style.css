@@ -22,7 +22,7 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     padding: 2rem;
-    min-height: 100vh;
+    height: 100svh;
 }
 
 main { padding-left: 2rem; }
@@ -67,7 +67,7 @@ a { text-decoration: none; color: inherit; display: inline-block;}
 }
 
 @media screen and (max-width:600px) {
-    body{ grid-template-columns: 1fr; padding: 1rem; align-items: start;}
+    body{ grid-template-columns: 1fr; padding: 0 1rem; align-items: start;}
     .navigation {
         flex-direction: row;
         flex-wrap: wrap;
@@ -76,8 +76,9 @@ a { text-decoration: none; color: inherit; display: inline-block;}
         gap: 1rem;
         border: none;
         padding: 0;
+        padding-top: 1rem;
     }
-    main { padding: 0; align-self: flex-end;}
+    main { padding: 0; align-self: flex-end; margin-bottom: 1rem;}
     .about-description {font-size: 1rem;}
     .skill-container {gap: 0.5rem;}
     .skill-card {height: 5rem; width: 5rem;}
