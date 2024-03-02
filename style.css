@@ -35,7 +35,6 @@ a {
 .skill-section,
 .project-link {
     background-color: rgba(255,255,255,0.7);
-    backdrop-filter: blur(1rem);
     padding: 1rem;
     border-radius: 1rem;
 }
@@ -116,9 +115,6 @@ a {
 
 .skill-icon {
     width: 3rem;
-}
-
-.skill-icon[alt="React JS icon"] {
     filter: drop-shadow(0 0 2px black)
 }
 
@@ -170,6 +166,7 @@ a {
 
     .profile-picture {
         width: 8rem;
+        height: 8rem;
     }
 
     .profile-info {
