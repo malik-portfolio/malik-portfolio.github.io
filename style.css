@@ -9,12 +9,11 @@
 
 :root {
     font-size: 16px;
-    --dark-background-color: #231f20;
-    --text-color: #efe6dd;
-    /* --heading-color: #7ebdc2;
-    --light-background-color: #f3dfa2; */
-    --heading-color: #f3dfa2;
-    --light-background-color: #7ebdc2;
+    --dark-background-color: #283618;
+    --text-color: #fefae0;
+    --light-background-color: #606c38;
+    --light-background-secondary-color: #dda15e;
+    --accent-color: #bc6c25;
 }
 
 /* Global Style */
@@ -37,7 +36,7 @@ a {
 }
 
 strong {
-    color: var(--heading-color);
+    font-weight: normal;
 }
 
 p {
@@ -76,7 +75,8 @@ p {
     font-weight: 700;
     font-size: 1.25rem;
     width: 10rem;
-    background-color: var(--light-background-color);
+    background-color: var(--accent-color);
+    transition: transform 1s;
 }
 
 .nav-links {
@@ -101,15 +101,17 @@ p {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    width: 15rem;
+    width: 10rem;
     height: 10rem;
     padding: 1rem;
     border: 0.5rem solid var(--light-background-color);
+    transition: transform 1s;
 }
 
 .skill-card::after {
     content: attr(title);
-    font-size: 1.25rem;
+    font-size: 1rem;
+    color: inherit;
 }
 
 .skill-card[title="Expess JS"] img {
@@ -117,8 +119,8 @@ p {
 }
 
 .skill-icon {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 .projects-link-container {
@@ -136,6 +138,7 @@ p {
     padding: 1rem;
     text-align: left;
     max-width: 19rem;
+    transition: background-color 1s;
 }
 
 .project-title {
@@ -176,14 +179,15 @@ p {
     align-items: center;
     justify-content: space-around;
     background-color: var(--light-background-color);
-    color: var(--dark-background-color);
+    color: black;
     padding: 1rem;
     width: 8rem;
     height: 8rem;
+    transition: background-color 1s;
 }
 
 .contact-icon {
-    fill: var(--dark-background-color);
+    fill: black;
 }
 
 @media screen and (min-width:600px) {
@@ -213,14 +217,12 @@ p {
     }
 
     .skill-card:hover {
-        background-color: var(--heading-color);
-        border-color: transparent;
-        color: var(--dark-background-color);
+        transform: scale(1.2);
     }
 
     .project-link:hover,
     .contact-link:hover {
-        background-color: var(--heading-color);
+        background-color: var(--light-background-secondary-color);
     }
 
 
