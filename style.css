@@ -9,179 +9,221 @@
 
 :root {
     font-size: 16px;
+
 }
 
 /* Global Style */
 body {
-    background-color: #111;
-    color: black;
-    padding: 1rem;
+    background-color: black;
+    color: lightgray;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    padding: 4rem 1rem;
+    text-align: center;
 }
 
 a {
-    display: block;
+    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
 
-.profile-section,
-.about-section,
-.skill-section,
-.project-link {
-    background-color: rgba(255,255,255,0.7);
-    padding: 1rem;
-    border-radius: 1rem;
+strong {
+    color: mediumseagreen;
 }
 
-.profile-section {
-    grid-area: 1 / 1 / 2 / 3;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+p {
+    line-height: 1.75;
+    font-size: 1.5rem;
+}
+
+.divider {
+    font-size: 4rem;
+    margin: 6rem auto;
 }
 
 .profile-picture {
-    width: 6rem;
+    display: block;
+    margin: 0 auto 1rem;
     border-radius: 50%;
 }
 
-.profile-career {
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: cornflowerblue;
+}
+
+.career {
+    font-size: 2rem;
+    color: springgreen;
+
+}
+
+.career-simple {
+    font-size: 2rem;
+    font-weight: 700;
+    color: gray;
+}
+
+.certificate-link,
+.projects-nav,
+.contacts-nav {
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: black;
+    font-weight: 700;
     font-size: 1.25rem;
-}
-
-.contact-container {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 0.5rem;
-}
-
-.contact-icon {
-    width: 2rem;
-    height: 2rem;
-}
-
-.contact-icon:hover {
-    transform: scale(1.25);
+    width: 10rem;
 }
 
 .certificate-link {
-    display: inline-block;
-    background-color: black;
-    color: white;
-    padding: 0.5rem 2rem;
-    border-radius: 0.5rem;
-    border: 1px solid black;
-    font-weight: 700;
+    background-color: mediumslateblue;
 }
 
-.certificate-link:hover {
-    background-color: white;
-    border-color: black;
-    color: black;
+.projects-nav {
+    background-color: mediumseagreen;
 }
 
-.about-section {
-    grid-area: 2 / 1 / 3 / 3;
-    line-height: 2;
-    font-size: 1.25rem;
+.contacts-nav {
+    background-color: orange;
 }
 
-.skill-section {
-    grid-area: 3 / 1 / 4 / 3;
+.nav-links {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    margin: 2rem 0;
+    gap: 1rem;
+    align-items: center;
+}
+
+.skill-icon-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    box-shadow: 0 0 0.25rem 0.25rem lightgray;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 .skill-card {
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    width: 8rem;
-    height: 6rem;
+    gap: 1rem;
+
 }
 
 .skill-card::after {
     content: attr(title);
+    font-size: 1.5rem;
 }
 
-.skill-icon {
-    width: 3rem;
-    filter: drop-shadow(0 0 2px black)
+.skill-category-heading {
+    font-size: 1.5rem;
+    text-align: left;
 }
 
-.project-section {
-    grid-area: 1 / 3 / 4 / 4;
+.skill-card[title="Expess JS"] img {
+    filter: invert(100%);
+}
+
+.projects-link-container {
+    font-size: 1.25rem;
+    margin-top: 4rem;
+}
+
+.project-link {
+    background-color: mediumturquoise;
+    color: black;
+    padding: 1rem;
+    text-align: left;
+    border-radius: 1rem;
 }
 
 .project-heading {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.project-arrow-icon {
+    font-size: 2rem;
 }
 
 .project-description {
-    display: none;
-    margin-top: 1rem;
+    font-size: 1.25rem;
 }
 
-.project-link:hover .project-description {
+.contact-icon {
     display: block;
+    width: 3rem;
+    height: 3rem;
+    fill: #eee;
+    margin: 0.5rem;
 }
 
-@media screen and (max-width:1000px) {
-    body {
-        display: flex;
-        flex-direction: column
-    }
-    
-    .about-section {
-        line-height: 1.5;
+.contact-links-container {
+    width: 15rem;
+    margin: 4rem auto;
+    font-size: 1.5rem;
+}
+
+.contact-link::after {
+    content: attr(title);
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-link:hover {
+    color: springgreen;
+}
+
+.contact-link:hover .contact-icon {
+    fill: springgreen;
+}
+
+@media screen and (min-width:600px) {
+    p {
+        font-size: 2rem;
     }
 
-    .project-section {
-        display: grid;
+    section {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .skill-icon-container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
     }
 
-    .project-description {
-        display: block;
-    }
+
 }
 
-@media screen and (max-width:600px) {
-    .profile-section {
-        flex-direction: column;
-        text-align: center;
+@media screen and (min-width:1000px) {
+    section {
+        width: 60%;
     }
 
-    .profile-picture {
-        width: 8rem;
-        height: 8rem;
+    .nav-links a:hover {
+        transform: scale(1.25);
     }
 
-    .profile-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .skill-card:hover {
+        color: springgreen;
     }
 
-    .contact-container {
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 1rem;
+    .project-link:hover {
+        background-color: turquoise;
     }
 
-    .project-section {
-        grid-template-columns: 1fr;
-    }
+
 }
