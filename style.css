@@ -9,18 +9,25 @@
 
 :root {
     font-size: 16px;
-
+    --dark-background-color: #231f20;
+    --text-color: #efe6dd;
+    /* --heading-color: #7ebdc2;
+    --light-background-color: #f3dfa2; */
+    --heading-color: #f3dfa2;
+    --light-background-color: #7ebdc2;
 }
 
 /* Global Style */
 body {
-    background-color: black;
-    color: lightgray;
-    font-family: "Inter", sans-serif;
+    background-color: var(--dark-background-color);
+    color: var(--text-color);
+    /* font-family: "Inter", sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     padding: 4rem 1rem;
     text-align: center;
+    letter-spacing: 1px;
 }
 
 a {
@@ -30,11 +37,11 @@ a {
 }
 
 strong {
-    color: mediumseagreen;
+    color: var(--heading-color);
 }
 
 p {
-    line-height: 1.75;
+    line-height: 1.5;
     font-size: 1.5rem;
 }
 
@@ -52,19 +59,12 @@ p {
 .name {
     font-size: 2.5rem;
     font-weight: 700;
-    color: cornflowerblue;
+    color: var(--heading-color);
 }
 
 .career {
     font-size: 2rem;
-    color: springgreen;
-
-}
-
-.career-simple {
-    font-size: 2rem;
     font-weight: 700;
-    color: gray;
 }
 
 .certificate-link,
@@ -76,18 +76,7 @@ p {
     font-weight: 700;
     font-size: 1.25rem;
     width: 10rem;
-}
-
-.certificate-link {
-    background-color: mediumslateblue;
-}
-
-.projects-nav {
-    background-color: mediumseagreen;
-}
-
-.contacts-nav {
-    background-color: orange;
+    background-color: var(--light-background-color);
 }
 
 .nav-links {
@@ -99,96 +88,102 @@ p {
 }
 
 .skill-icon-container {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
-    box-shadow: 0 0 0.25rem 0.25rem lightgray;
     margin: 2rem auto;
-    padding: 2rem;
-    border-radius: 1rem;
 }
 
 .skill-card {
     display: inline-flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
-
+    width: 15rem;
+    height: 10rem;
+    padding: 1rem;
+    border: 0.5rem solid var(--light-background-color);
 }
 
 .skill-card::after {
     content: attr(title);
-    font-size: 1.5rem;
-}
-
-.skill-category-heading {
-    font-size: 1.5rem;
-    text-align: left;
+    font-size: 1.25rem;
 }
 
 .skill-card[title="Expess JS"] img {
     filter: invert(100%);
 }
 
+.skill-icon {
+    width: 4rem;
+    height: 4rem;
+}
+
 .projects-link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
     font-size: 1.25rem;
     margin-top: 4rem;
 }
 
 .project-link {
-    background-color: mediumturquoise;
+    background-color: var(--light-background-color);
     color: black;
     padding: 1rem;
     text-align: left;
-    border-radius: 1rem;
+    max-width: 19rem;
 }
 
-.project-heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.project-title {
+    font-size: 1.25rem;
     margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-.project-arrow-icon {
-    font-size: 2rem;
 }
 
 .project-description {
-    font-size: 1.25rem;
+    font-size: 1rem;
+    color: black;
 }
 
 .contact-icon {
     display: block;
     width: 3rem;
     height: 3rem;
-    fill: #eee;
+    fill: var(--text-color);
     margin: 0.5rem;
 }
 
 .contact-links-container {
-    width: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
     margin: 4rem auto;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .contact-link::after {
     content: attr(title);
+    font-size: 1rem;
 }
 
 .contact-link {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    margin-bottom: 1rem;
+    justify-content: space-around;
+    background-color: var(--light-background-color);
+    color: var(--dark-background-color);
+    padding: 1rem;
+    width: 8rem;
+    height: 8rem;
 }
 
-.contact-link:hover {
-    color: springgreen;
-}
-
-.contact-link:hover .contact-icon {
-    fill: springgreen;
+.contact-icon {
+    fill: var(--dark-background-color);
 }
 
 @media screen and (min-width:600px) {
@@ -218,11 +213,14 @@ p {
     }
 
     .skill-card:hover {
-        color: springgreen;
+        background-color: var(--heading-color);
+        border-color: transparent;
+        color: var(--dark-background-color);
     }
 
-    .project-link:hover {
-        background-color: turquoise;
+    .project-link:hover,
+    .contact-link:hover {
+        background-color: var(--heading-color);
     }
 
 
