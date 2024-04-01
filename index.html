@@ -2,201 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="My name is Malik Jahanzaib and I am a Web Developer professionally certified by Codecademy. This is my portfolio website here I showcase my skills and projects as a Web Developer" />
+        content="My name is Malik Jahanzaib and I am a Front End Engineer professionally certified by Codecademy. This is my portfolio website here I showcase my skills and projects as a Front End Engineer" />
     <link rel="stylesheet" href="style.css" />
-    <title>Malik Jahanzaib | Web Developer</title>
+    <title>Malik Jahanzaib | Front End Engineer</title>
 </head>
 
 <body>
-    <header>
-        <img class="profile-picture" src="assets/profile-picture.webp" alt="malik jahanzaib front end engineer"
-            width="160" height="160" />
-        <div class="name">Malik Jahanzaib</div>
-        <div class="career">Web Developer</div>
-        <nav class="nav-links">
-            <a class="certificate-link"
-                href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
-                target="_blank" title="Certificate">Certificate</a>
-            <a href="#projects" class="projects-nav" title="projects">Project</a>
-            <a href="#contacts" class="contacts-nav" title="contacts">Contact</a>
-        </nav>
+    <!-- Hero Section -->
+    <header id="hero-section" class="gradient-background">
+        <!-- Profile Picture -->
+        <img id="profile-picture" src="assets/profile-picture.jpg" alt="malik jahanzaib front end engineer">
+        <!-- Profile Info -->
+        <div id="profile-info">
+            <h1 id="profile-name">Malik Jahanzaib</h1>
+            <p id="profile-career">Front End Engineer</p>
+            <!-- Profile Links -->
+            <div id="links-container">
+                <a id="certificate-link"
+                    href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
+                    target="_blank" title="Certificate">Certificate</a>
+                <div id="social-links">
+                    <a class="contact-link" href="mailto:malic.jahan@gmail.com" target="_blank" title="Gmail">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="social-icon">
+                            <g clip-path="url(#clip0_14_198)">
+                                <path
+                                    d="M24.5 0.375H7.5C3.35786 0.375 0 3.73286 0 7.875V24.875C0 29.0171 3.35786 32.375 7.5 32.375H24.5C28.6421 32.375 32 29.0171 32 24.875V7.875C32 3.73286 28.6421 0.375 24.5 0.375Z"
+                                    fill="#F4F2ED" />
+                                <path
+                                    d="M5.2045 25.7548H9.18175V16.0957L3.5 11.8345V24.0503C3.5 24.9935 4.26425 25.7548 5.2045 25.7548Z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M22.8184 25.755H26.7957C27.7389 25.755 28.5002 24.9907 28.5002 24.0505V11.8345L22.8184 16.0958"
+                                    fill="#34A853" />
+                                <path
+                                    d="M22.8184 8.70947V16.0958L28.5002 11.8346V9.5616C28.5002 7.45372 26.094 6.25197 24.4094 7.51622"
+                                    fill="#FBBC04" />
+                                <path
+                                    d="M9.18164 16.096V8.70972L15.9998 13.8231L22.8179 8.70947V16.0958L15.9998 21.2096"
+                                    fill="#EA4335" />
+                                <path
+                                    d="M3.5 9.5616V11.8343L9.18175 16.0957V8.70947L7.59088 7.51622C5.90338 6.25197 3.5 7.45372 3.5 9.5616Z"
+                                    fill="#C5221F" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_14_198">
+                                    <rect width="32" height="32" fill="white" transform="translate(0 0.375)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </a>
+                    <a class="contact-link" href="https://wa.me/923032791874" target="_blank" title="Whatsapp">
+
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="social-icon">
+                            <g clip-path="url(#clip0_14_206)">
+                                <path
+                                    d="M0.682949 16.3071C0.682199 19.0168 1.3902 21.6625 2.73645 23.9945L0.554199 31.9623L8.7082 29.8243C10.9635 31.052 13.4904 31.6954 16.0582 31.6955H16.0649C24.5418 31.6955 31.4422 24.7976 31.4458 16.3193C31.4474 12.2109 29.8489 8.34764 26.9447 5.44114C24.041 2.53489 20.1791 0.933516 16.0643 0.931641C7.58645 0.931641 0.686574 7.82914 0.683074 16.3071"
+                                    fill="url(#paint0_linear_14_206)" />
+                                <path
+                                    d="M0.13375 16.302C0.132875 19.1091 0.86625 21.8495 2.2605 24.265L0 32.5184L8.44637 30.3037C10.7736 31.5726 13.3939 32.2416 16.0601 32.2426H16.067C24.848 32.2426 31.9963 25.0966 32 16.3147C32.0015 12.0588 30.3455 8.05662 27.3375 5.046C24.3291 2.03575 20.3291 0.37675 16.067 0.375C7.2845 0.375 0.13725 7.52 0.13375 16.302ZM5.16388 23.849L4.8485 23.3484C3.52275 21.2404 2.823 18.8044 2.824 16.303C2.82675 9.00363 8.76725 3.065 16.072 3.065C19.6095 3.0665 22.934 4.4455 25.4345 6.9475C27.9349 9.44975 29.3108 12.776 29.3099 16.3138C29.3066 23.6131 23.366 29.5525 16.067 29.5525H16.0618C13.6851 29.5513 11.3542 28.913 9.3215 27.7069L8.83775 27.42L3.8255 28.7341L5.16388 23.849Z"
+                                    fill="url(#paint1_linear_14_206)" />
+                                <path
+                                    d="M12.0849 9.64343C11.7867 8.98055 11.4728 8.96718 11.1892 8.95555C10.9569 8.94555 10.6914 8.9463 10.4262 8.9463C10.1607 8.9463 9.72932 9.04618 9.36469 9.4443C8.99969 9.8428 7.97119 10.8058 7.97119 12.7644C7.97119 14.7232 9.39782 16.6161 9.59669 16.8819C9.79582 17.1473 12.3508 21.2953 16.3973 22.8911C19.7603 24.2172 20.4447 23.9534 21.1746 23.8869C21.9046 23.8207 23.5301 22.9242 23.8617 21.9946C24.1936 21.0651 24.1936 20.2683 24.0941 20.1018C23.9946 19.9359 23.7291 19.8363 23.3309 19.6373C22.9327 19.4382 20.9754 18.4751 20.6106 18.3422C20.2456 18.2094 19.9802 18.1432 19.7147 18.5418C19.4492 18.9398 18.6868 19.8363 18.4544 20.1018C18.2223 20.3679 17.9899 20.4011 17.5919 20.2019C17.1936 20.0022 15.9114 19.5823 14.3903 18.2262C13.2068 17.1709 12.4078 15.8678 12.1756 15.4692C11.9433 15.0712 12.1507 14.8554 12.3503 14.6571C12.5292 14.4787 12.7486 14.1922 12.9478 13.9598C13.1463 13.7273 13.2126 13.5614 13.3453 13.2959C13.4782 13.0302 13.4117 12.7977 13.3123 12.5986C13.2126 12.3994 12.4389 10.4306 12.0849 9.64343Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_14_206" x1="1545.14" y1="3103.99" x2="1545.14"
+                                    y2="0.931641" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#1FAF38" />
+                                    <stop offset="1" stop-color="#60D669" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_14_206" x1="1600" y1="3214.71" x2="1600" y2="0.375"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#F9F9F9" />
+                                    <stop offset="1" stop-color="white" />
+                                </linearGradient>
+                                <clipPath id="clip0_14_206">
+                                    <rect width="32" height="32.25" fill="white" transform="translate(0 0.375)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="contact-link"
+                        href="https://pk.linkedin.com/in/malik-jahanzaib-15807016a?trk=people-guest_people_search-card"
+                        target="_blank" title="Linkedin">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="social-icon">
+                            <g clip-path="url(#clip0_14_210)">
+                                <path
+                                    d="M24.5 0.375H7.5C3.35786 0.375 0 3.73286 0 7.875V24.875C0 29.0171 3.35786 32.375 7.5 32.375H24.5C28.6421 32.375 32 29.0171 32 24.875V7.875C32 3.73286 28.6421 0.375 24.5 0.375Z"
+                                    fill="white" />
+                                <path
+                                    d="M24.5 0.375H7.5C3.35786 0.375 0 3.73286 0 7.875V24.875C0 29.0171 3.35786 32.375 7.5 32.375H24.5C28.6421 32.375 32 29.0171 32 24.875V7.875C32 3.73286 28.6421 0.375 24.5 0.375Z"
+                                    fill="#0A66C2" />
+                                <path
+                                    d="M23.0894 27.5856H26.7481C26.8807 27.5856 27.0079 27.533 27.1016 27.4392C27.1954 27.3455 27.2481 27.2183 27.2481 27.0858L27.25 19.3555C27.25 15.3151 26.3794 12.2095 21.6577 12.2095C19.8629 12.1428 18.1702 13.068 17.2569 14.613C17.2524 14.6205 17.2456 14.6263 17.2375 14.6296C17.2294 14.6329 17.2205 14.6334 17.2121 14.6312C17.2036 14.6289 17.1962 14.6239 17.1908 14.617C17.1855 14.6101 17.1826 14.6016 17.1825 14.5929V13.0825C17.1825 12.9499 17.1298 12.8227 17.0361 12.7289C16.9423 12.6352 16.8151 12.5825 16.6825 12.5825H13.2104C13.0778 12.5825 12.9506 12.6352 12.8568 12.7289C12.7631 12.8227 12.7104 12.9499 12.7104 13.0825V27.085C12.7104 27.2176 12.7631 27.3448 12.8568 27.4386C12.9506 27.5323 13.0778 27.585 13.2104 27.585H16.8689C17.0015 27.585 17.1287 27.5323 17.2224 27.4386C17.3162 27.3448 17.3689 27.2176 17.3689 27.085V20.1634C17.3689 18.2063 17.7401 16.3109 20.1665 16.3109C22.5584 16.3109 22.5894 18.5504 22.5894 20.2901V27.0856C22.5894 27.2182 22.6421 27.3454 22.7358 27.4392C22.8296 27.5329 22.9568 27.5856 23.0894 27.5856ZM4.75 7.8285C4.75 9.3115 5.97088 10.5317 7.454 10.5317C8.93675 10.5316 10.1569 9.31063 10.1569 7.82788C10.1566 6.34513 8.93637 5.125 7.4535 5.125C5.97025 5.125 4.75 6.3455 4.75 7.8285ZM5.61987 27.5856H9.28325C9.41586 27.5856 9.54304 27.5329 9.6368 27.4392C9.73057 27.3454 9.78325 27.2182 9.78325 27.0856V13.0825C9.78325 12.9499 9.73057 12.8227 9.6368 12.7289C9.54304 12.6352 9.41586 12.5825 9.28325 12.5825H5.61987C5.48727 12.5825 5.36009 12.6352 5.26632 12.7289C5.17255 12.8227 5.11987 12.9499 5.11987 13.0825V27.0856C5.11987 27.2182 5.17255 27.3454 5.26632 27.4392C5.36009 27.5329 5.48727 27.5856 5.61987 27.5856Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_14_210">
+                                    <rect width="32" height="32" fill="white" transform="translate(0 0.375)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </a>
+                    <a class="contact-link" href="https://github.com/malik-portfolio" target="_blank" title="Github">
+                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="social-icon">
+                            <g clip-path="url(#clip0_14_215)">
+                                <path
+                                    d="M16 0.375C7.16 0.375 0 7.535 0 16.375C0 23.455 4.58 29.435 10.94 31.555C11.74 31.695 12.04 31.215 12.04 30.795C12.04 30.415 12.02 29.155 12.02 27.815C8 28.555 6.96 26.835 6.64 25.935C6.46 25.475 5.68 24.055 5 23.675C4.44 23.375 3.64 22.635 4.98 22.615C6.24 22.595 7.14 23.775 7.44 24.255C8.88 26.675 11.18 25.995 12.1 25.575C12.24 24.535 12.66 23.835 13.12 23.435C9.56 23.035 5.84 21.655 5.84 15.535C5.84 13.795 6.46 12.355 7.48 11.235C7.32 10.835 6.76 9.195 7.64 6.995C7.64 6.995 8.98 6.575 12.04 8.635C13.32 8.275 14.68 8.095 16.04 8.095C17.4 8.095 18.76 8.275 20.04 8.635C23.1 6.555 24.44 6.995 24.44 6.995C25.32 9.195 24.76 10.835 24.6 11.235C25.62 12.355 26.24 13.775 26.24 15.535C26.24 21.675 22.5 23.035 18.94 23.435C19.52 23.935 20.02 24.895 20.02 26.395C20.02 28.535 20 30.255 20 30.795C20 31.215 20.3 31.715 21.1 31.555C24.2768 30.4835 27.0373 28.4423 28.9928 25.7191C30.9483 22.9958 32 19.7276 32 16.375C32 7.535 24.84 0.375 16 0.375Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_14_215">
+                                    <rect width="32" height="32" fill="white" transform="translate(0 0.375)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </header>
 
-    <div class="divider">👇</div>
+    <!-- Navigation Section -->
+    <nav id="nav-section">
+        <button id="about" type="button" class="nav-btn gradient-background" title="about">About</button>
+        <button id="skill" type="button" class="nav-btn" title="skill">Skill</button>
+        <button id="project" type="button" class="nav-btn" title="project">Project</button>
+    </nav>
 
-    <section>
-        <p>👋 Welcome, my name is <strong>Malik Jahanzaib</strong> and I am a professionally certified <strong>🖥️
-                front-end engineer</strong> and a self-taught <strong>🌏
-                back-end engineer</strong> that makes me a <strong>👨‍💻 full stack
-                engineer</strong> aka web developer </p>
+    <!-- Main Section -->
+    <main>
+        <section id="cards-wrapper">
 
-    </section>
+        </section>
+    </main>
 
-    <div class="divider">👇</div>
+    <!-- Modal -->
+    <div id="card-modal-wrapper" hidden>
+        <div id="card-modal">
 
-    <section>
-        <p>I am using <strong>🚀 modern technologies</strong> like <strong>MERN stack</strong> or <strong>next
-                JS</strong> for full-stack web application development with the addition of <strong>typescript</strong>
-            and
-            <strong>tailwind CSS</strong>. I can also analyze <strong>web security</strong> by using burpsuite tool. I
-            also have an understanding of the most common <strong>data structures & algorithms</strong> and
-            <strong>computational thinking</strong> skills
-        </p>
-    </section>
-
-    <div class="divider">👇</div>
-
-    <section>
-        <p>Following are the <strong>skills</strong> that I have learned</p>
-
-        <div class="skill-icon-container">
-            <a class="skill-card" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" title="HTML">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-                    alt="HTML icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" title="CSS">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-                    alt="CSS icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://developer.mozilla.org/en-US/docs/Web/javascript" target="_blank"
-                title="JavaScript">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-                    alt="JavaScript icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://www.w3schools.com/sql/" target="_blank" title="SQL">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
-                    alt="SQL icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://react.dev/" target="_blank" title="React JS">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
-                    alt="React JS icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://redux.js.org/" target="_blank" title="Redux">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg"
-                    alt="Redux icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://tailwindcss.com/" target="_blank" title="Tailwind CSS">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
-                    alt="Tailwind CSS icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://nextjs.org/" target="_blank" title="Next JS">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
-                    alt="Next JS icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://nodejs.org/en" target="_blank" title="Node JS">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
-                    alt="Node JS icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://expressjs.com/" target="_blank" title="Expess JS">
-                <img class="skill-icon white-shadow"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
-                    alt="Express JS icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://www.mongodb.com/" target="_blank" title="MongoDB">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
-                    alt="MongoDB icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://www.postgresql.org/" target="_blank" title="PostgreSQL">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
-                    alt="PostgreSQL icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://www.typescriptlang.org/" target="_blank" title="TypeScript">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
-                    alt="TypeScript icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://www.python.org/" target="_blank" title="Python">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
-                    alt="Python icon" width="48" height="48" />
-            </a>
-            <a class="skill-card" href="https://git-scm.com/" target="_blank" title="Git">
-                <img class="skill-icon"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git icon"
-                    width="48" height="48" />
-            </a>
         </div>
-    </section>
+    </div>
 
-    <div class="divider">👇</div>
-
-    <section id="projects">
-        <p>Still unsure? You can view my <strong>projects</strong> which I have completed by using modern technologies.
-            Future projects are pending and will deploy them</p>
-        <div class="projects-link-container">
-            <a class="project-link" href="https://malik-portfolio.github.io/number-magic-game/" target="_blank">
-                <h2 class="project-title">Number Magic Game</h2>
-                <p class="project-description">
-                    In this game, the user thinks of a number in a range. The computer will show some number grid
-                    slides and ask that the number is available in this slide. After getting answers from the user,
-                    the computer will guess the number and display it.
-                </p>
-            </a>
-        </div>
-    </section>
-
-    <div class="divider">👇</div>
-
-    <section id="contacts">
-        <p>If you have decided that I am <strong>eligible</strong> to work as a front-end engineer, back-end engineer,
-            full-stack engineer or in simple terms a web developer 🙂. You can
-            <strong>contact</strong> me
-        </p>
-        <div class="contact-links-container">
-            <a class="contact-link" href="mailto:malic.jahan@gmail.com" target="_blank" title="Gmail">
-                <svg xmlns="http://www.w3.org/2000/svg" class="contact-icon"
-                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path
-                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
-                </svg>
-            </a>
-            <a class="contact-link" href="https://wa.me/923032791874" target="_blank" title="Whatsapp">
-                <svg xmlns="http://www.w3.org/2000/svg" class="contact-icon"
-                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path
-                        d="M92.1 254.6c0 24.9 7 49.2 20.2 70.1l3.1 5-13.3 48.6L152 365.2l4.8 2.9c20.2 12 43.4 18.4 67.1 18.4h.1c72.6 0 133.3-59.1 133.3-131.8c0-35.2-15.2-68.3-40.1-93.2c-25-25-58-38.7-93.2-38.7c-72.7 0-131.8 59.1-131.9 131.8zM274.8 330c-12.6 1.9-22.4 .9-47.5-9.9c-36.8-15.9-61.8-51.5-66.9-58.7c-.4-.6-.7-.9-.8-1.1c-2-2.6-16.2-21.5-16.2-41c0-18.4 9-27.9 13.2-32.3c.3-.3 .5-.5 .7-.8c3.6-4 7.9-5 10.6-5c2.6 0 5.3 0 7.6 .1c.3 0 .5 0 .8 0c2.3 0 5.2 0 8.1 6.8c1.2 2.9 3 7.3 4.9 11.8c3.3 8 6.7 16.3 7.3 17.6c1 2 1.7 4.3 .3 6.9c-3.4 6.8-6.9 10.4-9.3 13c-3.1 3.2-4.5 4.7-2.3 8.6c15.3 26.3 30.6 35.4 53.9 47.1c4 2 6.3 1.7 8.6-1c2.3-2.6 9.9-11.6 12.5-15.5c2.6-4 5.3-3.3 8.9-2s23.1 10.9 27.1 12.9c.8 .4 1.5 .7 2.1 1c2.8 1.4 4.7 2.3 5.5 3.6c.9 1.9 .9 9.9-2.4 19.1c-3.3 9.3-19.1 17.7-26.7 18.8zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM148.1 393.9L64 416l22.5-82.2c-13.9-24-21.2-51.3-21.2-79.3C65.4 167.1 136.5 96 223.9 96c42.4 0 82.2 16.5 112.2 46.5c29.9 30 47.9 69.8 47.9 112.2c0 87.4-72.7 158.5-160.1 158.5c-26.6 0-52.7-6.7-75.8-19.3z" />
-                </svg>
-            </a>
-            <a class="contact-link"
-                href="https://pk.linkedin.com/in/malik-jahanzaib-15807016a?trk=people-guest_people_search-card"
-                target="_blank" title="Linkedin">
-                <svg xmlns="http://www.w3.org/2000/svg" class="contact-icon"
-                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path
-                        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                </svg>
-            </a>
-            <a class="contact-link" href="https://github.com/malik-portfolio" target="_blank" title="Github">
-                <svg xmlns="http://www.w3.org/2000/svg" class="contact-icon"
-                    viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path
-                        d="M448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM265.8 407.7c0-1.8 0-6 .1-11.6c.1-11.4 .1-28.8 .1-43.7c0-15.6-5.2-25.5-11.3-30.7c37-4.1 76-9.2 76-73.1c0-18.2-6.5-27.3-17.1-39c1.7-4.3 7.4-22-1.7-45c-13.9-4.3-45.7 17.9-45.7 17.9c-13.2-3.7-27.5-5.6-41.6-5.6s-28.4 1.9-41.6 5.6c0 0-31.8-22.2-45.7-17.9c-9.1 22.9-3.5 40.6-1.7 45c-10.6 11.7-15.6 20.8-15.6 39c0 63.6 37.3 69 74.3 73.1c-4.8 4.3-9.1 11.7-10.6 22.3c-9.5 4.3-33.8 11.7-48.3-13.9c-9.1-15.8-25.5-17.1-25.5-17.1c-16.2-.2-1.1 10.2-1.1 10.2c10.8 5 18.4 24.2 18.4 24.2c9.7 29.7 56.1 19.7 56.1 19.7c0 9 .1 21.7 .1 30.6c0 4.8 .1 8.6 .1 10c0 4.3-3 9.5-11.5 8C106 393.6 59.8 330.8 59.8 257.4c0-91.8 70.2-161.5 162-161.5s166.2 69.7 166.2 161.5c.1 73.4-44.7 136.3-110.7 158.3c-8.4 1.5-11.5-3.7-11.5-8zm-90.5-54.8c-.2-1.5 1.1-2.8 3-3.2c1.9-.2 3.7 .6 3.9 1.9c.3 1.3-1 2.6-3 3c-1.9 .4-3.7-.4-3.9-1.7zm-9.1 3.2c-2.2 .2-3.7-.9-3.7-2.4c0-1.3 1.5-2.4 3.5-2.4c1.9-.2 3.7 .9 3.7 2.4c0 1.3-1.5 2.4-3.5 2.4zm-14.3-2.2c-1.9-.4-3.2-1.9-2.8-3.2s2.4-1.9 4.1-1.5c2 .6 3.3 2.1 2.8 3.4c-.4 1.3-2.4 1.9-4.1 1.3zm-12.5-7.3c-1.5-1.3-1.9-3.2-.9-4.1c.9-1.1 2.8-.9 4.3 .6c1.3 1.3 1.8 3.3 .9 4.1c-.9 1.1-2.8 .9-4.3-.6zm-8.5-10c-1.1-1.5-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3c1.1 1.5 1.1 3.3 0 4.1c-.9 .6-2.6 0-3.7-1.5zm-6.3-8.8c-1.1-1.3-1.3-2.8-.4-3.5c.9-.9 2.4-.4 3.5 .6c1.1 1.3 1.3 2.8 .4 3.5c-.9 .9-2.4 .4-3.5-.6zm-6-6.4c-1.3-.6-1.9-1.7-1.5-2.6c.4-.6 1.5-.9 2.8-.4c1.3 .7 1.9 1.8 1.5 2.6c-.4 .9-1.7 1.1-2.8 .4z" />
-                </svg>
-            </a>
-            <a class="contact-link" href="https://maps.app.goo.gl/L3NvFAbHquFZrqjo8" target="_blank" title="Location">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                    class="contact-icon"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                    <path
-                        d="M256 0c17.7 0 32 14.3 32 32V66.7C368.4 80.1 431.9 143.6 445.3 224H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H445.3C431.9 368.4 368.4 431.9 288 445.3V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V445.3C143.6 431.9 80.1 368.4 66.7 288H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H66.7C80.1 143.6 143.6 80.1 224 66.7V32c0-17.7 14.3-32 32-32zM128 256a128 128 0 1 0 256 0 128 128 0 1 0 -256 0zm128-80a80 80 0 1 1 0 160 80 80 0 1 1 0-160z" />
-                </svg>
-            </a>
-        </div>
-    </section>
-
+    <script src="script.js"></script>
 </body>
+
+
 
 </html>
