@@ -12,150 +12,217 @@
 
 <body>
     <!-- Hero Section -->
-    <header id="hero-section" class="gradient-background">
-        <!-- Profile Picture -->
-        <img id="profile-picture" src="assets/profile-picture.jpg" alt="malik jahanzaib front end engineer">
-        <!-- Profile Info -->
-        <div id="profile-info">
-            <h1 id="profile-name">Malik Jahanzaib</h1>
-            <p id="profile-career">Front End Engineer</p>
-            <!-- Profile Links -->
-            <div id="links-container">
-                <a id="certificate-link"
-                    href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
-                    target="_blank" title="Certificate">Certificate</a>
-                <div id="social-links">
-                    <a class="contact-link" href="mailto:malic.jahan@gmail.com" target="_blank" title="Gmail">
-                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="social-icon">
-                            <g clip-path="url(#clip0_14_198)">
-                                <path
-                                    d="M24.5 0.375H7.5C3.35786 0.375 0 3.73286 0 7.875V24.875C0 29.0171 3.35786 32.375 7.5 32.375H24.5C28.6421 32.375 32 29.0171 32 24.875V7.875C32 3.73286 28.6421 0.375 24.5 0.375Z"
-                                    fill="#F4F2ED" />
-                                <path
-                                    d="M5.2045 25.7548H9.18175V16.0957L3.5 11.8345V24.0503C3.5 24.9935 4.26425 25.7548 5.2045 25.7548Z"
-                                    fill="#4285F4" />
-                                <path
-                                    d="M22.8184 25.755H26.7957C27.7389 25.755 28.5002 24.9907 28.5002 24.0505V11.8345L22.8184 16.0958"
-                                    fill="#34A853" />
-                                <path
-                                    d="M22.8184 8.70947V16.0958L28.5002 11.8346V9.5616C28.5002 7.45372 26.094 6.25197 24.4094 7.51622"
-                                    fill="#FBBC04" />
-                                <path
-                                    d="M9.18164 16.096V8.70972L15.9998 13.8231L22.8179 8.70947V16.0958L15.9998 21.2096"
-                                    fill="#EA4335" />
-                                <path
-                                    d="M3.5 9.5616V11.8343L9.18175 16.0957V8.70947L7.59088 7.51622C5.90338 6.25197 3.5 7.45372 3.5 9.5616Z"
-                                    fill="#C5221F" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_14_198">
-                                    <rect width="32" height="32" fill="white" transform="translate(0 0.375)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                    </a>
-                    <a class="contact-link" href="https://wa.me/923032791874" target="_blank" title="Whatsapp">
-
-                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="social-icon">
-                            <g clip-path="url(#clip0_14_206)">
-                                <path
-                                    d="M0.682949 16.3071C0.682199 19.0168 1.3902 21.6625 2.73645 23.9945L0.554199 31.9623L8.7082 29.8243C10.9635 31.052 13.4904 31.6954 16.0582 31.6955H16.0649C24.5418 31.6955 31.4422 24.7976 31.4458 16.3193C31.4474 12.2109 29.8489 8.34764 26.9447 5.44114C24.041 2.53489 20.1791 0.933516 16.0643 0.931641C7.58645 0.931641 0.686574 7.82914 0.683074 16.3071"
-                                    fill="url(#paint0_linear_14_206)" />
-                                <path
-                                    d="M0.13375 16.302C0.132875 19.1091 0.86625 21.8495 2.2605 24.265L0 32.5184L8.44637 30.3037C10.7736 31.5726 13.3939 32.2416 16.0601 32.2426H16.067C24.848 32.2426 31.9963 25.0966 32 16.3147C32.0015 12.0588 30.3455 8.05662 27.3375 5.046C24.3291 2.03575 20.3291 0.37675 16.067 0.375C7.2845 0.375 0.13725 7.52 0.13375 16.302ZM5.16388 23.849L4.8485 23.3484C3.52275 21.2404 2.823 18.8044 2.824 16.303C2.82675 9.00363 8.76725 3.065 16.072 3.065C19.6095 3.0665 22.934 4.4455 25.4345 6.9475C27.9349 9.44975 29.3108 12.776 29.3099 16.3138C29.3066 23.6131 23.366 29.5525 16.067 29.5525H16.0618C13.6851 29.5513 11.3542 28.913 9.3215 27.7069L8.83775 27.42L3.8255 28.7341L5.16388 23.849Z"
-                                    fill="url(#paint1_linear_14_206)" />
-                                <path
-                                    d="M12.0849 9.64343C11.7867 8.98055 11.4728 8.96718 11.1892 8.95555C10.9569 8.94555 10.6914 8.9463 10.4262 8.9463C10.1607 8.9463 9.72932 9.04618 9.36469 9.4443C8.99969 9.8428 7.97119 10.8058 7.97119 12.7644C7.97119 14.7232 9.39782 16.6161 9.59669 16.8819C9.79582 17.1473 12.3508 21.2953 16.3973 22.8911C19.7603 24.2172 20.4447 23.9534 21.1746 23.8869C21.9046 23.8207 23.5301 22.9242 23.8617 21.9946C24.1936 21.0651 24.1936 20.2683 24.0941 20.1018C23.9946 19.9359 23.7291 19.8363 23.3309 19.6373C22.9327 19.4382 20.9754 18.4751 20.6106 18.3422C20.2456 18.2094 19.9802 18.1432 19.7147 18.5418C19.4492 18.9398 18.6868 19.8363 18.4544 20.1018C18.2223 20.3679 17.9899 20.4011 17.5919 20.2019C17.1936 20.0022 15.9114 19.5823 14.3903 18.2262C13.2068 17.1709 12.4078 15.8678 12.1756 15.4692C11.9433 15.0712 12.1507 14.8554 12.3503 14.6571C12.5292 14.4787 12.7486 14.1922 12.9478 13.9598C13.1463 13.7273 13.2126 13.5614 13.3453 13.2959C13.4782 13.0302 13.4117 12.7977 13.3123 12.5986C13.2126 12.3994 12.4389 10.4306 12.0849 9.64343Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <linearGradient id="paint0_linear_14_206" x1="1545.14" y1="3103.99" x2="1545.14"
-                                    y2="0.931641" gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#1FAF38" />
-                                    <stop offset="1" stop-color="#60D669" />
-                                </linearGradient>
-                                <linearGradient id="paint1_linear_14_206" x1="1600" y1="3214.71" x2="1600" y2="0.375"
-                                    gradientUnits="userSpaceOnUse">
-                                    <stop stop-color="#F9F9F9" />
-                                    <stop offset="1" stop-color="white" />
-                                </linearGradient>
-                                <clipPath id="clip0_14_206">
-                                    <rect width="32" height="32.25" fill="white" transform="translate(0 0.375)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </a>
-                    <a class="contact-link"
-                        href="https://pk.linkedin.com/in/malik-jahanzaib-15807016a?trk=people-guest_people_search-card"
-                        target="_blank" title="Linkedin">
-                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="social-icon">
-                            <g clip-path="url(#clip0_14_210)">
-                                <path
-                                    d="M24.5 0.375H7.5C3.35786 0.375 0 3.73286 0 7.875V24.875C0 29.0171 3.35786 32.375 7.5 32.375H24.5C28.6421 32.375 32 29.0171 32 24.875V7.875C32 3.73286 28.6421 0.375 24.5 0.375Z"
-                                    fill="white" />
-                                <path
-                                    d="M24.5 0.375H7.5C3.35786 0.375 0 3.73286 0 7.875V24.875C0 29.0171 3.35786 32.375 7.5 32.375H24.5C28.6421 32.375 32 29.0171 32 24.875V7.875C32 3.73286 28.6421 0.375 24.5 0.375Z"
-                                    fill="#0A66C2" />
-                                <path
-                                    d="M23.0894 27.5856H26.7481C26.8807 27.5856 27.0079 27.533 27.1016 27.4392C27.1954 27.3455 27.2481 27.2183 27.2481 27.0858L27.25 19.3555C27.25 15.3151 26.3794 12.2095 21.6577 12.2095C19.8629 12.1428 18.1702 13.068 17.2569 14.613C17.2524 14.6205 17.2456 14.6263 17.2375 14.6296C17.2294 14.6329 17.2205 14.6334 17.2121 14.6312C17.2036 14.6289 17.1962 14.6239 17.1908 14.617C17.1855 14.6101 17.1826 14.6016 17.1825 14.5929V13.0825C17.1825 12.9499 17.1298 12.8227 17.0361 12.7289C16.9423 12.6352 16.8151 12.5825 16.6825 12.5825H13.2104C13.0778 12.5825 12.9506 12.6352 12.8568 12.7289C12.7631 12.8227 12.7104 12.9499 12.7104 13.0825V27.085C12.7104 27.2176 12.7631 27.3448 12.8568 27.4386C12.9506 27.5323 13.0778 27.585 13.2104 27.585H16.8689C17.0015 27.585 17.1287 27.5323 17.2224 27.4386C17.3162 27.3448 17.3689 27.2176 17.3689 27.085V20.1634C17.3689 18.2063 17.7401 16.3109 20.1665 16.3109C22.5584 16.3109 22.5894 18.5504 22.5894 20.2901V27.0856C22.5894 27.2182 22.6421 27.3454 22.7358 27.4392C22.8296 27.5329 22.9568 27.5856 23.0894 27.5856ZM4.75 7.8285C4.75 9.3115 5.97088 10.5317 7.454 10.5317C8.93675 10.5316 10.1569 9.31063 10.1569 7.82788C10.1566 6.34513 8.93637 5.125 7.4535 5.125C5.97025 5.125 4.75 6.3455 4.75 7.8285ZM5.61987 27.5856H9.28325C9.41586 27.5856 9.54304 27.5329 9.6368 27.4392C9.73057 27.3454 9.78325 27.2182 9.78325 27.0856V13.0825C9.78325 12.9499 9.73057 12.8227 9.6368 12.7289C9.54304 12.6352 9.41586 12.5825 9.28325 12.5825H5.61987C5.48727 12.5825 5.36009 12.6352 5.26632 12.7289C5.17255 12.8227 5.11987 12.9499 5.11987 13.0825V27.0856C5.11987 27.2182 5.17255 27.3454 5.26632 27.4392C5.36009 27.5329 5.48727 27.5856 5.61987 27.5856Z"
-                                    fill="white" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_14_210">
-                                    <rect width="32" height="32" fill="white" transform="translate(0 0.375)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                    </a>
-                    <a class="contact-link" href="https://github.com/malik-portfolio" target="_blank" title="Github">
-                        <svg width="32" height="33" viewBox="0 0 32 33" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            class="social-icon">
-                            <g clip-path="url(#clip0_14_215)">
-                                <path
-                                    d="M16 0.375C7.16 0.375 0 7.535 0 16.375C0 23.455 4.58 29.435 10.94 31.555C11.74 31.695 12.04 31.215 12.04 30.795C12.04 30.415 12.02 29.155 12.02 27.815C8 28.555 6.96 26.835 6.64 25.935C6.46 25.475 5.68 24.055 5 23.675C4.44 23.375 3.64 22.635 4.98 22.615C6.24 22.595 7.14 23.775 7.44 24.255C8.88 26.675 11.18 25.995 12.1 25.575C12.24 24.535 12.66 23.835 13.12 23.435C9.56 23.035 5.84 21.655 5.84 15.535C5.84 13.795 6.46 12.355 7.48 11.235C7.32 10.835 6.76 9.195 7.64 6.995C7.64 6.995 8.98 6.575 12.04 8.635C13.32 8.275 14.68 8.095 16.04 8.095C17.4 8.095 18.76 8.275 20.04 8.635C23.1 6.555 24.44 6.995 24.44 6.995C25.32 9.195 24.76 10.835 24.6 11.235C25.62 12.355 26.24 13.775 26.24 15.535C26.24 21.675 22.5 23.035 18.94 23.435C19.52 23.935 20.02 24.895 20.02 26.395C20.02 28.535 20 30.255 20 30.795C20 31.215 20.3 31.715 21.1 31.555C24.2768 30.4835 27.0373 28.4423 28.9928 25.7191C30.9483 22.9958 32 19.7276 32 16.375C32 7.535 24.84 0.375 16 0.375Z"
-                                    fill="black" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_14_215">
-                                    <rect width="32" height="32" fill="white" transform="translate(0 0.375)" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-
-                    </a>
+    <header>
+        <div class="hero-section gradient-background">
+            <!-- Profile Picture -->
+            <img class="profile-picture" src="assets/profile-picture.webp" alt="malik jahanzaib front end engineer">
+            <!-- Profile Info -->
+            <div class="profile-info">
+                <div class="profile-name">Malik Jahanzaib</div>
+                <h1 class="profile-career">Software Engineer</h1>
+                <!-- Profile Links -->
+                <div class="links-container">
+                    <div class="buttons-container">
+                        <a class="projects-section-link" href="#project">Projects</a>
+                        <a class="certificate-link"
+                            href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
+                            target="_blank" title="Certificate">Certificate</a>
+                    </div>
+                    <div class="social-link-wrapper">
+                        <a class="social-link" href="mailto:malic.jahan@gmail.com" target="_blank" title="Gmail">
+                            <span class="icon bg-gmail"></span>
+                        </a>
+                        <a class="social-link" href="https://wa.me/923032791874" target="_blank" title="Whatsapp">
+                            <span class="icon bg-whatsapp"></span>
+                        </a>
+                        <a class="social-link"
+                            href="https://pk.linkedin.com/in/malik-jahanzaib-15807016a?trk=people-guest_people_search-card"
+                            target="_blank" title="Linkedin">
+                            <span class="icon bg-linkedin"></span>
+                        </a>
+                        <a class="social-link" href="https://github.com/malik-portfolio" target="_blank" title="Github">
+                            <span class="icon bg-github"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
 
     </header>
 
-    <!-- Navigation Section -->
-    <nav id="nav-section">
-        <button id="about" type="button" class="nav-btn gradient-background" title="about">About</button>
-        <button id="skill" type="button" class="nav-btn" title="skill">Skill</button>
-        <button id="project" type="button" class="nav-btn" title="project">Project</button>
-    </nav>
-
-    <!-- Main Section -->
-    <main>
-        <section id="cards-wrapper">
-
+    <!-- UI/UX Designer Section -->
+    <article>
+        <section class="section">
+            <div class="section-info">
+                <h2 class="subheading">UI / UX Designer</h2>
+                <p class="description">I'm a UI/UX Designer with a passion for user-centered design, wielding Figma to
+                    translate research and user thinking into intuitive, visually stunning prototypes. I can design user
+                    flows and wireframes, craft pixel-perfect mockups with Figma's design systems, and leverage its
+                    prototyping features for user testing, ensuring a seamless user experience. Proficient in Figma's
+                    core functionalities, I can collaborate effectively with developers and stakeholders to bring design
+                    visions to life, all while staying on top of design trends and utilizing Figma's latest
+                    features.</p>
+                <div class="skill-chip-wrapper">
+                    <div class="skill-chip">
+                        <span class="icon bg-figma"></span>
+                        <span>Figma</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="illustration bg-design"></div>
+            </div>
         </section>
-    </main>
+        <section></section>
+    </article>
+    <!-- Front End Engineer Section -->
+    <article>
+        <section class="section">
+            <div class="section-info">
+                <h2 class="subheading">Front End Engineer</h2>
+                <p class="description">I'm a passionate Front-End Engineer specializing in crafting user-centric web
+                    applications with React, Redux, and TypeScript. I excel at transforming designer mockups into
+                    dynamic and responsive UIs, utilizing the power of React to build reusable components and manage
+                    complex state with Redux. My proficiency in TypeScript ensures code maintainability, improves
+                    developer experience, and catches errors early on. I prioritize performance optimization and user
+                    experience while fostering a collaborative environment with designers and back-end engineers. Let's
+                    discuss your project and how I can leverage my front-end expertise to bring your vision to life!</p>
+                <div class="skill-chip-wrapper">
+                    <div class="skill-chip">
+                        <span class="icon bg-html"></span>
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-chip">
+                        <span class="icon bg-css"></span>
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-chip">
+                        <span class="icon bg-javascript"></span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-chip">
+                        <span class="icon bg-typescript"></span>
+                        <span>TypeScript</span>
+                    </div>
+                    <div class="skill-chip">
+                        <span class="icon bg-react"></span>
+                        <span>React</span>
+                    </div>
+                    <div class="skill-chip">
+                        <span class="icon bg-redux"></span>
+                        <span>Redux</span>
+                    </div>
+                    <div class="skill-chip">
+                        <span class="icon bg-tailwind"></span>
+                        <span>Tailwind</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="illustration bg-frontend"></div>
+            </div>
+        </section>
+        <section></section>
+    </article>
+    <!-- Back End Developer Section -->
+    <article>
+        <section class="section">
+            <div class="section-info">
+                <h2 class="subheading">Back End Developer</h2>
+                <p class="description">I'm a proficient Backend Developer with a focus on building robust and scalable
+                    web applications. I leverage the powerful MERN stack (MongoDB, Express.js, React, Next.js) to craft
+                    secure and efficient backend APIs. My expertise shines in crafting well-designed RESTful APIs with
+                    Express.js for seamless data exchange. I structure data effectively using Mongoose to ensure a clean
+                    and performant interaction with MongoDB. For SEO and user experience, I leverage Next.js's
+                    Server-Side Rendering capabilities to generate dynamic content. My core strength lies in writing
+                    clean, maintainable, and well-tested Node.js code, prioritizing code scalability and long-term
+                    project health. I'm a strong believer in collaboration and work closely with frontend developers and
+                    other stakeholders to deliver exceptional web applications. Let's discuss your project and tackle
+                    your backend challenges!</p>
+                <div class="skill-chip-wrapper">
+                    <div class="skill-chip">
+                        <span class="icon bg-nextjs"></span>
+                        <span>Next JS</span>
+                    </div>
+                    <div class="skill-chip">
+                        <span class="icon bg-nodejs"></span>
+                        <span>Node JS</span>
+                    </div>
+                    <div class="skill-chip">
+                        <span class="icon bg-expressjs"></span>
+                        <span>Express JS</span>
+                    </div>
+                    <div class="skill-chip">
+                        <span class="icon bg-mongodb"></span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="skill-chip">
+                        <span class="icon bg-postman"></span>
+                        <span>Postman</span>
+                    </div>
+                    <div class="skill-chip">
+                        <span class="icon bg-sql"></span>
+                        <span>SQL</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="illustration bg-backend"></div>
+            </div>
+        </section>
+        <section></section>
+    </article>
+    <!-- Security Section -->
+    <article>
+        <section class="section">
+            <div class="section-info">
+                <h2 class="subheading">Web Security Analyst</h2>
+                <p class="description">I'm a meticulous Web Security Analyst with a keen eye for vulnerabilities. I
+                    utilize Burp Suite, a comprehensive web application security platform, to identify and exploit
+                    weaknesses in web applications. My process involves meticulously mapping application functionalities
+                    using Burp Suite's tools, then crafting and launching targeted attacks to uncover potential security
+                    flaws like SQL injection or cross-site scripting (XSS). I leverage Burp Suite's features to analyze
+                    intercepted traffic, manipulate requests and responses, and identify exploitable weaknesses. By
+                    leveraging Burp Suite's extensive functionalities, I can thoroughly assess an application's security
+                    posture, report vulnerabilities, and recommend remediation strategies to fortify the application's
+                    defenses.</p>
+                <div class="skill-chip-wrapper">
+                    <div class="skill-chip">
+                        <span class="icon bg-burpsuite"></span>
+                        <span>Burp Suite</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="illustration bg-security"></div>
+            </div>
+        </section>
+        <section></section>
+    </article>
+    <!-- Projects Section -->
+    <article id="project">
+        <section class="section">
+            <div class="section-info">
+                <h2 class="subheading">Projects</h2>
+                <p class="description">I bridge the gap between design and development! I translate stunning UI/UX
+                    concepts (Figma) into user-friendly front-ends, utilizing modern frameworks, before building secure
+                    backends with the MERN stack. Prioritizing clean code and user experience, I craft innovative
+                    projects using cutting-edge tech. Let's discuss your project! Here is the list of my projects that I
+                    have completed</p>
+                <ul class="projects-list">
+                    <li class="project-item">
+                        <a class="project-link" href="https://malik-portfolio.github.io/number-magic-game"
+                            target="_blank">Number Magic Game&nbsp;&nbsp;&nbsp;➜</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="illustration bg-project"></div>
+            </div>
+        </section>
+        <section></section>
+    </article>
 
-    <!-- Modal -->
-    <div id="card-modal-wrapper" hidden>
-        <div id="card-modal">
-
-        </div>
-    </div>
-
-    <script src="script.js"></script>
 </body>
 
 
