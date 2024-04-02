@@ -13,11 +13,12 @@
 body {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: start;
+    justify-content: space-between;
     gap: 4rem;
-    background-color: #212121;
+    background-color: black;
     color: #eeeeee;
-    padding: 4rem;
+    padding: 4rem 2rem;
     min-height: 100lvh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -81,7 +82,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    flex: 2;
+    flex: 3;
 }
 
 .introduction-title {
@@ -101,18 +102,21 @@ strong {
     text-decoration: none;
     color: inherit;
     border: 1px solid #eeeeee;
-    padding: 0.5rem;
+    padding: 1rem;
+    font-size: 1.25rem;
 }
 
 .project-link:hover {
     border-color: mediumseagreen;
     color: mediumseagreen;
+    border-radius: 5rem;
 }
 
 /* Responsive */
 @media screen and (max-width:1000px) {
     body {
         flex-direction: column;
+        align-items: center;
     }
 }
 
