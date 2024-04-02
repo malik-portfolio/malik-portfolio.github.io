@@ -12,216 +12,145 @@
 
 <body>
     <!-- Hero Section -->
-    <header>
-        <div class="hero-section gradient-background">
-            <!-- Profile Picture -->
-            <img class="profile-picture" src="assets/profile-picture.webp" alt="malik jahanzaib front end engineer">
-            <!-- Profile Info -->
-            <div class="profile-info">
-                <div class="profile-name">Malik Jahanzaib</div>
-                <h1 class="profile-career">Software Engineer</h1>
-                <!-- Profile Links -->
-                <div class="links-container">
-                    <div class="buttons-container">
-                        <a class="projects-section-link" href="#project">Projects</a>
-                        <a class="certificate-link"
-                            href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
-                            target="_blank" title="Certificate">Certificate</a>
-                    </div>
-                    <div class="social-link-wrapper">
-                        <a class="social-link" href="mailto:malic.jahan@gmail.com" target="_blank" title="Gmail">
-                            <span class="icon bg-gmail"></span>
-                        </a>
-                        <a class="social-link" href="https://wa.me/923032791874" target="_blank" title="Whatsapp">
-                            <span class="icon bg-whatsapp"></span>
-                        </a>
-                        <a class="social-link"
-                            href="https://pk.linkedin.com/in/malik-jahanzaib-15807016a?trk=people-guest_people_search-card"
-                            target="_blank" title="Linkedin">
-                            <span class="icon bg-linkedin"></span>
-                        </a>
-                        <a class="social-link" href="https://github.com/malik-portfolio" target="_blank" title="Github">
-                            <span class="icon bg-github"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <header class="profile-section">
+        <!-- Profile Picture -->
+        <img class="profile-picture" src="assets/profile-picture.webp" alt="malik jahanzaib front end engineer">
+        <!-- Profile Info -->
+        <div class="profile-title">
+            <div class="profile-name">Malik Jahanzaib</div>
+            <h1 class="profile-career">Software Engineer</h1>
         </div>
+        <!-- Profile Links -->
+        <div class="social-links-container">
+            <a class="social-link" href="mailto:malic.jahan@gmail.com" target="_blank" title="Gmail">
 
+                <svg class="social-icon" width="128" height="129" viewBox="0 0 128 129" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_59_127)">
+                        <path
+                            d="M98 0.375H30C13.4315 0.375 0 13.8065 0 30.375V98.375C0 114.944 13.4315 128.375 30 128.375H98C114.569 128.375 128 114.944 128 98.375V30.375C128 13.8065 114.569 0.375 98 0.375Z"
+                            fill="#F4F2ED" />
+                        <path
+                            d="M20.818 101.894H36.727V63.2579L14 46.2129V95.0764C14 98.8489 17.057 101.894 20.818 101.894Z"
+                            fill="#4285F4" />
+                        <path
+                            d="M91.2725 101.894H107.182C110.954 101.894 114 98.8374 114 95.0764V46.2124L91.2725 63.2579"
+                            fill="#34A853" />
+                        <path
+                            d="M91.2725 33.7124V63.2579L114 46.2129V37.1209C114 28.6894 104.375 23.8824 97.6365 28.9394"
+                            fill="#FBBC04" />
+                        <path d="M36.7275 63.2579V33.7129L64 54.1664L91.2725 33.7119V63.2574L64 83.7124"
+                            fill="#EA4335" />
+                        <path
+                            d="M14 37.1214V46.2124L36.727 63.2579V33.7129L30.3635 28.9399C23.6135 23.8829 14 28.6899 14 37.1214Z"
+                            fill="#C5221F" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_59_127">
+                            <rect width="128" height="128" fill="white" transform="translate(0 0.375)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <a class="social-link" href="https://wa.me/923032791874" target="_blank" title="Whatsapp">
+
+                <svg class="social-icon" width="128" height="129" viewBox="0 0 128 129" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_59_135)">
+                        <path
+                            d="M2.73131 63.7281C2.72831 74.5666 5.56031 85.1496 10.9453 94.4776L2.21631 126.349L34.8323 117.797C43.8535 122.708 53.961 125.281 64.2323 125.282H64.2593C98.1668 125.282 125.768 97.6901 125.783 63.7766C125.789 47.3431 119.395 31.8901 107.778 20.2641C96.1633 8.63907 80.7158 2.23357 64.2568 2.22607C30.3453 2.22607 2.74581 29.8161 2.73181 63.7281"
+                            fill="url(#paint0_linear_59_135)" />
+                        <path
+                            d="M0.535 63.708C0.5315 74.9365 3.465 85.898 9.042 95.56L0 128.574L33.7855 119.715C43.0945 124.79 53.5755 127.466 64.2405 127.47H64.268C99.392 127.47 127.985 98.8865 128 63.759C128.006 46.735 121.382 30.7265 109.35 18.684C97.3165 6.643 81.3165 0.007 64.268 0C29.138 0 0.549 28.58 0.535 63.708ZM20.6555 93.896L19.394 91.8935C14.091 83.4615 11.292 73.7175 11.296 63.712C11.307 34.5145 35.069 10.76 64.288 10.76C78.438 10.766 91.736 16.282 101.738 26.29C111.739 36.299 117.243 49.604 117.24 63.755C117.227 92.9525 93.464 116.71 64.268 116.71H64.247C54.7405 116.705 45.417 114.152 37.286 109.327L35.351 108.18L15.302 113.437L20.6555 93.896Z"
+                            fill="url(#paint1_linear_59_135)" />
+                        <path
+                            d="M48.3388 37.0742C47.1458 34.4227 45.8903 34.3692 44.7558 34.3227C43.8268 34.2827 42.7648 34.2857 41.7038 34.2857C40.6418 34.2857 38.9163 34.6852 37.4578 36.2777C35.9978 37.8717 31.8838 41.7237 31.8838 49.5582C31.8838 57.3932 37.5903 64.9647 38.3858 66.0282C39.1823 67.0897 49.4023 83.6817 65.5883 90.0647C79.0403 95.3692 81.7778 94.3142 84.6973 94.0482C87.6173 93.7832 94.1193 90.1972 95.4458 86.4787C96.7733 82.7607 96.7733 79.5737 96.3753 78.9077C95.9773 78.2442 94.9153 77.8457 93.3228 77.0497C91.7298 76.2532 83.9008 72.4007 82.4413 71.8692C80.9813 71.3382 79.9198 71.0732 78.8578 72.6677C77.7958 74.2597 74.7463 77.8457 73.8168 78.9077C72.8883 79.9722 71.9588 80.1047 70.3668 79.3082C68.7733 78.5092 63.6448 76.8297 57.5603 71.4052C52.8263 67.1842 49.6303 61.9717 48.7013 60.3772C47.7723 58.7852 48.6018 57.9222 49.4003 57.1287C50.1158 56.4152 50.9933 55.2692 51.7903 54.3397C52.5843 53.4097 52.8493 52.7462 53.3803 51.6842C53.9118 50.6212 53.6458 49.6912 53.2483 48.8947C52.8493 48.0982 49.7548 40.2227 48.3388 37.0742Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <linearGradient id="paint0_linear_59_135" x1="6180.54" y1="12414.5" x2="6180.54" y2="2.22607"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#1FAF38" />
+                            <stop offset="1" stop-color="#60D669" />
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_59_135" x1="6400" y1="12857.4" x2="6400" y2="0"
+                            gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#F9F9F9" />
+                            <stop offset="1" stop-color="white" />
+                        </linearGradient>
+                        <clipPath id="clip0_59_135">
+                            <rect width="128" height="129" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+            <a class="social-link"
+                href="https://pk.linkedin.com/in/malik-jahanzaib-15807016a?trk=people-guest_people_search-card"
+                target="_blank" title="Linkedin">
+
+                <svg class="social-icon" width="128" height="128" viewBox="0 0 128 128" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_59_139)">
+                        <path
+                            d="M98 0H30C13.4315 0 0 13.4315 0 30V98C0 114.569 13.4315 128 30 128H98C114.569 128 128 114.569 128 98V30C128 13.4315 114.569 0 98 0Z"
+                            fill="white" />
+                        <path
+                            d="M98 0H30C13.4315 0 0 13.4315 0 30V98C0 114.569 13.4315 128 30 128H98C114.569 128 128 114.569 128 98V30C128 13.4315 114.569 0 98 0Z"
+                            fill="#0A66C2" />
+                        <path
+                            d="M92.3575 108.842H106.993C107.523 108.842 108.031 108.632 108.407 108.257C108.782 107.882 108.992 107.373 108.993 106.843L109 75.922C109 59.7605 105.517 47.338 86.631 47.338C79.4515 47.071 72.681 50.772 69.0275 56.952C69.0096 56.982 68.9824 57.0054 68.9501 57.0185C68.9177 57.0316 68.8819 57.0338 68.8482 57.0246C68.8145 57.0155 68.7847 56.9956 68.7633 56.968C68.742 56.9403 68.7303 56.9064 68.73 56.8715V50.83C68.73 50.2996 68.5193 49.7909 68.1442 49.4158C67.7691 49.0407 67.2604 48.83 66.73 48.83H52.8415C52.3111 48.83 51.8024 49.0407 51.4273 49.4158C51.0522 49.7909 50.8415 50.2996 50.8415 50.83V106.84C50.8415 107.37 51.0522 107.879 51.4273 108.254C51.8024 108.629 52.3111 108.84 52.8415 108.84H67.4755C68.0059 108.84 68.5146 108.629 68.8897 108.254C69.2648 107.879 69.4755 107.37 69.4755 106.84V79.1535C69.4755 71.325 70.9605 63.7435 80.666 63.7435C90.2335 63.7435 90.3575 72.7015 90.3575 79.6605V106.842C90.3575 107.373 90.5682 107.882 90.9433 108.257C91.3184 108.632 91.8271 108.842 92.3575 108.842ZM19 29.814C19 35.746 23.8835 40.627 29.816 40.627C35.747 40.6265 40.6275 35.7425 40.6275 29.8115C40.6265 23.8805 35.7455 19 29.814 19C23.881 19 19 23.882 19 29.814ZM22.4795 108.842H37.133C37.6634 108.842 38.1721 108.632 38.5472 108.257C38.9223 107.882 39.133 107.373 39.133 106.842V50.83C39.133 50.2996 38.9223 49.7909 38.5472 49.4158C38.1721 49.0407 37.6634 48.83 37.133 48.83H22.4795C21.9491 48.83 21.4404 49.0407 21.0653 49.4158C20.6902 49.7909 20.4795 50.2996 20.4795 50.83V106.842C20.4795 107.373 20.6902 107.882 21.0653 108.257C21.4404 108.632 21.9491 108.842 22.4795 108.842Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_59_139">
+                            <rect width="128" height="128" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+
+            </a>
+            <a class="social-link" href="https://github.com/malik-portfolio" target="_blank" title="Github">
+
+                <svg class="social-icon" width="128" height="128" viewBox="0 0 128 128" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_59_144)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M64 128C99.3462 128 128 99.3462 128 64C128 28.6538 99.3462 0 64 0C28.6538 0 0 28.6538 0 64C0 99.3462 28.6538 128 64 128Z"
+                            fill="#3E75C3" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M63.9975 21.3335C40.4375 21.3335 21.3335 40.5106 21.3335 64.172C21.3335 83.0947 33.5575 99.1501 50.5148 104.815C52.6482 105.209 53.4268 103.886 53.4268 102.751C53.4268 101.734 53.3895 99.0403 53.3682 95.4662C41.4988 98.0551 38.9948 89.7235 38.9948 89.7235C37.0562 84.776 34.2588 83.4588 34.2588 83.4588C30.3842 80.8003 34.5522 80.8538 34.5522 80.8538C38.8322 81.1564 41.0855 85.2686 41.0855 85.2686C44.8935 91.8145 51.0722 89.9243 53.5042 88.8267C53.8908 86.0584 54.9948 84.1709 56.2135 83.1C46.7388 82.0184 36.7788 78.3453 36.7788 61.9311C36.7788 57.254 38.4402 53.4309 41.1708 50.4351C40.7308 49.3508 39.2668 44.9976 41.5868 39.0996C41.5868 39.0996 45.1708 37.9484 53.3202 43.4903C56.7255 42.5399 60.3735 42.066 64.0028 42.0473C67.6268 42.066 71.2775 42.5399 74.6855 43.4903C82.8295 37.9484 86.4055 39.0996 86.4055 39.0996C88.7335 44.9976 87.2695 49.3508 86.8295 50.4351C89.5655 53.4309 91.2162 57.254 91.2162 61.9311C91.2162 78.3854 81.2402 82.0077 71.7362 83.0679C73.2668 84.3905 74.6322 87.0035 74.6322 91.0006C74.6322 96.7272 74.5788 101.345 74.5788 102.751C74.5788 103.897 75.3468 105.23 77.5122 104.81C94.4535 99.134 106.667 83.0893 106.667 64.172C106.667 40.5106 87.5628 21.3335 63.9975 21.3335Z"
+                            fill="white" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_59_144">
+                            <rect width="128" height="128" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
+        </div>
+        <a class="certificate-link"
+            href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
+            target="_blank" title="Certificate">Certificate</a>
     </header>
 
-    <!-- UI/UX Designer Section -->
-    <article>
-        <section class="section">
-            <div class="section-info">
-                <h2 class="subheading">UI / UX Designer</h2>
-                <p class="description">I'm a UI/UX Designer with a passion for user-centered design, wielding Figma to
-                    translate research and user thinking into intuitive, visually stunning prototypes. I can design user
-                    flows and wireframes, craft pixel-perfect mockups with Figma's design systems, and leverage its
-                    prototyping features for user testing, ensuring a seamless user experience. Proficient in Figma's
-                    core functionalities, I can collaborate effectively with developers and stakeholders to bring design
-                    visions to life, all while staying on top of design trends and utilizing Figma's latest
-                    features.</p>
-                <div class="skill-chip-wrapper">
-                    <div class="skill-chip">
-                        <span class="icon bg-figma"></span>
-                        <span>Figma</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="illustration bg-design"></div>
-            </div>
-        </section>
-        <section></section>
-    </article>
-    <!-- Front End Engineer Section -->
-    <article>
-        <section class="section">
-            <div class="section-info">
-                <h2 class="subheading">Front End Engineer</h2>
-                <p class="description">I'm a passionate Front-End Engineer specializing in crafting user-centric web
-                    applications with React, Redux, and TypeScript. I excel at transforming designer mockups into
-                    dynamic and responsive UIs, utilizing the power of React to build reusable components and manage
-                    complex state with Redux. My proficiency in TypeScript ensures code maintainability, improves
-                    developer experience, and catches errors early on. I prioritize performance optimization and user
-                    experience while fostering a collaborative environment with designers and back-end engineers. Let's
-                    discuss your project and how I can leverage my front-end expertise to bring your vision to life!</p>
-                <div class="skill-chip-wrapper">
-                    <div class="skill-chip">
-                        <span class="icon bg-html"></span>
-                        <span>HTML</span>
-                    </div>
-                    <div class="skill-chip">
-                        <span class="icon bg-css"></span>
-                        <span>CSS</span>
-                    </div>
-                    <div class="skill-chip">
-                        <span class="icon bg-javascript"></span>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill-chip">
-                        <span class="icon bg-typescript"></span>
-                        <span>TypeScript</span>
-                    </div>
-                    <div class="skill-chip">
-                        <span class="icon bg-react"></span>
-                        <span>React</span>
-                    </div>
-                    <div class="skill-chip">
-                        <span class="icon bg-redux"></span>
-                        <span>Redux</span>
-                    </div>
-                    <div class="skill-chip">
-                        <span class="icon bg-tailwind"></span>
-                        <span>Tailwind</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="illustration bg-frontend"></div>
-            </div>
-        </section>
-        <section></section>
-    </article>
-    <!-- Back End Developer Section -->
-    <article>
-        <section class="section">
-            <div class="section-info">
-                <h2 class="subheading">Back End Developer</h2>
-                <p class="description">I'm a proficient Backend Developer with a focus on building robust and scalable
-                    web applications. I leverage the powerful MERN stack (MongoDB, Express.js, React, Next.js) to craft
-                    secure and efficient backend APIs. My expertise shines in crafting well-designed RESTful APIs with
-                    Express.js for seamless data exchange. I structure data effectively using Mongoose to ensure a clean
-                    and performant interaction with MongoDB. For SEO and user experience, I leverage Next.js's
-                    Server-Side Rendering capabilities to generate dynamic content. My core strength lies in writing
-                    clean, maintainable, and well-tested Node.js code, prioritizing code scalability and long-term
-                    project health. I'm a strong believer in collaboration and work closely with frontend developers and
-                    other stakeholders to deliver exceptional web applications. Let's discuss your project and tackle
-                    your backend challenges!</p>
-                <div class="skill-chip-wrapper">
-                    <div class="skill-chip">
-                        <span class="icon bg-nextjs"></span>
-                        <span>Next JS</span>
-                    </div>
-                    <div class="skill-chip">
-                        <span class="icon bg-nodejs"></span>
-                        <span>Node JS</span>
-                    </div>
-                    <div class="skill-chip">
-                        <span class="icon bg-expressjs"></span>
-                        <span>Express JS</span>
-                    </div>
-                    <div class="skill-chip">
-                        <span class="icon bg-mongodb"></span>
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="skill-chip">
-                        <span class="icon bg-postman"></span>
-                        <span>Postman</span>
-                    </div>
-                    <div class="skill-chip">
-                        <span class="icon bg-sql"></span>
-                        <span>SQL</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="illustration bg-backend"></div>
-            </div>
-        </section>
-        <section></section>
-    </article>
-    <!-- Security Section -->
-    <article>
-        <section class="section">
-            <div class="section-info">
-                <h2 class="subheading">Web Security Analyst</h2>
-                <p class="description">I'm a meticulous Web Security Analyst with a keen eye for vulnerabilities. I
-                    utilize Burp Suite, a comprehensive web application security platform, to identify and exploit
-                    weaknesses in web applications. My process involves meticulously mapping application functionalities
-                    using Burp Suite's tools, then crafting and launching targeted attacks to uncover potential security
-                    flaws like SQL injection or cross-site scripting (XSS). I leverage Burp Suite's features to analyze
-                    intercepted traffic, manipulate requests and responses, and identify exploitable weaknesses. By
-                    leveraging Burp Suite's extensive functionalities, I can thoroughly assess an application's security
-                    posture, report vulnerabilities, and recommend remediation strategies to fortify the application's
-                    defenses.</p>
-                <div class="skill-chip-wrapper">
-                    <div class="skill-chip">
-                        <span class="icon bg-burpsuite"></span>
-                        <span>Burp Suite</span>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="illustration bg-security"></div>
-            </div>
-        </section>
-        <section></section>
-    </article>
-    <!-- Projects Section -->
-    <article id="project">
-        <section class="section">
-            <div class="section-info">
-                <h2 class="subheading">Projects</h2>
-                <p class="description">I bridge the gap between design and development! I translate stunning UI/UX
-                    concepts (Figma) into user-friendly front-ends, utilizing modern frameworks, before building secure
-                    backends with the MERN stack. Prioritizing clean code and user experience, I craft innovative
-                    projects using cutting-edge tech. Let's discuss your project! Here is the list of my projects that I
-                    have completed</p>
-                <ul class="projects-list">
-                    <li class="project-item">
-                        <a class="project-link" href="https://malik-portfolio.github.io/number-magic-game"
-                            target="_blank">Number Magic Game&nbsp;&nbsp;&nbsp;➜</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <div class="illustration bg-project"></div>
-            </div>
-        </section>
-        <section></section>
-    </article>
+    <!-- Main Section -->
+    <main class="introduction-section">
+        <h2 class="introduction-title">Turn your ideas into <strong>software</strong> product</h2>
+        <p class="introduction-description">Welcome my name is Malik Jahanzaib and I am a software engineer specific to
+            web development living in Pakistan. I am using modern technologies like Figma for design & prototype, React,
+            Redux, Tailwind CSS & TypeScript for front-end development, MERN stack or Next JS for back-end development
+            and Git for version control. I can also work on databases mostly MongoDB and PostgreSQL. I can also analyze
+            web security by using the BurpSuite tool. Whenever I engage with the problem I try computation thinking
+            principles to find better solutions. I can also collaborate with the team by using Github. I am currently
+            working on various projects and deploy them as soon as they are developed. </p>
+        <div class="project-links-container">
+            <a class="project-link" href="https://malik-portfolio.github.io/number-magic-game" target="_blank">🚀 Number
+                Magic Game</a>
+        </div>
+    </main>
+
+
 
 </body>
 
