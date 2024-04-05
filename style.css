@@ -177,9 +177,7 @@ body {
 }
 
 @media screen and (min-width:750px) {
-    .profile-section {
-        flex-direction: row-reverse;
-    }
+
 
     .profile-picture {
         width: 14rem;
@@ -189,6 +187,10 @@ body {
 @media screen and (min-width:1000px) {
     body {
         padding: 8rem 4rem;
+    }
+
+    .profile-section {
+        flex-direction: row-reverse;
     }
 
     .profile-picture {
