@@ -29,6 +29,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+header,
+section {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
 .icon {
     display: inline-block;
     width: 2rem;
