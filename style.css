@@ -52,7 +52,8 @@ section {
     margin: 0 auto;
     width: 12rem;
     border-radius: 50%;
-    box-shadow: 0 0 20rem 5rem springgreen;
+    box-shadow: 0 0 20rem 5rem mediumseagreen;
+    filter: brightness(90%);
 }
 
 .profile__info {
