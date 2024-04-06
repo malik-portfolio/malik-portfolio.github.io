@@ -25,7 +25,7 @@ body {
     gap: 8rem;
     background-color: #1B1B1F;
     color: white;
-    padding: 8rem 1rem;
+    padding: 4rem 1rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -50,10 +50,9 @@ section {
 .profile__picture img {
     display: block;
     margin: 0 auto;
-    width: 10rem;
+    width: 12rem;
     border-radius: 50%;
-    filter: drop-shadow(0 0 10rem springgreen);
-    opacity: 0.75;
+    box-shadow: 0 0 20rem 5rem springgreen;
 }
 
 .profile__info {
@@ -66,6 +65,7 @@ section {
 .profile__title {
     color: #fffd;
     margin-bottom: 0.5rem;
+    font-size: 3rem;
 }
 
 .profile__subtitle {
@@ -111,7 +111,7 @@ section {
     padding: 0.75rem 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    width: 18rem;
+    width: 100%;
     text-align: center;
 }
 
@@ -182,15 +182,11 @@ section {
 /* Responsive - Tablet*/
 @media screen and (min-width:600px) {
     body {
-        padding: 8rem 2rem;
+        padding: 4rem;
     }
 
-    .profile__picture img {
-        width: 14rem;
-    }
-
-    .profile__title {
-        font-size: 3rem;
+    .button {
+        width: 15rem;
     }
 }
 
