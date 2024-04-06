@@ -11,40 +11,40 @@
 </head>
 
 <body>
-
     <!-- Hero Section -->
-    <header class="profile-section">
-        <div class="profile-picture-wrapper">
-            <img class="profile-picture" src="assets/profile-picture.webp" alt="malik jahanzaib front end engineer">
+    <header class="profile">
+        <div class="profile__picture">
+            <img src="assets/profile-picture.webp" alt="malik jahanzaib front end engineer">
         </div>
-        <div class="profile-info">
-            <h1 class="profile-title">Turn your idea from design to software product</h1>
-            <p class="profile-subtitle">Hi! I'm Malik Jahanzaib, a software engineer specializing in crafting
+        <div class="profile__info">
+            <h1 class="profile__title">Turn your idea from design to software product</h1>
+            <p class="profile__subtitle">Hi! I'm Malik Jahanzaib, a software engineer specializing in crafting
                 user-centric web applications. I leverage Figma for design and build user interfaces with React and
                 Tailwind CSS, ensuring clean and efficient experiences. My expertise extends beyond the frontend. I
                 utilize the powerful MERN stack (including Next.js) for full-stack development and prioritize code
                 quality with TypeScript. This combination, along with my strong foundation in computational thinking and
                 web security, guarantees your applications are built on a secure and solid foundation.</p>
-            <div class="profile-links-wrapper">
-                <div class="profile-btn-wrapper">
-                    <a class="project-btn" href="#project">Project</a>
-                    <a class="certificate-btn"
+            <div class="profile__links-container">
+                <div class="profile__buttons-container">
+                    <a class="button button--primary" href="#project">Project</a>
+                    <a class="button button--secondary"
                         href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
                         target="_blank">Certificate</a>
                 </div>
-                <div class="social-links-wrapper">
-                    <a class="social-link" href="mailto:malic.jahan@gmail.com" target="_blank" title="Gmail">
+                <div class="profile__social-links-wrapper">
+                    <a class="profile__social-link" href="mailto:malic.jahan@gmail.com" target="_blank" title="Gmail">
                         <span class="icon gmail-icon"></span>
                     </a>
-                    <a class="social-link" href="https://wa.me/923032791874" target="_blank" title="Whatsapp">
+                    <a class="profile__social-link" href="https://wa.me/923032791874" target="_blank" title="Whatsapp">
                         <span class="icon whatsapp-icon"></span>
                     </a>
-                    <a class="social-link"
+                    <a class="profile__social-link"
                         href="https://pk.linkedin.com/in/malik-jahanzaib-15807016a?trk=people-guest_people_search-card"
                         target="_blank" title="Linkedin">
                         <span class="icon linkedin-icon"></span>
                     </a>
-                    <a class="social-link" href="https://github.com/malik-portfolio" target="_blank" title="Github">
+                    <a class="profile__social-link" href="https://github.com/malik-portfolio" target="_blank"
+                        title="Github">
                         <span class="icon github-icon"></span>
                     </a>
                 </div>
@@ -53,271 +53,230 @@
     </header>
 
     <!-- Section - About -->
-    <section class="about-section">
+    <section class="about">
         <h2 class="subheading">About</h2>
         <div class="cards-wrapper">
-            <div class="card">
-                <span class="card-icon-wrapper">🏆</span>
-                <div class="card-info">
-                    <h3 class="card-title">Certification</h3>
-                    <p class="card-description">Professional certified front end engineer by codecademy</p>
+            <div class="card card--about">
+                <span class="card__emoji">🏆</span>
+                <div class="card__info">
+                    <h3 class="card__title">Certification</h3>
+                    <p class="card__description">Professional certified front end engineer by codecademy</p>
                 </div>
             </div>
-            <div class="card">
-                <span class="card-icon-wrapper">🎓</span>
-                <div class="card-info">
-                    <h3 class="card-title">Qualification</h3>
-                    <p class="card-description">Graduate in M.Ed from AIOU, Islamabad, Pakistan</p>
+            <div class="card card--about">
+                <span class="card__emoji">🎓</span>
+                <div class="card__info">
+                    <h3 class="card__title">Qualification</h3>
+                    <p class="card__description">Graduate in M.Ed from AIOU, Islamabad, Pakistan</p>
                 </div>
             </div>
-            <div class="card">
-                <span class="card-icon-wrapper">🛠️</span>
-                <div class="card-info">
-                    <h3 class="card-title">Core Skill</h3>
-                    <p class="card-description">HTML, CSS, JavaScript and SQL which are fundamental skills</p>
+            <div class="card card--about">
+                <span class="card__emoji">🛠️</span>
+                <div class="card__info">
+                    <h3 class="card__title">Core Skill</h3>
+                    <p class="card__description">HTML, CSS, JavaScript and SQL which are fundamental skills</p>
                 </div>
             </div>
-            <div class="card">
-                <span class="card-icon-wrapper">⭐</span>
-                <div class="card-info">
-                    <h3 class="card-title">UI / UX Design</h3>
-                    <p class="card-description">UI / UX design and prototype by using Figma tool</p>
+            <div class="card card--about">
+                <span class="card__emoji">⭐</span>
+                <div class="card__info">
+                    <h3 class="card__title">UI / UX Design</h3>
+                    <p class="card__description">UI / UX design and prototype by using Figma tool</p>
                 </div>
             </div>
-            <div class="card">
-                <span class="card-icon-wrapper">🖥️</span>
-                <div class="card-info">
-                    <h3 class="card-title">Front End Development</h3>
-                    <p class="card-description">Using React, Redux, Tailwind CSS and TypeScript</p>
+            <div class="card card--about">
+                <span class="card__emoji">🖥️</span>
+                <div class="card__info">
+                    <h3 class="card__title">Front End Development</h3>
+                    <p class="card__description">Using React, Redux, Tailwind CSS and TypeScript</p>
                 </div>
             </div>
-            <div class="card">
-                <span class="card-icon-wrapper">🌏</span>
-                <div class="card-info">
-                    <h3 class="card-title">Back End Development</h3>
-                    <p class="card-description">Using Next JS or MERN stack for full stack web application</p>
+            <div class="card card--about">
+                <span class="card__emoji">🌏</span>
+                <div class="card__info">
+                    <h3 class="card__title">Back End Development</h3>
+                    <p class="card__description">Using Next JS or MERN stack for full stack web application development
+                    </p>
                 </div>
             </div>
-            <div class="card">
-                <span class="card-icon-wrapper">🕵</span>
-                <div class="card-info">
-                    <h3 class="card-title">Web Security Analysis</h3>
-                    <p class="card-description">Find vulnerabilities by using Burp suite tool</p>
+            <div class="card card--about">
+                <span class="card__emoji">🕵</span>
+                <div class="card__info">
+                    <h3 class="card__title">Web Security Analysis</h3>
+                    <p class="card__description">Find web security vulnerabilities by using Burp suite tool</p>
                 </div>
             </div>
-            <div class="card">
-                <span class="card-icon-wrapper">👨‍💻</span>
-                <div class="card-info">
-                    <h3 class="card-title">Computational Thinking</h3>
-                    <p class="card-description">Solve complex problems by applying CT principles</p>
+            <div class="card card--about">
+                <span class="card__emoji">👨‍💻</span>
+                <div class="card__info">
+                    <h3 class="card__title">Computational Thinking</h3>
+                    <p class="card__description">Solve complex problems by applying CT principles</p>
                 </div>
             </div>
-            <div class="card">
-                <span class="card-icon-wrapper">⚡</span>
-                <div class="card-info">
-                    <h3 class="card-title">Data Structure and Algorithm</h3>
-                    <p class="card-description">Develop web applications more efficient and reliable</p>
+            <div class="card card--about">
+                <span class="card__emoji">⚡</span>
+                <div class="card__info">
+                    <h3 class="card__title">Data Structure and Algorithm</h3>
+                    <p class="card__description">Develop web applications more efficient and reliable</p>
                 </div>
             </div>
-            <div class="card">
-                <span class="card-icon-wrapper">🤝</span>
-                <div class="card-info">
-                    <h3 class="card-title">Team Collaboration</h3>
-                    <p class="card-description">Better team collaboration by using Github</p>
+            <div class="card card--about">
+                <span class="card__emoji">🤝</span>
+                <div class="card__info">
+                    <h3 class="card__title">Team Collaboration</h3>
+                    <p class="card__description">Better team collaboration by using Github</p>
                 </div>
             </div>
-            <div class="card">
-                <span class="card-icon-wrapper">⚙️</span>
-                <div class="card-info">
-                    <h3 class="card-title">Automation</h3>
-                    <p class="card-description">Using python for automation scripts</p>
+            <div class="card card--about">
+                <span class="card__emoji">⚙️</span>
+                <div class="card__info">
+                    <h3 class="card__title">Automation</h3>
+                    <p class="card__description">Using python for automation scripts</p>
                 </div>
             </div>
-            <div class="card">
-                <span class="card-icon-wrapper">🚀</span>
-                <div class="card-info">
-                    <h3 class="card-title">Keep Learning</h3>
-                    <p class="card-description">Stay up to date with latest technologies</p>
+            <div class="card card--about">
+                <span class="card__emoji">🚀</span>
+                <div class="card__info">
+                    <h3 class="card__title">Keep Learning</h3>
+                    <p class="card__description">Stay up to date with latest technologies</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Section - Technology -->
-    <section class="technology-section">
+    <section class="technology">
         <h2 class="subheading">Technology</h2>
         <div class="cards-wrapper">
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon figma-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">Figma</h3>
-                    <p class="card-description">Design and Prototype</p>
+                <div class="card__info">
+                    <h3 class="card__title">Figma</h3>
+                    <p class="card__description">Design and Prototype</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon html-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">HTML</h3>
-                    <p class="card-description">Structure and Semantic</p>
+                <div class="card__info">
+                    <h3 class="card__title">HTML</h3>
+                    <p class="card__description">Structure and Semantic</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon css-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">CSS</h3>
-                    <p class="card-description">Styling and Responsive</p>
+                <div class="card__info">
+                    <h3 class="card__title">CSS</h3>
+                    <p class="card__description">Styling and Responsive</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon javascript-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">JavaScript</h3>
-                    <p class="card-description">Dynamic and Logic</p>
+                <div class="card__info">
+                    <h3 class="card__title">JavaScript</h3>
+                    <p class="card__description">Dynamic and Logic</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon sql-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">SQL</h3>
-                    <p class="card-description">Database Management</p>
+                <div class="card__info">
+                    <h3 class="card__title">SQL</h3>
+                    <p class="card__description">Database Management</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon react-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">React</h3>
-                    <p class="card-description">Single Page Application</p>
+                <div class="card__info">
+                    <h3 class="card__title">React</h3>
+                    <p class="card__description">Single Page Application</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon redux-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">Redux</h3>
-                    <p class="card-description">State Management</p>
+                <div class="card__info">
+                    <h3 class="card__title">Redux</h3>
+                    <p class="card__description">Advanced State Management</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon tailwind-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">Tailwind CSS</h3>
-                    <p class="card-description">CSS Utilities Classes</p>
+                <div class="card__info">
+                    <h3 class="card__title">Tailwind CSS</h3>
+                    <p class="card__description">CSS Utilities Classes</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon nextjs-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">Next JS</h3>
-                    <p class="card-description">Full-stack Framework</p>
+                <div class="card__info">
+                    <h3 class="card__title">Next JS</h3>
+                    <p class="card__description">Full-stack Framework</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon nodejs-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">Node JS</h3>
-                    <p class="card-description">Server-side JS</p>
+                <div class="card__info">
+                    <h3 class="card__title">Node JS</h3>
+                    <p class="card__description">Server-side JavaScript</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon expressjs-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">Express JS</h3>
-                    <p class="card-description">API Development</p>
+                <div class="card__info">
+                    <h3 class="card__title">Express JS</h3>
+                    <p class="card__description">API Development</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon mongodb-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">MongoDB</h3>
-                    <p class="card-description">NoSQL Database</p>
+                <div class="card__info">
+                    <h3 class="card__title">MongoDB</h3>
+                    <p class="card__description">NoSQL Database</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon typescript-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">TypeScript</h3>
-                    <p class="card-description">Type Safety JavaScript</p>
+                <div class="card__info">
+                    <h3 class="card__title">TypeScript</h3>
+                    <p class="card__description">Type Safe JavaScript</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon python-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">Python</h3>
-                    <p class="card-description">Automation</p>
+                <div class="card__info">
+                    <h3 class="card__title">Python</h3>
+                    <p class="card__description">Automation</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon postman-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">Postman</h3>
-                    <p class="card-description">API Testing</p>
+                <div class="card__info">
+                    <h3 class="card__title">Postman</h3>
+                    <p class="card__description">API Testing</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card card--technology">
                 <span class="icon burpsuite-icon"></span>
-                <div class="card-info">
-                    <h3 class="card-title">Burp Suite</h3>
-                    <p class="card-description">Web Security Analysis</p>
+                <div class="card__info">
+                    <h3 class="card__title">Burp Suite</h3>
+                    <p class="card__description">Web Security Analysis</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Project Section -->
-    <section id="project" class="project-section">
+    <section id="project" class="project">
         <h2 class="subheading">Project</h2>
         <div class="cards-wrapper">
-            <a class="card" href="https://malik-portfolio.github.io/number-magic-game" target="_blank">
-                <div class="card-info">
-                    <h3 class="card-title">Number Magic Game</h3>
-                    <p class="card-description">In this game the user thinks a number in a range. The computer will show
-                        some numbers grid slides and ask that the number is available in the slide. After getting
-                        answers by the user, the computer will guess the number and display it.</p>
-                    <div class="card-arrow">👉</div>
-                </div>
+            <a class="card card--project" href="https://malik-portfolio.github.io/number-magic-game" target="_blank">
+                <h3 class="card__title">Number Magic Game</h3>
+                <p class="card__description">In this game the user thinks a number in a range. The computer will
+                    show
+                    some numbers grid slides and ask that the number is available in the slide. After getting
+                    answers by the user, the computer will guess the number and display it.</p>
+                <div class="card__arrow">👉</div>
             </a>
         </div>
     </section>
-
-    <!-- <header class="profile-section">
-        <img class="profile-picture" src="assets/profile-picture.webp" alt="malik jahanzaib front end engineer">
-        <div class="profile-title">
-            <div class="profile-name">Malik Jahanzaib</div>
-            <h1 class="profile-career">Software Engineer</h1>
-        </div>
-        <div class="social-links-container">
-            <a class="social-link" href="mailto:malic.jahan@gmail.com" target="_blank" title="Gmail">
-            </a>
-            <a class="social-link" href="https://wa.me/923032791874" target="_blank" title="Whatsapp">
-            </a>
-            <a class="social-link"
-                href="https://pk.linkedin.com/in/malik-jahanzaib-15807016a?trk=people-guest_people_search-card"
-                target="_blank" title="Linkedin">
-            </a>
-            <a class="social-link" href="https://github.com/malik-portfolio" target="_blank" title="Github">
-            </a>
-        </div>
-        <a class="certificate-link"
-            href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
-            target="_blank" title="Certificate">Certificate</a>
-    </header>
-
-    <main class="introduction-section">
-        <h2 class="introduction-title">Turn your <strong>idea</strong> into <strong>software</strong> product</h2>
-        <p class="introduction-description">Welcome my name is Malik Jahanzaib and I am a software engineer specific to
-            web development living in Pakistan. I am using modern technologies like Figma for design & prototype, React,
-            Redux, Tailwind CSS & TypeScript for front-end development, MERN stack or Next JS for back-end development
-            and Git for version control. I can also work on databases mostly MongoDB and PostgreSQL. I am also familiar
-            with Python programming language. I can also analyze web security by using the BurpSuite tool. Whenever I
-            deal with a problem I try to apply computation thinking principles and data structures & algorithms to find
-            better solutions. I can also collaborate with the team by using Github. I am currently working on various
-            projects and deploy them as soon as they are developed. </p>
-        <div class="project-links-container">
-            <a class="project-link" href="https://malik-portfolio.github.io/number-magic-game" target="_blank">🚀 Number
-                Magic Game</a>
-        </div>
-    </main> -->
-
-
 
 </body>
 

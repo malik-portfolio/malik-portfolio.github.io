@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+:root {
+    font-size: 16px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -15,10 +19,6 @@ p {
 }
 
 /* Global */
-:root {
-    font-size: 16px;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -26,29 +26,106 @@ body {
     background-color: #1B1B1F;
     color: white;
     padding: 8rem 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header,
 section {
-    max-width: 70rem;
+    max-width: 80rem;
     margin: 0 auto;
 }
 
+/* Profile */
+.profile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.profile__picture {
+    flex: 1;
+}
+
+.profile__picture img {
+    display: block;
+    margin: 0 auto;
+    width: 10rem;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 10rem springgreen);
+    opacity: 0.75;
+}
+
+.profile__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+}
+
+.profile__title {
+    color: #fffd;
+    margin-bottom: 0.5rem;
+}
+
+.profile__subtitle {
+    color: #fff7;
+}
+
+.profile__links-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
+.profile__buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.profile__social-links-wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Icons */
 .icon {
     display: inline-block;
     width: 2rem;
     height: 2rem;
 }
 
+/* Subheading */
 .subheading {
     text-align: center;
     font-size: 2rem;
     opacity: 0.75;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     text-transform: uppercase;
 }
 
+/* Buttons */
+.button {
+    padding: 0.75rem 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 18rem;
+    text-align: center;
+}
+
+.button--primary {
+    background-color: darkorange;
+    color: black;
+}
+
+.button--secondary {
+    border: 1px solid white;
+}
+
+
+/* Card */
 .cards-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -58,16 +135,28 @@ section {
 
 .card {
     display: flex;
-    flex-direction: column;
     gap: 1.5rem;
     width: 100%;
     background-color: #202127;
     border-radius: 0.5rem;
     padding: 1rem;
-    max-width: 20rem;
+    max-width: 22rem;
 }
 
-.card-icon-wrapper {
+.card--about {
+    flex-direction: column;
+}
+
+.card--technology {
+    align-items: center;
+}
+
+.card--project {
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card__emoji {
     display: block;
     width: fit-content;
     border-radius: 0.25rem;
@@ -76,143 +165,55 @@ section {
     padding: 0.5rem;
 }
 
-.card-title {
+.card__title {
     color: #fffd;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
-.card-description {
+.card__description {
     color: #fff7;
 }
 
-/* Profile Section */
-.profile-section {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 4rem;
+.card__arrow {
+    font-size: 2rem;
 }
 
-.profile-picture-wrapper {
-    flex: 1;
-}
 
-.profile-picture {
-    display: block;
-    margin: 0 auto;
-    width: 10rem;
-    border-radius: 50%;
-    filter: drop-shadow(0 0 8rem springgreen);
-}
-
-.profile-info {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    flex: 1;
-}
-
-.profile-title {
-    color: #fffd;
-    margin-bottom: 0.5rem;
-    font-size: 3rem;
-}
-
-.profile-subtitle {
-    color: #fff7;
-}
-
-.profile-links-wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 1rem;
-}
-
-.social-links-wrapper {
-    display: flex;
-    gap: 1rem;
-}
-
-.profile-btn-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: center;
-}
-
-.project-btn {
-    background-color: darkorange;
-    padding: 0.75rem 2rem;
-    color: black;
-    font-weight: bold;
-    opacity: 0.75;
-    text-transform: uppercase;
-}
-
-.certificate-btn {
-    padding: 0.75rem 2rem;
-    opacity: 0.75;
-    border: 1px solid white;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-/* About Section */
-
-/* Technology Section */
-.technology-section .card {
-    flex-direction: row;
-    align-items: center;
-}
-
-.technology-section .card-title {
-    margin-bottom: 0;
-}
-
-/* Project Section */
-.card-arrow {
-    font-size: 1.5rem;
-    text-align: right;
-}
-
-/* Responsive */
-@media screen and (min-width:500px) {
+/* Responsive - Tablet*/
+@media screen and (min-width:600px) {
     body {
         padding: 8rem 2rem;
     }
-}
 
-@media screen and (min-width:750px) {
-
-
-    .profile-picture {
+    .profile__picture img {
         width: 14rem;
     }
+
+    .profile__title {
+        font-size: 3rem;
+    }
 }
 
+/* Responsive - Laptop or Desktop */
 @media screen and (min-width:1000px) {
-    body {
-        padding: 8rem 4rem;
-    }
-
-    .profile-section {
+    .profile {
         flex-direction: row-reverse;
     }
 
-    .profile-picture {
+    .profile__picture img {
         width: 18rem;
     }
 
-    .profile-section .icon:hover {
+    .profile .icon:hover {
         transform: scale(1.25);
     }
 
-    .project-btn:hover {
+    .button:hover {
         background-color: white;
     }
 
-    .certificate-btn:hover {
-        background-color: white;
+    .button--secondary:hover {
+        border-color: white;
         color: black;
     }
 }
