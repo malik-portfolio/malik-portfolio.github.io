@@ -18,15 +18,8 @@ p {
     line-height: 1.5;
 }
 
-/* Global */
-body {
-    display: flex;
-    flex-direction: column;
-    gap: 8rem;
-    background-color: #1B1B1F;
-    color: white;
-    padding: 4rem 1rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+strong {
+    color: mediumseagreen;
 }
 
 header,
@@ -35,25 +28,44 @@ section {
     margin: 0 auto;
 }
 
+/* Global */
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    background-color: black;
+    color: white;
+    padding: 4rem 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Profile */
 .profile {
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 4rem;
+    margin: 4rem 0;
+    gap: 6rem;
 }
 
 .profile__picture {
     flex: 1;
 }
 
+.profile__picture-background {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: mediumseagreen;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    border-radius: 6rem;
+}
+
 .profile__picture img {
     display: block;
     margin: 0 auto;
-    width: 12rem;
+    width: 10rem;
     border-radius: 50%;
-    box-shadow: 0 0 20rem 5rem mediumseagreen;
-    filter: brightness(90%);
 }
 
 .profile__info {
@@ -66,7 +78,7 @@ section {
 .profile__title {
     color: #fffd;
     margin-bottom: 0.5rem;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .profile__subtitle {
@@ -75,13 +87,13 @@ section {
 
 .profile__links-container {
     display: flex;
-    flex-direction: column-reverse;
-    gap: 1rem;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .profile__buttons-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 1rem;
     align-items: center;
 }
@@ -112,8 +124,8 @@ section {
     padding: 0.75rem 2rem;
     font-weight: bold;
     text-transform: uppercase;
-    width: 100%;
     text-align: center;
+    width: 100%;
 }
 
 .button--primary {
@@ -181,13 +193,19 @@ section {
 
 
 /* Responsive - Tablet*/
-@media screen and (min-width:600px) {
-    body {
-        padding: 4rem;
+@media screen and (min-width:500px) {
+    .profile__buttons-container {
+        flex-direction: row;
     }
 
     .button {
-        width: 15rem;
+        width: 12rem;
+    }
+}
+
+@media screen and (min-width:700px) {
+    body {
+        padding-inline: 4rem;
     }
 }
 
@@ -195,14 +213,34 @@ section {
 @media screen and (min-width:1000px) {
     .profile {
         flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .profile__info {
+        flex: 2;
+    }
+
+    .profile__subtitle {
+        max-width: 60ch;
     }
 
     .profile__picture img {
-        width: 18rem;
+        width: 14rem;
+    }
+
+    .profile__picture-background {
+        border-radius: 7.25rem;
     }
 
     .profile .icon:hover {
         transform: scale(1.25);
+    }
+
+    .profile__links-container {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: start;
     }
 
     .button:hover {
