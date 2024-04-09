@@ -44,7 +44,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 4rem 0;
+    margin: 4rem auto;
     gap: 6rem;
 }
 
@@ -108,6 +108,8 @@ body {
     display: inline-block;
     width: 2rem;
     height: 2rem;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Subheading */
@@ -189,10 +191,11 @@ body {
 
 .card__arrow {
     font-size: 2rem;
+    text-align: right;
 }
 
 
-/* Responsive - Tablet*/
+/* Responsive */
 @media screen and (min-width:500px) {
     .profile__buttons-container {
         flex-direction: row;
@@ -209,7 +212,6 @@ body {
     }
 }
 
-/* Responsive - Laptop or Desktop */
 @media screen and (min-width:1000px) {
     .profile {
         flex-direction: row-reverse;
@@ -218,10 +220,6 @@ body {
 
     .profile__info {
         flex: 2;
-    }
-
-    .profile__subtitle {
-        max-width: 60ch;
     }
 
     .profile__picture img {
@@ -250,6 +248,12 @@ body {
     .button--secondary:hover {
         border-color: white;
         color: black;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    :root {
+        font-size: 24px;
     }
 }
 
