@@ -5,50 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="My name is Malik Jahanzaib and I am a software engineer focus on web application development. I am  professionally certified by Codecademy. This is my portfolio website here I showcase my skills and projects." />
+        content="My name is Malik Jahanzaib and I am a professional certified front-end engineer from codecademy one of the top learning platforms for the tech industry. This is my portfolio website here I showcase my skills and projects." />
     <link rel="stylesheet" href="style.css" />
-    <title>Malik Jahanzaib | Software Engineer</title>
+    <title>Malik Jahanzaib | Front-end Engineer</title>
 </head>
 
 <body>
     <!-- Hero Section -->
     <header class="profile">
-        <div class="profile__picture">
-            <div class="profile__picture-background">
-                <img src="assets/profile-picture.webp" alt="malik jahanzaib front end engineer">
+        <div class="profile__card">
+            <img class="profile__picture" src="assets/profile-picture.webp" alt="malik jahanzaib front end engineer">
+            <div class="profile__name">Malik Jahanzaib</div>
+            <div class="profile__career">Front End Engineer</div>
+            <div class="social-links-wrapper">
+                <a class="profile__social-link" href="mailto:malic.jahan@gmail.com" target="_blank" title="Gmail">
+                    <span class="icon gmail-icon"></span>
+                </a>
+                <a class="profile__social-link" href="https://wa.me/923032791874" target="_blank" title="Whatsapp">
+                    <span class="icon whatsapp-icon"></span>
+                </a>
+                <a class="profile__social-link"
+                    href="https://pk.linkedin.com/in/malik-jahanzaib-15807016a?trk=people-guest_people_search-card"
+                    target="_blank" title="Linkedin">
+                    <span class="icon linkedin-icon"></span>
+                </a>
+                <a class="profile__social-link" href="https://github.com/malik-portfolio" target="_blank"
+                    title="Github">
+                    <span class="icon github-icon"></span>
+                </a>
             </div>
         </div>
         <div class="profile__info">
-            <h1 class="profile__title">Turn your <strong>idea</strong> from design to <strong>software</strong> product
-            </h1>
-            <p class="profile__subtitle">Hi! I'm Malik Jahanzaib, a software engineer crafting user-friendly web apps. I
-                design with Figma, build UIs with React and Tailwind CSS, and utilize MERN stack or Next.js for
-                full-stack development with TypeScript for top-notch code. My expertise in computational thinking and
-                web security analysis ensures I build secure and well-built applications.</p>
-            <div class="links-container">
-                <div class="social-links-wrapper">
-                    <a class="profile__social-link" href="mailto:malic.jahan@gmail.com" target="_blank" title="Gmail">
-                        <span class="icon gmail-icon"></span>
-                    </a>
-                    <a class="profile__social-link" href="https://wa.me/923032791874" target="_blank" title="Whatsapp">
-                        <span class="icon whatsapp-icon"></span>
-                    </a>
-                    <a class="profile__social-link"
-                        href="https://pk.linkedin.com/in/malik-jahanzaib-15807016a?trk=people-guest_people_search-card"
-                        target="_blank" title="Linkedin">
-                        <span class="icon linkedin-icon"></span>
-                    </a>
-                    <a class="profile__social-link" href="https://github.com/malik-portfolio" target="_blank"
-                        title="Github">
-                        <span class="icon github-icon"></span>
-                    </a>
-                </div>
-                <div class="buttons-container">
-                    <a class="button button--primary" href="#project">Project</a>
-                    <a class="button button--secondary"
-                        href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
-                        target="_blank">Certificate</a>
-                </div>
+            <h1 class="profile__title">Turn your idea from design to web application</h1>
+            <p class="profile__subtitle">Welcome, my name is Malik Jahanzaib and I am a front-end engineer professional
+                certified by codecademy one of the top learning platforms for the tech industry. Using modern
+                technologies like Figma, React, Redux, Tailwind CSS and TypeScript. I am also a self-taught back-end
+                developer using the MERN stack</p>
+            <div class="buttons-container">
+                <a class="button button--primary" href="#project">Project</a>
+                <a class="button button--secondary"
+                    href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
+                    target="_blank">Certificate</a>
             </div>
         </div>
     </header>
@@ -58,11 +55,19 @@
         <h2 class="subheading">About</h2>
         <div class="cards-wrapper">
             <div class="card card--about">
+                <span class="card__emoji">🏆</span>
+                <div class="card__info">
+                    <h3 class="card__title">Certification</h3>
+                    <p class="card__description">Professional certified front-end engineer by codecademy one of the top
+                        learning platforms for the tech industry</p>
+                </div>
+            </div>
+            <div class="card card--about">
                 <span class="card__emoji">🎓</span>
                 <div class="card__info">
-                    <h3 class="card__title">Qualification</h3>
-                    <p class="card__description">Professional certified front-end engineer by codecademy and graduate
-                        in M.Ed. from AIOU, Islamabad, Pakistan</p>
+                    <h3 class="card__title">Graduation</h3>
+                    <p class="card__description">Graduate in M.Ed (Teacher Education) from Allama
+                        Iqbal Open University, Islamabad, Pakistan</p>
                 </div>
             </div>
             <div class="card card--about">
@@ -74,33 +79,41 @@
                 </div>
             </div>
             <div class="card card--about">
-                <span class="card__emoji">⭐</span>
-                <div class="card__info">
-                    <h3 class="card__title">UI / UX Designer</h3>
-                    <p class="card__description">I am comfortable on working UI / UX design by using the Figma
-                        tool. To make the user experience better</p>
-                </div>
-            </div>
-            <div class="card card--about">
                 <span class="card__emoji">🖥️</span>
                 <div class="card__info">
                     <h3 class="card__title">Front End Engineer</h3>
-                    <p class="card__description">My main role as a Front-end Engineer by using React, Redux, Tailwind
-                        CSS and TypeScript for client-side development</p>
+                    <p class="card__description">My main role as a Front-end Engineer by using Figma, React, Redux,
+                        Tailwind CSS and TypeScript</p>
+                </div>
+            </div>
+            <div class="card card--about">
+                <span class="card__emoji">⭐</span>
+                <div class="card__info">
+                    <h3 class="card__title">UI / UX Designer</h3>
+                    <p class="card__description">I am comfortable working on UI/UX design by using the Figma
+                        tool. To make the user experience better</p>
                 </div>
             </div>
             <div class="card card--about">
                 <span class="card__emoji">🌏</span>
                 <div class="card__info">
-                    <h3 class="card__title">Back End Developer</h3>
-                    <p class="card__description">I am comfortable on working server-side application development by
-                        using Next JS or MERN stack</p>
+                    <h3 class="card__title">Understanding of Back End</h3>
+                    <p class="card__description">Understanding back-end development by using MERN stack or
+                        Next JS helps me to deal with full-stack applications</p>
+                </div>
+            </div>
+            <div class="card card--about">
+                <span class="card__emoji">⚡</span>
+                <div class="card__info">
+                    <h3 class="card__title">Understanding of DSA</h3>
+                    <p class="card__description">I have an understanding of the most common data structures and
+                        algorithms to make the application efficient </p>
                 </div>
             </div>
             <div class="card card--about">
                 <span class="card__emoji">🕵</span>
                 <div class="card__info">
-                    <h3 class="card__title">Web Security Analyst</h3>
+                    <h3 class="card__title">Web Security Analysis</h3>
                     <p class="card__description">By using the Burpsuite tool I try my best to find web security
                         vulnerabilities to make web applications secure</p>
                 </div>
@@ -111,14 +124,6 @@
                     <h3 class="card__title">Computational Thinking</h3>
                     <p class="card__description">For solving complex problems I use CT principles which are
                         decomposition, pattern recognition, abstraction and algorithm</p>
-                </div>
-            </div>
-            <div class="card card--about">
-                <span class="card__emoji">⚡</span>
-                <div class="card__info">
-                    <h3 class="card__title">Data Structure and Algorithm</h3>
-                    <p class="card__description">I have an understanding of the most common data structures and
-                        algorithms to make the application efficient </p>
                 </div>
             </div>
             <div class="card card--about">
@@ -257,7 +262,7 @@
         <div class="cards-wrapper">
             <a class="card card--project" href="https://malik-portfolio.github.io/number-magic-game" target="_blank">
                 <h3 class="card__title">Number Magic Game</h3>
-                <p class="card__description">In this game, the user thinks a number in a range. The computer will
+                <p class="card__description">In this game, the user thinks of a number in a range. The computer will
                     show some numbers grid slides and ask that the number be available in the slide. After getting
                     answers from the user, the computer will guess the number and display it.</p>
                 <div class="card__arrow">👉</div>
