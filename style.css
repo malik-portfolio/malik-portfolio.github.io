@@ -137,14 +137,6 @@ section {
         transform: scale(1.25);
     }
 
-    .button--primary:hover {
-        background-color: white;
-    }
-
-    .button--secondary:hover {
-        border-color: white;
-        color: black;
-    }
 }
 
 /* Subheading */
@@ -171,9 +163,20 @@ section {
 }
 
 .button--secondary {
-    border: 1px solid white;
+    border: 1px solid floralwhite;
 }
 
+@media screen and (min-width:1000px) {
+    .button--primary:hover {
+        background-color: floralwhite;
+    }
+
+    .button--secondary:hover {
+        border-color: floralwhite;
+        background-color: floralwhite;
+        color: black;
+    }
+}
 
 /* Card */
 .cards-wrapper {
