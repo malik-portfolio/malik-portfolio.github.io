@@ -13,8 +13,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8rem;
-    background-color: black;
-    color: floralwhite;
+    background-color: #EEEEEE;
+    color: #222831;
     padding: 4rem 1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -24,16 +24,15 @@ a {
     color: inherit;
 }
 
-p {
-    line-height: 1.5;
-    opacity: 0.5;
+li {
+    list-style: none;
+    margin: 1rem 0;
 }
 
 strong {
     color: mediumseagreen;
 }
 
-header,
 section {
     max-width: 80rem;
     margin: 0 auto;
@@ -48,29 +47,22 @@ section {
     background-size: cover;
 }
 
-@media screen and (min-width:1000px) {
-    body {
-        padding: 8rem 4rem;
-    }
+.subheading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: #00ADB5;
 }
 
-@media screen and (min-width: 2000px) {
-    :root {
-        font-size: 24px;
-    }
-}
-
-
-/* Profile */
-.profile {
+.profile-section {
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 4rem;
 }
 
-.profile__card {
-    background-color: mediumseagreen;
+.profile-card {
     border-radius: 2rem;
     padding: 4rem 2rem;
     text-align: center;
@@ -78,21 +70,20 @@ section {
 }
 
 
-.profile__picture {
+.profile-picture {
     display: block;
     margin: 0 auto;
     width: 10rem;
     border-radius: 50%;
-    border: 0.25rem solid black;
     margin-bottom: 1rem;
 }
 
-.profile__name {
+.profile-name {
     font-size: 2rem;
     font-weight: bold;
 }
 
-.profile__career {
+.profile-career {
     font-size: 1.5rem;
 }
 
@@ -103,9 +94,30 @@ section {
     gap: 1rem;
 }
 
-.profile__title {
-    margin-bottom: 2rem;
+.social-icon {
+    display: inline-block;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.profile-title {
     font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.subtitle-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    gap: 1rem;
+    line-height: 1.5;
+}
+
+.subtitle-icon {
+    width: 2rem;
+    flex-shrink: 0;
 }
 
 .buttons-container {
@@ -115,135 +127,146 @@ section {
     margin-top: 2rem;
 }
 
-@media screen and (min-width:1000px) {
-    .profile {
-        flex-direction: row;
-        align-items: end;
-    }
-
-    .profile__card {
-        flex: 1 0 20rem;
-    }
-
-    .profile__title {
-        font-size: 4rem;
-    }
-
-    .profile__subtitle {
-        width: 75%;
-    }
-
-    .profile .icon:hover {
-        transform: scale(1.25);
-    }
-
-}
-
-/* Subheading */
-.subheading {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    color: mediumseagreen;
-}
-
-/* Buttons */
 .button {
     padding: 0.75rem 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
 }
 
-.button--primary {
-    background-color: darkorange;
-    color: black;
+.button-project {
+    background-color: #00ADB5;
+    border: 1px solid #222831;
 }
 
-.button--secondary {
-    border: 1px solid floralwhite;
+.button-certificate {
+    border: 1px solid #222831;
 }
 
-@media screen and (min-width:1000px) {
-    .button--primary:hover {
-        background-color: floralwhite;
-    }
-
-    .button--secondary:hover {
-        border-color: floralwhite;
-        background-color: floralwhite;
-        color: black;
-    }
-}
-
-/* Card */
-.cards-wrapper {
+.technology-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
-.card {
+.technology-card {
     display: flex;
-    gap: 1.5rem;
-    width: 100%;
-    background-color: #202127;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    max-width: 22rem;
-}
-
-.card--about {
     flex-direction: column;
-}
-
-.card--technology {
     align-items: center;
-}
-
-.card--project {
-    flex-direction: column;
+    justify-content: center;
     gap: 1rem;
-}
-
-.card__emoji {
-    display: block;
-    width: fit-content;
-    border-radius: 0.25rem;
-    background-color: #fff2;
-    font-size: 1.5rem;
     padding: 0.5rem;
+    background-color: #222831;
+    border-radius: 0.25rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 0.5rem;
 }
 
-.card__title {
+.technology-icon {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background-size: cover;
+}
+
+.technology-title {
+    color: #EEEEEE;
     font-weight: normal;
+    font-size: 1rem;
 }
 
-.about .card__title {
+.project-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 2rem;
+    width: 100%;
+}
+
+.project-card {
+    width: 18rem;
+    background-color: #00ADB5;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: black;
+
+}
+
+.project-title {
+    font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
 
-.card__arrow {
+.project-description {
+    line-height: 1.75;
+}
+
+.project-arrow {
     font-size: 2rem;
 }
 
 @media screen and (min-width:1000px) {
-    .card--project:hover {
-        background-color: rgba(255, 255, 255, 0.75);
+    body {
+        padding: 8rem 4rem;
+    }
 
-        .card__title,
-        .card__description {
-            color: black;
+    .profile-section {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .profile-card {
+        flex: 1 0 20rem;
+    }
+
+    .profile-title {
+        font-size: 4rem;
+    }
+
+    .profile-subtitle {
+        width: 75%;
+    }
+
+    .social-icon:hover {
+        transform: scale(1.25);
+    }
+
+    .button-project:hover,
+    .button-certificate:hover {
+        box-shadow: 0 0.15rem 0.25rem #222831;
+        transform: scale(1.05);
+    }
+
+    .project-card:hover {
+        background-color: #222831;
+
+        .project-title,
+        .project-description {
+            color: #EEEEEE;
+        }
+
+        .project-arrow {
+            text-align: right;
         }
     }
 
-    .card--project:hover .card__arrow {
-        text-align: right;
+    .technology-card:hover {
+        transform: scale(1.5);
+        box-shadow: 0 0 1rem black;
     }
 }
+
+
+
+@media screen and (min-width: 2000px) {
+    :root {
+        font-size: 24px;
+    }
+}
+
 
 /* Icons */
 .gmail-icon {
@@ -295,7 +318,7 @@ section {
 }
 
 .nextjs-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3e%3cg clip-path='url(%23a)'%3e%3cpath fill='%23EEE' d='M23.749 30.005c-.119.063-.109.083.005.025a.31.31 0 0 0 .095-.061c0-.021 0-.021-.1.036Zm.24-.13c-.057.047-.057.047.011.016a.249.249 0 0 0 .068-.047c0-.027-.016-.021-.079.031Zm.156-.094c-.057.047-.057.047.011.016a.246.246 0 0 0 .068-.048c0-.025-.016-.02-.079.032Zm.158-.093c-.057.047-.057.047.009.015.037-.02.068-.041.068-.047 0-.025-.016-.02-.077.032Zm.213-.141c-.109.073-.147.12-.047.068.067-.041.181-.131.161-.131-.043.016-.079.043-.115.063h.001ZM14.953.011c-.073.005-.292.025-.484.041-4.548.412-8.803 2.86-11.5 6.631a15.828 15.828 0 0 0-2.824 6.989c-.129.88-.145 1.14-.145 2.333 0 1.192.016 1.448.145 2.328.871 6.011 5.147 11.057 10.943 12.927 1.043.333 2.136.563 3.381.704.484.052 2.577.052 3.061 0 2.152-.24 3.969-.771 5.767-1.688.276-.14.328-.177.291-.208a340.89 340.89 0 0 1-2.609-3.495l-2.557-3.453-3.203-4.745a416.396 416.396 0 0 0-3.229-4.744c-.011 0-.025 2.109-.031 4.681-.011 4.505-.011 4.688-.068 4.792a.572.572 0 0 1-.276.287c-.099.047-.188.057-.661.057h-.541l-.141-.088a.595.595 0 0 1-.208-.229l-.068-.141.005-6.271.011-6.271.099-.125a.753.753 0 0 1 .229-.187c.131-.063.183-.073.724-.073.635 0 .74.025.907.208a602.855 602.855 0 0 1 3.859 5.812c2.079 3.152 4.917 7.453 6.312 9.563l2.537 3.839.125-.083a16.346 16.346 0 0 0 3.285-2.885 15.935 15.935 0 0 0 3.767-8.177c.129-.88.145-1.141.145-2.333 0-1.193-.016-1.448-.145-2.328C30.985 7.668 26.709 2.622 20.913.751a16.983 16.983 0 0 0-3.328-.697c-.303-.031-2.371-.068-2.631-.041l-.001-.002ZM21.5 9.688a.623.623 0 0 1 .317.364c.027.084.032 1.823.027 5.74l-.011 5.624-.989-1.52-.995-1.521v-4.083c0-2.647.011-4.131.025-4.204a.67.67 0 0 1 .313-.395c.124-.063.172-.068.667-.068.463 0 .542.005.646.063Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h32v32H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><circle cx="64" cy="64" r="64"/><path fill="url(%23a)" d="M106.317 112.014 49.167 38.4H38.4v51.179h8.614v-40.24l52.54 67.884a64.216 64.216 0 0 0 6.763-5.209z"/><path fill="url(%23b)" d="M81.778 38.4h8.533v51.2h-8.533z"/><defs><linearGradient id="a" x1="109" x2="144.5" y1="116.5" y2="160.5" gradientTransform="scale(.71111)" gradientUnits="userSpaceOnUse"><stop stop-color="%23fff"/><stop offset="1" stop-color="%23fff" stop-opacity="0"/></linearGradient><linearGradient id="b" x1="121" x2="120.799" y1="54" y2="106.875" gradientTransform="scale(.71111)" gradientUnits="userSpaceOnUse"><stop stop-color="%23fff"/><stop offset="1" stop-color="%23fff" stop-opacity="0"/></linearGradient></defs></svg>');
 }
 
 .nodejs-icon {
@@ -303,7 +326,7 @@ section {
 }
 
 .expressjs-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3e%3cg clip-path='url(%23a)'%3e%3cpath fill='%23EEE' d='M32 24.784a2.039 2.039 0 0 1-2.527-.96l-4.6-6.361-.666-.89-5.338 7.259a1.955 1.955 0 0 1-2.402.944l6.877-9.227-6.397-8.334a2.127 2.127 0 0 1 2.533.888l4.768 6.44 4.795-6.414a1.913 1.913 0 0 1 2.384-.89l-2.483 3.294-3.363 4.378a.888.888 0 0 0 0 1.325l6.406 8.55.013-.002ZM.003 15.434l.56-2.766c1.538-5.47 7.81-7.747 12.125-4.36 2.527 1.985 3.157 4.796 3.033 7.964H1.488c-.23 5.657 3.852 9.073 9.072 7.328a5.437 5.437 0 0 0 3.443-3.835c.276-.888.73-1.04 1.565-.784a7.223 7.223 0 0 1-3.452 5.276 8.362 8.362 0 0 1-9.741-1.244A8.766 8.766 0 0 1 .188 17.87c0-.313-.107-.606-.179-.888-.006-.515-.01-1.03-.009-1.545l.003-.001Zm1.502-.38h12.872c-.08-4.102-2.668-7.011-6.12-7.038-3.842-.053-6.592 2.792-6.761 7.019l.01.018Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h32v32H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' viewBox='0 0 32 32'%3e%3cg clip-path='url(%23a)'%3e%3cpath fill='%23eee' d='M32 24.784a2.039 2.039 0 0 1-2.527-.96l-4.6-6.361-.666-.89-5.338 7.259a1.955 1.955 0 0 1-2.402.944l6.877-9.227-6.397-8.334a2.127 2.127 0 0 1 2.533.888l4.768 6.44 4.795-6.414a1.913 1.913 0 0 1 2.384-.89l-2.483 3.294-3.363 4.378a.888.888 0 0 0 0 1.325l6.406 8.55.013-.002ZM.003 15.434l.56-2.766c1.538-5.47 7.81-7.747 12.125-4.36 2.527 1.985 3.157 4.796 3.033 7.964H1.488c-.23 5.657 3.852 9.073 9.072 7.328a5.437 5.437 0 0 0 3.443-3.835c.276-.888.73-1.04 1.565-.784a7.223 7.223 0 0 1-3.452 5.276 8.362 8.362 0 0 1-9.741-1.244A8.766 8.766 0 0 1 .188 17.87c0-.313-.107-.606-.179-.888-.006-.515-.01-1.03-.009-1.545l.003-.001Zm1.502-.38h12.872c-.08-4.102-2.668-7.011-6.12-7.038-3.842-.053-6.592 2.792-6.761 7.019l.01.018Z'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='a'%3e%3cpath fill='white' d='M0 0h32v32H0z'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
 }
 
 .mongodb-icon {
