@@ -62,11 +62,8 @@ section {
 
 /* Profile - Card */
 .profile-card {
-    border-radius: 2rem;
-    padding: 4rem 2rem;
     text-align: center;
     color: black;
-    min-height: 100dvh;
 }
 
 .profile-picture {
