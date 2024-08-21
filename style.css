@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+/* || Universal Styles */
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --green: #0F9D58;
+    --yellow: #F4B400;
+    --blue: #4285F4;
+    --red: #DB4437;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: transparent;
+    color: #d5d5d5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+p {
+    line-height: 1.5;
+    color: #d5d5d5;
+}
+
+.bg-video {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.main-bg-wrapper {
+    background: hsla(339, 100%, 55%, 1);
+    background: linear-gradient(hsla(339, 100%, 55%, 1) 0%, hsla(197, 100%, 64%, 1) 100%);
+    padding: 0.125rem;
+    border-radius: 0.5rem;
+}
+
+.main {
+    background-color: #101314;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.profile-picture {
+    display: block;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    max-width: 10rem;
+}
+
+.profile-name {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.profile-career {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.social-link {
+    width: 2.25rem;
+    fill: #d5d5d5;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.gmail-icon {
+    fill: var(--red);
+}
+
+.whatsapp-icon {
+    fill: var(--green);
+}
+
+.linkedin-icon {
+    fill: var(--blue);
+}
+
+.github-icon {
+    fill: var(--yellow);
+}
+
+.subheading {
+    width: fit-content;
+    font-size: 1rem;
+    margin: 2rem auto;
+    border-top: 0.125rem solid gray;
+    border-bottom: 0.125rem solid gray;
+    padding: 0.5rem;
+}
+
+.card-bg-wrapper {
+    background: hsla(152, 100%, 50%, 1);
+    background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+    padding: 0.125rem;
+    border-radius: 0.25rem;
+}
+
+.card-bg-wrapper:not(:last-of-type) {
+    margin-bottom: 1rem;
+}
+
+.card {
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    background-color: #101314;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card-icon {
+    font-size: 2rem;
+    width: 2.5rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.card-icon[alt='expressjs icon'] {
+    filter: invert(100);
+}
+
+.card-title {
+    margin-bottom: 0.25rem;
+}
+
+.project .card {
+    background-color: transparent;
+    color: #101314;
+}
+
+.project .card-description {
+    color: #101314;
+}
+
+.project:hover {
+    transform: scale(0.9);
+}
+
+.btns {
+    border-top: 0.125rem solid gray;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.certificate-btn,
+.cv-btn {
+    border-radius: 4rem;
+    padding: 0.5rem 1rem;
+    border: 0.125rem solid #d5d5d5;
+    flex: 1;
+    text-align: center;
+}
+
+.certificate-btn:hover,
+.cv-btn:hover {
+    opacity: 0.75;
+}
+
+.certificate-btn {
+    background-color: #d5d5d5;
+    color: black;
+}
+
+
+/* Responsive */
+
+@media only screen and (min-width: 576px) {
+    .main-bg-wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    .main-bg-wrapper {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 992px) and (orientation: landscape) {
+    :root {
+        font-size: 18px;
+    }
+
+    body {
+        padding: 2rem;
+    }
+
+    .main-bg-wrapper {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (orientation: landscape) {}
+
+@media only screen and (min-width: 1400px) and (orientation: landscape) {}
