@@ -15,9 +15,19 @@
 
 <body>
 
+  <!-- Header -->
+  <header>
+    <nav class="nav">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#skill">Skill</a>
+      <a class="nav-link" href="#technology">Technology</a>
+      <a class="nav-link" href="#project">Project</a>
+    </nav>
+  </header>
 
   <!-- Main -->
-  <main class="main">
+  <main id="home" class="main">
 
     <!-- Profile Picture -->
     <img class="profile-picture" src="/assets/profile-picture.webp"
@@ -25,7 +35,15 @@
 
     <!-- Profile Info -->
     <p class="profile-name">Malik Jahanzaib</p>
-    <h1 class="profile-career">JavaScript Developer</h1>
+    <h1 class="profile-career">Full Stack Engineer</h1>
+
+    <!-- Buttons -->
+    <div class="btns">
+      <a class="certificate-btn"
+        href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
+        target="_blank">Certificate</a>
+      <a class="cv-btn" href="./assets/malik-jahanzaib-resume.pdf" download="">Download CV</a>
+    </div>
 
     <!-- Social Links -->
     <div class="social-links">
@@ -67,90 +85,108 @@
       </a>
     </div>
 
-    <!-- Subheading -->
-    <h2 class="subheading">Education</h2>
-
     <!-- Education Section -->
+    <h2 id="about" class="subheading">About</h2>
+
     <section class="section">
       <div class="card-bg-wrapper">
         <article class="card">
           <div class="card-icon">🎓</div>
           <div class="card-info">
-            <h3 class="card-title">Graduation</h3>
-            <p class="card-description">Masters in teacher education</p>
+            <h3 class="card-title">Education</h3>
+            <p class="card-description">Graduate in teacher education then transit to IT career to become professional
+              certified front-end engineer and self-taught back-end engineer</p>
           </div>
         </article>
       </div>
       <div class="card-bg-wrapper">
         <article class="card">
-          <div class="card-icon">📜</div>
+          <div class="card-icon">👨‍💻</div>
           <div class="card-info">
-            <h3 class="card-title">Certification</h3>
-            <p class="card-description">Front-end engineer professional certificate</p>
+            <h3 class="card-title">Technology</h3>
+            <p class="card-description">Using modern JavaScript ecosystem like React, Next JS, Tailwind CSS, TypeScript
+              and MongoDB</p>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- Subheading -->
-    <h2 class="subheading">Skill</h2>
 
-    <!-- Skill Section -->
-    <section class="section">
+    <!-- Professional Skill -->
+    <h2 id="skill" class="subheading">Professional Skills</h2>
+
+    <section class="section section-skill">
       <div class="card-bg-wrapper">
         <article class="card">
           <div class="card-icon">🖥️</div>
-          <div class="card-info">
-            <p class="card-title">Modern responsive website development</p>
-          </div>
+          <h3 class="card-title">Modern responsive website development</h3>
         </article>
       </div>
       <div class="card-bg-wrapper">
         <article class="card">
-          <div class="card-icon">📱</div>
-          <div class="card-info">
-            <p class="card-title">SPA &lpar;Single Page Application&rpar; development</p>
-          </div>
+          <div class="card-icon">⚡</div>
+          <h3 class="card-title">SPA &lpar;Single Page Application&rpar; development</h3>
         </article>
       </div>
       <div class="card-bg-wrapper">
         <article class="card">
           <div class="card-icon">🔗</div>
-          <div class="card-info">
-            <p class="card-title">API &lpar;Application Programming Interface&rpar; development</p>
-          </div>
+          <h3 class="card-title">API &lpar;Application Programming Interface&rpar; development</h3>
         </article>
       </div>
       <div class="card-bg-wrapper">
         <article class="card">
           <div class="card-icon">🗄️</div>
-          <div class="card-info">
-            <p class="card-title">Database development & integration</p>
-          </div>
+          <h3 class="card-title">Database development & integration</h3>
         </article>
       </div>
+    </section>
+
+    <!-- Beginner Skill -->
+    <h2 class="subheading">Beginner Skills</h2>
+
+    <section class="section section-skill">
       <div class="card-bg-wrapper">
         <article class="card">
           <div class="card-icon">⚙️</div>
-          <div class="card-info">
-            <p class="card-title">Performance optimization</p>
-          </div>
+          <h3 class="card-title">Performance optimization</h3>
         </article>
       </div>
       <div class="card-bg-wrapper">
         <article class="card">
           <div class="card-icon">🔒</div>
-          <div class="card-info">
-            <p class="card-title">Web security</p>
-          </div>
+          <h3 class="card-title">Web security analysis</h3>
+        </article>
+      </div>
+      <div class="card-bg-wrapper">
+        <article class="card">
+          <div class="card-icon">⭐</div>
+          <h3 class="card-title">UI/UX design</h3>
         </article>
       </div>
     </section>
 
-    <!-- Subheading -->
-    <h2 class="subheading">Core Technologies</h2>
+    <!-- Pending Skill -->
+    <h2 class="subheading">Pending Skills</h2>
+
+    <section class="section section-skill">
+      <div class="card-bg-wrapper">
+        <article class="card">
+          <div class="card-icon">📱</div>
+          <h3 class="card-title">Mobile application development </h3>
+        </article>
+      </div>
+      <div class="card-bg-wrapper">
+        <article class="card">
+          <div class="card-icon">🤖</div>
+          <h3 class="card-title">AI &lpar;Aritificial Intelligence&rpar; integration</h3>
+        </article>
+      </div>
+    </section>
 
     <!-- Core Technologies -->
+    <h2 id="technology" class="subheading">Core Technologies</h2>
+
     <section class="section">
       <div class="card-bg-wrapper">
         <article class="card">
@@ -187,10 +223,9 @@
       </div>
     </section>
 
-    <!-- Subheading -->
+    <!-- Front End Technology -->
     <h2 class="subheading">Front-end Technologies</h2>
 
-    <!-- Front End Technology -->
     <section class="section">
       <div class="card-bg-wrapper">
         <article class="card">
@@ -250,10 +285,9 @@
       </div>
     </section>
 
-    <!-- Subheading -->
+    <!-- Back End Technology -->
     <h2 class="subheading">Back-end Technologies</h2>
 
-    <!-- Back End Technology -->
     <section class="section">
       <div class="card-bg-wrapper">
         <article class="card">
@@ -302,11 +336,9 @@
       </div>
     </section>
 
-
-    <!-- Subheading -->
+    <!-- Database Technology -->
     <h2 class="subheading">Database Technologies</h2>
 
-    <!-- Database Technology -->
     <section class="section">
       <div class="card-bg-wrapper">
         <article class="card">
@@ -333,8 +365,58 @@
       </div>
     </section>
 
+    <!-- Modern Tools -->
+    <h2 class="subheading">Modern Tools</h2>
+
+    <section class="section">
+      <div class="card-bg-wrapper">
+        <article class="card">
+          <img class="card-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+            alt="vscode icon">
+          <div class="card-info">
+            <h3 class="card-title">VS Code</h3>
+            <p class="card-description">Visual Studio Code (VSCode) is a free, open-source code editor for developers
+            </p>
+          </div>
+        </article>
+      </div>
+      <div class="card-bg-wrapper">
+        <article class="card">
+          <img class="card-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"
+            alt="git icon">
+          <div class="card-info">
+            <h3 class="card-title">Git</h3>
+            <p class="card-description">Git is a version control system that tracks changes to files over time</p>
+          </div>
+        </article>
+      </div>
+      <div class="card-bg-wrapper">
+        <article class="card">
+          <img class="card-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"
+            alt="postman icon">
+          <div class="card-info">
+            <h3 class="card-title">Postman</h3>
+            <p class="card-description">Postman is an API development environment for testing and documenting APIs</p>
+          </div>
+        </article>
+      </div>
+      <div class="card-bg-wrapper">
+        <article class="card">
+          <img class="card-icon"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="figma icon">
+          <div class="card-info">
+            <h3 class="card-title">Figma</h3>
+            <p class="card-description">Figma is a cloud-based design tool for creating and collaborating on digital
+              designs</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- Subheading -->
-    <h2 class="subheading">Projects</h2>
+    <h2 id="project" class="subheading">Projects</h2>
 
     <!-- Project -->
     <section class="section">
@@ -350,13 +432,7 @@
       </a>
     </section>
 
-    <!-- Buttons -->
-    <section class="btns">
-      <a class="certificate-btn"
-        href="https://www.codecademy.com/profiles/malik.jahan/certificates/2682884a0719474f96407efe432fdd87"
-        target="_blank">Certificate</a>
-      <a class="cv-btn">Download CV</a>
-    </section>
+
   </main>
 
   <!-- Laptop Image -->
