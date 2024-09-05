@@ -212,7 +212,7 @@ section {
 }
 
 .card-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 2rem;
     line-height: 1;
 }
@@ -227,8 +227,9 @@ section {
 }
 
 .section-skill .card-title {
-    line-height: 1.25;
+    line-height: 1;
     font-weight: normal;
+    margin: 0;
 }
 
 
@@ -279,6 +280,11 @@ section {
 
     .nav {
         width: 50%;
+    }
+
+    .card {
+        flex-direction: row;
+        align-items: center;
     }
 
     .laptop-image {
